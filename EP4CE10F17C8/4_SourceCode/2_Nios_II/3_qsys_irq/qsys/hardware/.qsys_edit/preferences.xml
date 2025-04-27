@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="Avalon-ST Interfaces">
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="175" />
+   <clocksource preferredWidth="174" />
+   <frequency preferredWidth="155" />
+  </columns>
+ </clocktable>
+ <window width="1158" height="791" x="186" y="84" />
+ <library
+   expandedCategories="Library/Interface Protocols/Serial,Project,Library,Library/Interface Protocols" />
+ <generation path="D:/work/Pio_irq/qsys/hardware" />
+ <hdlexample language="VERILOG" />
+</preferences>

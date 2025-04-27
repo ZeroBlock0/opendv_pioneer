@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="271" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="183" />
+   <export preferredWidth="119" />
+   <inputclock preferredWidth="61" />
+   <description preferredWidth="168" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="175" />
+   <clocksource preferredWidth="174" />
+   <frequency preferredWidth="155" />
+  </columns>
+ </clocktable>
+ <window width="1936" height="1056" x="-8" y="-8" />
+ <library expandedCategories="Project,Library" />
+ <generation path="nios2os" />
+ <hdlexample language="VERILOG" />
+</preferences>

@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project Timer ****
+
+make all 
+Info: Building D:/project/5_qsys_timer/qsys/software/Timer_bsp/
+make --no-print-directory -C D:/project/5_qsys_timer/qsys/software/Timer_bsp/
+[BSP build complete]
+[Timer build complete]
+
+**** Build Finished ****

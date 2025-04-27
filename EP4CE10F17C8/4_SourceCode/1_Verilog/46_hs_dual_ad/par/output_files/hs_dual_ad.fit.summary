@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Nov 21 22:08:03 2020
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : hs_dual_ad
+Top-level Entity Name : hs_dual_ad
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 859 / 10,320 ( 8 % )
+    Total combinational functions : 530 / 10,320 ( 5 % )
+    Dedicated logic registers : 703 / 10,320 ( 7 % )
+Total registers : 703
+Total pins : 27 / 180 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 45,056 / 423,936 ( 11 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

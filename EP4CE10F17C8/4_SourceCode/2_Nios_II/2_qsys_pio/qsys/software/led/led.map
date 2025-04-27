@@ -1,0 +1,643 @@
+Archive member included because of file (symbol)
+
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+                              D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o (alt_main)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o) (close)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o) (alt_errno)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o) (_exit)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o) (alt_find_dev)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o) (errno)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x4               d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+onchip_ram_BEFORE_EXCEPTION 0x00008000         0x00000020
+onchip_ram       0x00008020         0x00004fe0
+reset            0x00011000         0x00000020
+epcs_flash       0x00011020         0x000007e0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world.o
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libstdc++.a
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libm.a
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+START GROUP
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+LOAD D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a
+END GROUP
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+                0x00008000                __alt_mem_onchip_ram = 0x8000
+                0x00011000                __alt_mem_epcs_flash = 0x11000
+
+.entry          0x00011000        0x0
+ *(.entry)
+ .entry         0x00011000        0x0 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+                0x00011000                __reset
+
+.exceptions     0x00008020        0x0
+                0x00008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x00008020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x00008020      0xd3c
+                0x00008020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00008020       0x48 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+                0x00008020                _start
+ .text          0x00008068       0x3c obj/default/hello_world.o
+                0x00008068                main
+ .text          0x000080a4       0x68 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+                0x000080a4                alt_main
+ .text          0x0000810c       0xa4 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008144                alt_irq_init
+                0x00008178                alt_sys_init
+ .text          0x000081b0       0xc0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x000081b0                altera_avalon_jtag_uart_read_fd
+                0x00008210                altera_avalon_jtag_uart_write_fd
+ .text          0x00008270       0xf4 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00008270                altera_avalon_jtag_uart_read
+ .text          0x00008364       0x98 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00008364                altera_avalon_jtag_uart_write
+ .text          0x000083fc      0x118 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+                0x0000844c                close
+ .text          0x00008514       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00008540       0xf0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00008590                alt_dev_llist_insert
+ .text          0x00008630        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x00008630       0x3c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+                0x00008630                _exit
+ .text          0x0000866c      0x138 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x0000872c                alt_io_redirect
+ .text          0x000087a4      0x270 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+                0x000088c0                open
+ .text          0x00008a14       0x60 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x00008a14                alt_release_fd
+ .text          0x00008a74       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00008a74                altera_nios2_qsys_irq_init
+ .text          0x00008a94       0x90 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x00008a94                alt_find_dev
+ .text          0x00008b24      0x114 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x00008b24                alt_find_file
+ .text          0x00008c38       0xb4 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x00008c38                alt_get_fd
+ .text          0x00008cec        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .text          0x00008cec       0x48 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                0x00008cec                memcmp
+ .text          0x00008d34       0x28 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x00008d34                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00008d5c                PROVIDE (__etext, ABSOLUTE (.))
+                0x00008d5c                PROVIDE (_etext, ABSOLUTE (.))
+                0x00008d5c                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00008d5c                . = ALIGN (0x4)
+                0x00008d5c                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00008d5c                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00008d5c                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00008d5c                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00008d5c                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00008d5c                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x00008d5c                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x00008d5c                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00008d5c                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00008d5c                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00008d5c                . = ALIGN (0x4)
+
+.rodata         0x00008d5c       0x2c
+                0x00008d5c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00008d5c                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00008d5c       0x10 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x00008d6c       0x10 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x00008d7c        0xc D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x00008d88                . = ALIGN (0x4)
+                0x00008d88                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00008d5c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00008d88      0x1ec
+                0x00008d88                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00008d88                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00008d88        0x0 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+ .data          0x00008d88        0x0 obj/default/hello_world.o
+ .data          0x00008d88        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00008d88       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00008db4        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x00008db4        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00008db4        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00008db4        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x00008db4      0x1a8 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00008db4                alt_dev_null
+                0x00008ddc                alt_fd_list
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x00008f5c        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x00008f5c        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .data          0x00008f5c        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .data          0x00008f5c        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x00010f5c                _gp = ABSOLUTE ((. + 0x8000))
+                0x00010f5c                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00008f5c       0x14 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00008f5c                alt_fs_list
+                0x00008f64                alt_dev_list
+                0x00008f6c                alt_max_fd
+ .sdata         0x00008f70        0x4 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00008f70                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00008f74                . = ALIGN (0x4)
+                0x00008f74                _edata = ABSOLUTE (.)
+                0x00008f74                PROVIDE (edata, ABSOLUTE (.))
+                0x00008f74                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00008d88                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00008f74       0x10
+                0x00008f74                __bss_start = ABSOLUTE (.)
+                0x00008f74                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00008f74                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00008f74        0xc D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+                0x00008f74                alt_argc
+                0x00008f78                alt_argv
+                0x00008f7c                alt_envp
+ .sbss          0x00008f80        0x4 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                0x00008f80                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00008f84                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00008f84                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+ .bss           0x00008f84        0x0 obj/default/hello_world.o
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x00008f84        0x0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x00008f84        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x00008f84        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .bss           0x00008f84        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+                0x00008f84                . = ALIGN (0x4)
+                0x00008f84                __bss_end = ABSOLUTE (.)
+
+.onchip_ram     0x00008f84        0x0
+                0x00008f84                PROVIDE (_alt_partition_onchip_ram_start, ABSOLUTE (.))
+ *(.onchip_ram .onchip_ram. onchip_ram.*)
+                0x00008f84                . = ALIGN (0x4)
+                0x00008f84                PROVIDE (_alt_partition_onchip_ram_end, ABSOLUTE (.))
+                0x00008f84                _end = ABSOLUTE (.)
+                0x00008f84                end = ABSOLUTE (.)
+                0x00008f84                __alt_stack_base = ABSOLUTE (.)
+                0x00008f84                PROVIDE (_alt_partition_onchip_ram_load_addr, LOADADDR (.onchip_ram))
+
+.epcs_flash     0x00011020        0x0
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_start, ABSOLUTE (.))
+ *(.epcs_flash .epcs_flash. epcs_flash.*)
+                0x00011020                . = ALIGN (0x4)
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_end, ABSOLUTE (.))
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_load_addr, LOADADDR (.epcs_flash))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/hello_world.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2b0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000020       0x20 obj/default/hello_world.o
+ .debug_aranges
+                0x00000040       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000060       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000080       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x000000a0       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x000000c0       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x000000e0       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000100       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000120       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000140       0x18 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x00000158       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_aranges
+                0x00000178       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000198       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x000001b8       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x000001d8       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x000001f8       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x00000218       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x00000238       0x20 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x00000258       0x18 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x00000270       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000290       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x30fb
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x5e D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000005e       0xc7 obj/default/hello_world.o
+ .debug_info    0x00000125      0x139 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000025e      0x413 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000671      0x3da D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00000a4b      0x1bc D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x00000c07      0x19f D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00000da6      0x350 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x000010f6      0x4e3 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x000015d9      0x1b9 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x00001792       0xa3 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x00001835       0xec D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_info    0x00001921      0x4f0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x00001e11      0x3f0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x00002201      0x2dd D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x000024de       0x90 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x0000256e      0x30d D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000287b      0x30c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x00002b87      0x339 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00002ec0       0x84 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00002f44       0xf1 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x00003035       0xc6 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x00000000     0x10ce
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x14 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000014       0x60 obj/default/hello_world.o
+ .debug_abbrev  0x00000074       0xba D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000012e      0x155 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000283       0xf7 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x0000037a       0xd5 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x0000044f       0xd5 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00000524      0x11f D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00000643       0xd9 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000071c      0x114 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x00000830       0x5a D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000088a       0xa6 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_abbrev  0x00000930      0x114 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00000a44      0x148 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00000b8c       0xde D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00000c6a       0x42 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x00000cac       0xf0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x00000d9c       0xf0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x00000e8c      0x10d D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x00000f99       0x37 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x00000fd0       0x7f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x0000104f       0x7f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x00000000     0x132a
+ *(.debug_line)
+ .debug_line    0x00000000       0x57 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000057       0x8f obj/default/hello_world.o
+ .debug_line    0x000000e6       0x9e D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000184      0x13b D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000002bf      0x114 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x000003d3      0x101 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x000004d4       0xf8 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000005cc      0x18a D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00000756      0x11d D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00000873       0xd0 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00000943       0x51 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000994       0x71 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_line    0x00000a05      0x158 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00000b5d      0x125 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x00000c82       0xae D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x00000d30       0x51 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x00000d81       0xb9 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x00000e3a       0xd5 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x00000f0f       0xd1 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x00000fe0       0x5d d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000103d      0x17c d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x000011b9      0x171 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x00000000      0x40c
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c obj/default/hello_world.o
+ .debug_frame   0x0000002c       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000058       0x64 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000000bc       0x48 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00000104       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000130       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x0000015c       0x48 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x000001a4       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x000001d0       0x48 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000218       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_frame   0x00000244       0x48 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x0000028c       0x64 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x000002f0       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x0000031c       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x00000348       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x00000374       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x000003a0       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x000003cc       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x000003ec       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x00000000      0x90f
+ *(.debug_str)
+ .debug_str     0x00000000       0xa4 obj/default/hello_world.o
+                                 0xe2 (size before relaxing)
+ .debug_str     0x000000a4       0xa2 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+                                0x140 (size before relaxing)
+ .debug_str     0x00000146      0x168 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x288 (size before relaxing)
+ .debug_str     0x000002ae       0x77 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                0x278 (size before relaxing)
+ .debug_str     0x00000325       0x4d D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                0x1c2 (size before relaxing)
+ .debug_str     0x00000372       0x50 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x1b8 (size before relaxing)
+ .debug_str     0x000003c2       0x44 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+                                0x1ae (size before relaxing)
+ .debug_str     0x00000406      0x120 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+                                0x2a8 (size before relaxing)
+ .debug_str     0x00000526       0x4b D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                0x16f (size before relaxing)
+ .debug_str     0x00000571       0x14 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_errno.o)
+                                 0xe8 (size before relaxing)
+ .debug_str     0x00000585       0x2a D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+                                 0xf4 (size before relaxing)
+ .debug_str     0x000005af       0x56 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                0x2b9 (size before relaxing)
+ .debug_str     0x00000605       0x36 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+                                0x1ee (size before relaxing)
+ .debug_str     0x0000063b       0x28 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                0x182 (size before relaxing)
+ .debug_str     0x00000663       0x3b D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                 0xff (size before relaxing)
+ .debug_str     0x0000069e       0x24 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                0x18f (size before relaxing)
+ .debug_str     0x000006c2       0x26 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+                                0x19d (size before relaxing)
+ .debug_str     0x000006e8       0x30 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                0x1bf (size before relaxing)
+ .debug_str     0x00000718       0xd1 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x000007e9       0xde d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x000008c7       0x48 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                0x182 (size before relaxing)
+
+.debug_loc      0x00000000      0x4e4
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x2c obj/default/hello_world.o
+ .debug_loc     0x0000002c       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000058       0x84 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x000000dc       0x58 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x00000134       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x00000160       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x0000018c       0x58 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x000001e4       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x00000210       0x58 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x00000268       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_loc     0x00000294       0x58 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x000002ec       0x84 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x00000370       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x0000039c       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x000003c8       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x000003f4       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00000420       0x2c D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x0000044c       0x6f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x000004bb       0x29 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x20
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x20 D:/work/Pio_led/qsys/software/led_bsp//obj/HAL/src/crt0.o
+                0x0000d000                __alt_data_end = 0xd000
+                0x0000d000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00008f84                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00008f84                PROVIDE (__alt_heap_start, end)
+                0x0000d000                PROVIDE (__alt_heap_limit, 0xd000)
+OUTPUT(led.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 D:/work/Pio_led/qsys/software/led_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)

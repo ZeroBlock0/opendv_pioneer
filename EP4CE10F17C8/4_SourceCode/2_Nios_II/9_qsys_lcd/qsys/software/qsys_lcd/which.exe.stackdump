@@ -1,0 +1,7 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=610DB869
+eax=00000000 ebx=00000000 ecx=00000000 edx=025EABB0 esi=00000000 edi=0000017C
+ebp=025EAB7C esp=025EAA64 program=\\?\D:\quartus13\quartus\bin\cygwin\bin\which.exe, pid 321492, thread unknown (0x4E7F4)
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+025EAB7C  610DB869  (00000000, 00000000

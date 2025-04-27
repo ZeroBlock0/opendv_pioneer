@@ -1,0 +1,1 @@
+exec quartus_cpf -c generate_jic.cof

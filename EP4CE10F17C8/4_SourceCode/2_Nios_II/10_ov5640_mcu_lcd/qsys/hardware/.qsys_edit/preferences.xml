@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="237" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="175" />
+   <clocksource preferredWidth="174" />
+   <frequency preferredWidth="155" />
+  </columns>
+ </clocktable>
+ <window width="1258" height="800" x="651" y="166" />
+ <library expandedCategories="Project,Library" />
+ <generation path="F:/project/ov5640_mcu_lcd/_PROJECT_NAME_/hardware" />
+ <hdlexample language="VERILOG" />
+</preferences>

@@ -1,0 +1,73 @@
+!SESSION 2018-07-19 09:30:54.363 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-07-19 09:32:42.960
+!MESSAGE Indexed 'led_bsp' (82 sources, 61 headers) in 0.56 sec: 1,142 declarations; 3,041 references; 117 unresolved inclusions; 5 syntax errors; 210 unresolved names (4.78%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-07-19 09:32:50.414
+!MESSAGE Indexed 'led' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 09:55:03.819
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11820 --id=0x0 --timestamp=1531920027]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 09:55:07.887
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11820 --id=0x0 --timestamp=1531920027 /cygdrive/d/work/Pio_led/qsys/software/led/led.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:22:36.110
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:22:36.890
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11820 --id=0x0 --timestamp=1531920027]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:22:43.876
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11820 --id=0x0 --timestamp=1531920027 /cygdrive/d/work/Pio_led/qsys/software/led/led.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:24:52.470
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:24:56.955
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11820 --id=0x0 --timestamp=1531920027]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:24:59.550
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11820 --id=0x0 --timestamp=1531920027 /cygdrive/d/work/Pio_led/qsys/software/led/led.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:29:16.171
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:29:17.005
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11820 --id=0x0 --timestamp=1531920027]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:29:19.706
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11820 --id=0x0 --timestamp=1531920027 /cygdrive/d/work/Pio_led/qsys/software/led/led.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:49:53.357
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:49:54.178
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11820 --id=0x0 --timestamp=1531920027]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:50:01.583
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11820 --id=0x0 --timestamp=1531920027 /cygdrive/d/work/Pio_led/qsys/software/led/led.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:55:26.584
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:55:27.395
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11820 --id=0x0 --timestamp=1531920027]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:55:30.034
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11820 --id=0x0 --timestamp=1531920027 /cygdrive/d/work/Pio_led/qsys/software/led/led.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:56:40.906
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:56:41.703
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x11820 --id=0x0 --timestamp=1531920027]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-19 10:56:49.532
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x11820 --id=0x0 --timestamp=1531920027 /cygdrive/d/work/Pio_led/qsys/software/led/led.elf]

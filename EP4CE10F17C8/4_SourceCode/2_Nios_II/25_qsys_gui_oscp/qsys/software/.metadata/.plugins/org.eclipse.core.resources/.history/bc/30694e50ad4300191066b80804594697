@@ -1,0 +1,50 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           touch.c
+// Last modified Date:  2019/3/6 13:28:14
+// Last Version:        V1.0
+// Descriptions:        触摸
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <unistd.h>
+#include "system.h"
+#include "draw_disp.h"
+#include "GUI.h"
+#include "touch.h";
+#include "mculcd.h";
+
+extern _disp_dev dispdev;	//界面显示参数
+extern _lcd_gui lcdgui;
+
+//触摸处理
+void TouchPro(alt_u16 x_pos,alt_u16 y_pos){
+    alt_u16 t = y_pos/dispdev.set_area_height;
+    alt_u16 touch_func = 0;
+	if(x_pos>=lcdgui.width - dispdev.set_area_width)
+    {
+
+
+
+    }
+}
+
+
+
+
+
+
+
+

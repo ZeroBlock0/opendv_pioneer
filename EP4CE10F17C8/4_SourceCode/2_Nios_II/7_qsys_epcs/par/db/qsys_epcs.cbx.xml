@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="qsys_epcs">
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_jtag_uart:jtag_uart|qsys_epcs_jtag_uart_scfifo_w:the_qsys_epcs_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_bht_module:qsys_epcs_nios2_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_70h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_dc_tag_module:qsys_epcs_nios2_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_3ig1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_dc_victim_module:qsys_epcs_nios2_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_r3d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_mult_cell:the_qsys_epcs_nios2_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_q1u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_epcs_flash:epcs_flash|altsyncram:the_boot_copier_rom" CBX_FILE_NAME="altsyncram_s651.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_jtag_uart:jtag_uart|qsys_epcs_jtag_uart_scfifo_r:the_qsys_epcs_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_mult_cell:the_qsys_epcs_nios2_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_s1u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_onchip_ram:onchip_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_vpc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_onchip_ram:onchip_ram|altsyncram:the_altsyncram|altsyncram_vpc1:auto_generated|altsyncram:ram_block1a0" CBX_FILE_NAME="altsyncram_jrc3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|lpm_add_sub:Add17" CBX_FILE_NAME="add_sub_qvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_ic_data_module:qsys_epcs_nios2_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cjd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_ic_tag_module:qsys_epcs_nios2_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ech1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_mult_cell:the_qsys_epcs_nios2_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_s1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_j011.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_nios2_oci:the_qsys_epcs_nios2_nios2_oci|qsys_epcs_nios2_nios2_ocimem:the_qsys_epcs_nios2_nios2_ocimem|qsys_epcs_nios2_ociram_sp_ram_module:qsys_epcs_nios2_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ho81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_register_bank_b_module:qsys_epcs_nios2_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_8eg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_mult_cell:the_qsys_epcs_nios2_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_q1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_jp01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_dc_data_module:qsys_epcs_nios2_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_kpc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|qsys_epcs_rw|qsys_epcs:u_qsys_epcs|qsys_epcs_nios2:nios2|qsys_epcs_nios2_register_bank_a_module:qsys_epcs_nios2_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_7eg1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

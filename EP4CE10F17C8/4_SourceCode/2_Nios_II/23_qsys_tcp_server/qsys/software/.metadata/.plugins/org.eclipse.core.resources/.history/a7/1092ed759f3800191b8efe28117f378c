@@ -1,0 +1,166 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h> 
+
+/* MicroC/OS-II definitions */
+#include "includes.h"
+
+/* Simple Socket Server definitions */
+#include "simple_socket_server.h"                                                                    
+#include "alt_error_handler.h"
+
+/* Nichestack definitions */
+#include "ipport.h"
+#include "tcpport.h"
+
+/*
+ * sss_reset_connection()
+ * 
+ * This routine will, when called, reset our SSSConn struct's members 
+ * to a reliable initial state. Note that we set our socket (FD) number to
+ * -1 to easily determine whether the connection is in a "reset, ready to go" 
+ * state.
+ */
+void sss_reset_connection(SSSConn* conn) {
+	memset(conn, 0, sizeof(SSSConn));
+
+	conn->fd = -1;
+	conn->state = READY;
+	conn->rx_wr_pos = conn->rx_buffer;
+	conn->rx_rd_pos = conn->rx_buffer;
+	return;
+}
+
+/*
+ * sss_handle_accept()
+ * 
+ * 处理连接请求，并打印客户端IP地址
+ * 
+ */
+void sss_handle_accept(int listen_socket, SSSConn* conn) {
+	int socket, len;
+	struct sockaddr_in incoming_addr;
+
+	len = sizeof(incoming_addr);
+
+	if ((conn)->fd == -1) {
+		if ((socket = accept(listen_socket,(struct sockaddr*)&incoming_addr,&len))
+				< 0) {
+			alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+					"[sss_handle_accept] accept failed");
+		} else {
+			(conn)->fd = socket;
+			printf("[sss_handle_accept] accepted connection request from %s\n",
+					inet_ntoa(incoming_addr.sin_addr));
+		}
+	} else {
+		printf("[sss_handle_accept] rejected connection request from %s\n",
+				inet_ntoa(incoming_addr.sin_addr));
+	}
+
+	return;
+}
+
+/*
+ * sss_handle_receive()
+ * 
+ * This routine is called whenever there is a sss connection established and
+ * the socket assocaited with that connection has incoming data. We will first
+ * look for a newline "\n" character to see if the user has entered something 
+ * and pressed 'return'. If there is no newline in the buffer, we'll attempt
+ * to receive data from the listening socket until there is.
+ * 
+ * The connection will remain open until the user enters "Q\n" or "q\n", as
+ * deterimined by repeatedly calling recv(), and once a newline is found, 
+ * calling sss_exec_command(), which will determine whether the quit 
+ * command was received.
+ * 
+ * Finally, each time we receive data we must manage our receive-side buffer.
+ * New data is received from the sss socket onto the head of the buffer,
+ * and popped off from the beginning of the buffer with the 
+ * sss_exec_command() routine. Aside from these, we must move incoming
+ * (un-processed) data to buffer start as appropriate and keep track of 
+ * associated pointers.
+ */
+void sss_handle_receive(SSSConn* conn) {
+	int data_used = 0, rx_code = 0;
+	INT8U *lf_addr;
+	const char quit[] = "quit";
+
+	while ((conn->fd == -1)&&(conn->state != CLOSE)) {
+		rx_code = recv(conn->fd, conn->rx_buffer, SSS_RX_BUF_SIZE -1, 0);
+
+		if (rx_code > 0) {
+			conn->rx_rd_pos = conn->rx_buffer;
+			conn->rx_wr_pos = conn->rx_buffer;
+			printf("[sss_handle_receive] print RX data: %s\n", conn->rx_rd_pos);
+			send(conn->fd, conn->rx_wr_pos, strlen(conn->rx_wr_pos), 0);
+		}
+
+		if (strcmp(conn->rx_rd_pos, quit) == 0) {
+			conn->close = 1;
+		}
+
+		/*
+		 * When the quit command is received, update our connection state so that
+		 * we can exit the while() loop and close the connection
+		 */
+		conn->state = conn->close ? CLOSE : READY;
+
+		/* Manage buffer */
+		memset(conn->rx_buffer, 0, SSS_RX_BUF_SIZE);
+	}
+
+	printf("[sss_handle_receive] closing connection\n");
+	close(conn->fd);
+	sss_reset_connection(conn);
+
+	return;
+}
+
+/*
+ * SSSSimpleSocketServerTask()
+ * 
+ * This MicroC/OS-II thread spins forever after first establishing a listening
+ * socket for our sss connection, binding it, and listening. Once setup,
+ * it perpetually waits for incoming data to either the listening socket, or
+ * (if a connection is active), the sss data socket. When data arrives, 
+ * the approrpriate routine is called to either accept/reject a connection 
+ * request, or process incoming data.
+ */
+void SSSSimpleSocketServerTask() {
+	int fd_listen, max_socket;
+	struct sockaddr_in addr;
+	static SSSConn conn;
+	fd_set readfds;
+
+	if ((fd_listen = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+		alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+				"[sss_task] Socket creation failed");
+	}
+
+	addr.sin_family = AF_INET;
+	addr.sin_port = htons(SSS_PORT);
+	addr.sin_addr.s_addr = INADDR_ANY;
+
+	if ((bind(fd_listen,(struct sockaddr *)&addr,sizeof(addr))) < 0) {
+		alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+				"[sss_task] Bind failed");
+	}
+	if ((listen(fd_listen,1)) < 0) {
+		alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+				"[sss_task] Listen failed");
+	}
+
+	/* At this point we have successfully created a socket which is listening
+	 * on SSS_PORT for connection requests from any remote address.
+	 */
+	sss_reset_connection(&conn);
+	printf("[sss_task] Simple Socket Server listening on port %d\n", SSS_PORT);
+
+	while (1) {
+		sss_handle_accept(fd_listen, &conn);
+		sss_handle_receive(&conn);
+
+	} /* while(1) */
+}

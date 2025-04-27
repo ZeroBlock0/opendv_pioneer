@@ -1,0 +1,131 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           gui_main.c
+// Last modified Date:  2018/11/30 14:07:58
+// Last Version:        V1.0
+// Descriptions:        uC/GUI实现打点画线
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        2018/11/30 14:07:32
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <stdio.h>
+#include "system.h"
+#include "io.h"
+#include "alt_types.h"
+#include "altera_avalon_pio_regs.h"
+#include "sys/alt_irq.h"
+#include "unistd.h"
+#include <string.h>
+#include "GUI.h"
+#include "draw_disp.h"
+#include "touch.h";
+
+extern _lcd_dev lcddev;	    //LCD参数参数
+
+//SDRAM显存的地址
+alt_u16 *ram = (alt_u16 *)(SDRAM_BASE + SDRAM_SPAN - 2049000);
+
+alt_u16 icon = 0;		//触摸的图标
+alt_u16 touch;          //是否有触摸操作
+alt_u16 x_pos;          //当前x坐标
+alt_u16 y_pos;          //当前y坐标
+alt_u32 tp_pos = 0;		//当前触点数据
+alt_u32 tp_pos_pre = 0;	//上一次触点数据
+
+void enable_tp_interrupt();
+void disable_tp_interrupt();
+
+//LCD触摸中断程序
+void tp_interrupt(void* context){
+    tp_pos_pre = tp_pos;
+    tp_pos = IORD(AVALON_MM_BRIDGE_0_BASE,1);
+
+    if(tp_pos != tp_pos_pre){	//对同一坐标点长时间触摸时，只输出一次坐标
+        x_pos = tp_pos>>16;
+        y_pos = tp_pos&0xffff;
+        touch = 1;
+
+        printf("x=%d, y=%d\n",x_pos,y_pos);
+    }
+    IOWR_ALTERA_AVALON_PIO_EDGE_CAP(PIO_TP_INT_BASE, 0x1); //清边沿捕获寄存器
+}
+
+//触摸中断初始化
+void init_tp_interrupt(){
+    IOWR_ALTERA_AVALON_PIO_IRQ_MASK(PIO_TP_INT_BASE, 0x1); //开触摸中断
+    IOWR_ALTERA_AVALON_PIO_EDGE_CAP(PIO_TP_INT_BASE, 0x1); //清边沿捕获寄存器
+    alt_ic_isr_register(
+        PIO_TP_INT_IRQ_INTERRUPT_CONTROLLER_ID, //中断控制器标号
+        PIO_TP_INT_IRQ,							//硬件中断号
+        tp_interrupt,							//中断服务函数
+        NULL,									//指向与设备驱动实例相关的结构体，一般为NULL
+        0										//保留位，设置为0
+        );
+}
+
+int main()
+{
+	int i = 0,j=0;
+    printf("Hello from NiosII!\n");
+
+    GUI_Init();                         //uC/GUI初始化
+    GUI_UC_SetEncodeUTF8();
+    GUI_SetFont(&GUI_FontChinese_ST16);
+    init_tp_interrupt();
+    enable_tp_interrupt();
+
+    lcddev.width  = 480;                //4.3'屏宽度
+    lcddev.height = 272;                //4.3'屏高度
+
+    for(i=0;i<lcddev.height;i++)
+    {
+    	for(j=0;j<lcddev.width;j++){
+//    		if(i>=0 && i <=100)
+    			*ram++ = GUI_WHITE;
+//    		else
+//    			*(ram+480*i+j) =  GUI_GREEN;
+    	}
+    }
+
+//    Draw_Display();                     //绘制显示界面
+//    SendCfgPara();
+    while(1){
+    	if(touch)
+    	{
+    		TouchPro(x_pos,y_pos);
+    		touch = 0;
+    	}
+    	usleep(10000);
+    	GetDataDisp();
+    }
+
+    return 0;
+}
+
+/************************************************************
+*
+*           触摸屏中断函数
+*
+*************************************************************
+*/
+
+//关触摸屏中断
+void disable_tp_interrupt(){
+    IOWR_ALTERA_AVALON_PIO_IRQ_MASK(PIO_TP_INT_BASE, 0x0);
+}
+
+//开触摸屏中断
+void enable_tp_interrupt(){
+    IOWR_ALTERA_AVALON_PIO_IRQ_MASK(PIO_TP_INT_BASE, 0x1);
+}

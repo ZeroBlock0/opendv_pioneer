@@ -1,0 +1,510 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           draw_disp.c
+// Last modified Date:  2019/3/6 13:28:14
+// Last Version:        V1.0
+// Descriptions:        绘制显示界面
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <unistd.h>
+#include "system.h"
+#include "draw_disp.h"
+#include "GUI.h"
+
+extern _disp_dev dispdev;	//界面显示参数
+extern _lcd_dev lcddev;
+
+u16 data_xcoord[] = {130,225,45,165,285};
+u16 data_ycoord[] = {8,8,256,256,256};
+s32 ver_res_arr[] = {100,200,500,1000,2000,4000};
+u16 sample_rate_arr[] = {1,2,5,10,20,50,100,200,500,1000};  //抽样率
+u8  zoom_nul_arr[] = {10,5,2,1,2,4};                        //缩放倍数
+
+s16 min_voltage = -5000;
+s16 max_voltage = 5000;
+s16 max_addata = 256;
+
+//绘制显示界面
+void Draw_Display(void){
+	Disp_Init();                        //显示区域位置初始化
+
+    GUI_SetBkColor(GUI_BLACK);  	    //设置GUI背景色
+    GUI_Clear();                        //GUI清屏
+
+    Draw_WaveBorder();                  //绘制波形区域边框
+    Draw_SetDisp();                     //绘制右侧设置窗口
+    Draw_DataCharDisp();                //绘制上侧和下测数据字符显示
+
+	//数据更新
+	HorSetDataDisp(dispdev.hor_res_gears);
+	VerSetDataDisp(dispdev.ver_res_gears);
+	EdgeSetDataDisp(dispdev.trig_gears);
+	VerZeroMarkDisp(dispdev.ver_zero_mark);
+	HorZeroMarkDisp(dispdev.hor_zero_mark);
+
+	alt_dcache_flush_all();
+}
+
+//显示区域位置初始化
+void Disp_Init(){
+	dispdev.wave_xstart = 16;             //波形起始区域x坐标
+	dispdev.wave_ystart = 45;             //波形起始区域y坐标
+	dispdev.wave_width = 360;             //波形窗口宽度
+	dispdev.wave_height = 204;            //波形窗口高度
+	dispdev.set_area_width = lcddev.width - dispdev.wave_width - dispdev.wave_xstart;
+	dispdev.set_area_height = lcddev.height/7;
+	dispdev.ver_zero_mark = 8;            //垂直方向零点位置-中间   从下到上1~15
+	dispdev.hor_zero_mark = 10;           //水平方向零点位置-中间   从右向左1~23
+	dispdev.run_flag = 1;                 //运行状态
+	dispdev.hor_res_gears = 1;            //默认水平方向分辨率档位2us 0~9
+	dispdev.ver_res_gears = 4;            //默认垂直方向分辨率档位2V  0~6
+
+	dispdev.trig_type = 0;                //上升沿触发
+	dispdev.trig_gears = 8;               //触发电平档位 0 ,从下到上1~15
+	dispdev.trig_level = (s32)(dispdev.trig_gears - dispdev.ver_zero_mark) * ver_res_arr[dispdev.ver_res_gears]/2;
+}
+
+//绘制波形区域边框
+void Draw_WaveBorder(){
+	u16 i = 0;
+	GUI_SetPenSize(1);                  //设置画笔大小
+	GUI_SetColor(GUI_WHITE);            //设置GUI前景色
+	GUI_DrawRect(dispdev.wave_xstart,dispdev.wave_ystart,dispdev.wave_xstart + dispdev.wave_width,dispdev.wave_ystart + dispdev.wave_height);  //矩形画线
+	GUI_SetColor(GUI_LIGHTDARK);        //设置GUI前景色，亮黑色
+	for(i = 1;i < 8;i++){
+		if(i == 4)
+			continue;
+		GUI_DrawLine(dispdev.wave_xstart+1,dispdev.wave_ystart+i*dispdev.wave_height/8,dispdev.wave_xstart + dispdev.wave_width-1,dispdev.wave_ystart+i*dispdev.wave_height/8);
+	}
+	for(i = 1;i < 12;i++){
+		if(i == 5)
+			continue;
+		GUI_DrawLine(dispdev.wave_xstart+i*dispdev.wave_width/12,dispdev.wave_ystart+1,dispdev.wave_xstart+i*dispdev.wave_width/12,dispdev.wave_ystart+dispdev.wave_height-1);
+	}
+	//绘制中间区域X轴和Y轴
+	GUI_SetColor(GUI_LIGHTGRAY);
+	GUI_DrawLine(dispdev.wave_xstart+1,dispdev.wave_ystart + 25*2+26*2,dispdev.wave_xstart + dispdev.wave_width-1,dispdev.wave_ystart+25*2+26*2);
+	GUI_DrawLine(dispdev.wave_xstart+6*dispdev.wave_width/12,dispdev.wave_ystart+1,dispdev.wave_xstart+6*dispdev.wave_width/12,dispdev.wave_ystart+dispdev.wave_height-1);
+}
+
+//绘制右侧设置窗口
+void Draw_SetDisp(){
+	u16 i = 0;
+	GUI_SetPenSize(1);                  //设置画笔大小
+	//绘制边框线
+	GUI_SetColor(GUI_DARKCYAN);
+	GUI_FillRect(lcddev.width-9*dispdev.set_area_width/5,0,dispdev.wave_xstart+dispdev.wave_width,dispdev.wave_ystart-17);
+	GUI_FillRect(dispdev.wave_xstart+dispdev.wave_width,0,lcddev.width-1,lcddev.height-1);
+  	GUI_SetColor(GUI_WHITE);
+	GUI_DrawRect(lcddev.width-9*dispdev.set_area_width/5,0,dispdev.wave_xstart+dispdev.wave_width,dispdev.wave_ystart-17);  //矩形画线
+	GUI_DrawRect(dispdev.wave_xstart+dispdev.wave_width,0,lcddev.width-1,lcddev.height-1);
+	for(i=1;i<7;i++)
+	{
+		GUI_DrawLine(dispdev.wave_xstart+dispdev.wave_width,i*lcddev.height/7,lcddev.width-1,i*lcddev.height/7);
+	}
+	GUI_DrawLine(lcddev.width-dispdev.set_area_width/2,2*lcddev.height/7,lcddev.width-dispdev.set_area_width/2,lcddev.height);
+	//绘制设置区域显示字符
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_DARKCYAN);    //设置GUI背景色
+	GUI_SetTextMode(GUI_TM_TRANS);
+	GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+	GUI_DispStringAt("Edge ▼",lcddev.width-7*dispdev.set_area_width/5+5,(dispdev.wave_ystart-17)/2);    //沿变设置▲▼
+	for(i=0;i<7;i++)
+	{
+		GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+		switch(i){
+			case 0 : GUI_DispStringAt("AUTO",lcddev.width-dispdev.set_area_width/2,i*lcddev.height/7+dispdev.set_area_height/2); break;
+			case 1 : GUI_DispStringAt("STOP",lcddev.width-dispdev.set_area_width/2,i*lcddev.height/7+dispdev.set_area_height/2); break;
+			case 2 :
+				GUI_DispStringAt("←",lcddev.width-3*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("→",lcddev.width-1*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2); break;
+			case 3 :
+				GUI_DispStringAt("↑",lcddev.width-3*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("↓",lcddev.width-1*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2); break;
+			case 4 :
+				GUI_DispStringAt("Hor+",lcddev.width-3*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("Hor-",lcddev.width-1*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2); break;
+			case 5 :
+				GUI_DispStringAt("Ver+",lcddev.width-3*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("Ver-",lcddev.width-1*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2); break;
+			case 6 :
+				GUI_DispStringAt("Trig+",lcddev.width-3*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("Trig-",lcddev.width-1*dispdev.set_area_width/4,i*lcddev.height/7+dispdev.set_area_height/2); break;
+			default : break;
+		}
+	}
+}
+
+//绘制上侧和下测数据字符显示
+void Draw_DataCharDisp(){
+	GUI_SetPenSize(1);                  //设置画笔大小
+	//绘制界面上方显示区域
+	//正点原子
+	GUI_SetTextMode(GUI_TM_TRANS);
+	GUI_SetColor(GUI_LIGHTGREEN);        //设置GUI前景色
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+	GUI_DispStringAt("正点原子",11,8);
+	//水平分辨率(时间)
+	GUI_SetColor(GUI_LIGHTGRAY);
+	GUI_DispStringAt("Hor:",data_xcoord[HorData]-32,data_ycoord[HorData]);
+	//垂直分辨率(电压)
+	GUI_DispStringAt("Ver:",data_xcoord[VerData]-32,data_ycoord[VerData]);
+
+	//绘制界面下方显示区域
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_DispStringAt("▲:",data_xcoord[EdgeData]-24,data_ycoord[EdgeData]);
+	GUI_DispStringAt("Vpp=",data_xcoord[VppData]-32,data_ycoord[VppData]);
+	GUI_DispStringAt("Freq=",data_xcoord[FreqData]-40,data_ycoord[FreqData]);
+}
+
+//水平分辨率显示
+void HorSetDataDisp(u8 hor_res){
+	GUI_SetPenSize(1);                  //设置画笔大小
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetColor(GUI_LIGHTGRAY);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+	switch(hor_res){
+		case 0 : GUI_DispStringAt("1us  ",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 1 : GUI_DispStringAt("2us  ",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 2 : GUI_DispStringAt("5us  ",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 3 : GUI_DispStringAt("10us ",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 4 : GUI_DispStringAt("20us ",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 5 : GUI_DispStringAt("50us ",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 6 : GUI_DispStringAt("100us",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 7 : GUI_DispStringAt("200us",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 8 : GUI_DispStringAt("500us",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		case 9 : GUI_DispStringAt("1ms  ",data_xcoord[HorData],data_ycoord[HorData]);	break;
+		default : break;
+	}
+}
+
+//垂直分辨率显示
+void VerSetDataDisp(u8 ver_res){
+	GUI_SetPenSize(1);                  //设置画笔大小
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetColor(GUI_LIGHTGRAY);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+
+	switch(ver_res){
+		case 0 : GUI_DispStringAt("100mV",data_xcoord[VerData],data_ycoord[VerData]);	break;
+		case 1 : GUI_DispStringAt("200mV",data_xcoord[VerData],data_ycoord[VerData]);	break;
+		case 2 : GUI_DispStringAt("500mV",data_xcoord[VerData],data_ycoord[VerData]);	break;
+		case 3 : GUI_DispStringAt("1V   ",data_xcoord[VerData],data_ycoord[VerData]);	break;
+		case 4 : GUI_DispStringAt("2V   ",data_xcoord[VerData],data_ycoord[VerData]);	break;
+		case 5 : GUI_DispStringAt("4V   ",data_xcoord[VerData],data_ycoord[VerData]);	break;
+		default : break;
+	}
+}
+
+//触发电平值显示
+void EdgeSetDataDisp(u8 trig_gears){
+	float f_data = 0.0;
+	s16 s_data = trig_gears - dispdev.ver_zero_mark;
+	dispdev.trig_level = s_data * ver_res_arr[dispdev.ver_res_gears]/2;
+	f_data = dispdev.trig_level*1.0;
+
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+	GUI_SetColor(GUI_YELLOW);           //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+
+	if(f_data>=1000){
+		GUI_GotoXY(data_xcoord[EdgeData],data_ycoord[EdgeData]);
+		GUI_DispFloat(f_data/1000,5);
+		GUI_DispStringAt("V  ",data_xcoord[EdgeData]+40,data_ycoord[EdgeData]);
+	}
+	else if(f_data >= 0){
+		GUI_GotoXY(data_xcoord[EdgeData],data_ycoord[EdgeData]);
+		GUI_DispFloat(f_data,5);
+		GUI_DispStringAt("mV  ",data_xcoord[EdgeData]+40,data_ycoord[EdgeData]);
+	}
+	else if(f_data >-1000)	{
+		GUI_GotoXY(data_xcoord[EdgeData],data_ycoord[EdgeData]);
+		GUI_DispFloat(f_data,6);
+		GUI_DispStringAt("mV ",data_xcoord[EdgeData]+48,data_ycoord[EdgeData]);
+	}
+	else{
+		GUI_GotoXY(data_xcoord[EdgeData],data_ycoord[EdgeData]);
+		GUI_DispFloat(f_data/1000,6);
+		GUI_DispStringAt("V ",data_xcoord[EdgeData]+48,data_ycoord[EdgeData]);
+	}
+}
+
+//电压幅值显示
+void VppDataDisp(u32 vpp_data){
+	float f_data = 0.0;
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+	GUI_SetColor(GUI_YELLOW);           //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	if(vpp_data>=1000)
+	{
+		f_data = (float)vpp_data/1000.0;
+		GUI_GotoXY(data_xcoord[VppData],data_ycoord[VppData]);
+		GUI_DispFloat(f_data,5);
+		GUI_SetTextMode(GUI_TM_NORMAL);
+		GUI_DispStringAt("V  ",data_xcoord[VppData]+40,data_ycoord[VppData]);
+	}
+	else{
+		f_data = (float)vpp_data/1.0;
+		GUI_GotoXY(data_xcoord[VppData],data_ycoord[VppData]);
+		GUI_DispFloat(vpp_data,5);
+		GUI_SetTextMode(GUI_TM_NORMAL);
+		GUI_DispStringAt("mV ",data_xcoord[VppData]+40,data_ycoord[VppData]);
+	}
+}
+
+//频率显示
+void FreqDataDisp(u32 freq_data){
+	float f_data = 0.0;
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetColor(GUI_YELLOW);           //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	if(freq_data>=1000000)
+	{
+		f_data = (float)freq_data/1000000.0;
+		GUI_GotoXY(data_xcoord[FreqData],data_ycoord[FreqData]);
+		GUI_DispFloat(f_data,5);
+		GUI_SetTextMode(GUI_TM_NORMAL);
+		GUI_DispStringAt("Mhz ",data_xcoord[FreqData]+40,data_ycoord[FreqData]);
+	}
+	else if(freq_data>=1000){
+		f_data = (float)freq_data/1000.0;
+		GUI_GotoXY(data_xcoord[FreqData],data_ycoord[FreqData]);
+		GUI_DispFloat(f_data,5);
+		GUI_SetTextMode(GUI_TM_NORMAL);
+		GUI_DispStringAt("Khz ",data_xcoord[FreqData]+40,data_ycoord[FreqData]);
+	}
+	else{
+		f_data = (float)freq_data/1.0;
+		GUI_GotoXY(data_xcoord[FreqData],data_ycoord[FreqData]);
+		GUI_DispFloat(f_data,5);
+		GUI_SetTextMode(GUI_TM_NORMAL);
+		GUI_DispStringAt("hz  ",data_xcoord[FreqData]+40,data_ycoord[FreqData]);
+	}
+}
+
+//绘制电压0V位置
+void VerZeroMarkDisp(u8 ver_zero_mark){
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_VCENTER);
+	if(ver_zero_mark >= 1 && ver_zero_mark <= 15){
+		GUI_DispStringAt("  ",0,dispdev.wave_ystart + dispdev.wave_height - dispdev.ver_zero_mark*dispdev.wave_height/16);
+		dispdev.ver_zero_mark = ver_zero_mark;
+		GUI_DispStringAt("→",0,dispdev.wave_ystart + dispdev.wave_height - dispdev.ver_zero_mark*dispdev.wave_height/16);
+
+	}
+}
+
+//绘制电压0V位置加1
+void VerZeroAddDisp(){
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_VCENTER);
+	GUI_DispStringAt("  ",0,dispdev.wave_ystart + dispdev.wave_height - dispdev.ver_zero_mark*dispdev.wave_height/16);
+	dispdev.ver_zero_mark++;
+	GUI_DispStringAt("→",0,dispdev.wave_ystart + dispdev.wave_height - dispdev.ver_zero_mark*dispdev.wave_height/16);
+}
+
+//绘制电压0V位置减1
+void VerZeroSubDisp(){
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_VCENTER);
+
+	GUI_DispStringAt("  ",0,dispdev.wave_ystart + dispdev.wave_height - dispdev.ver_zero_mark*dispdev.wave_height/16);
+	dispdev.ver_zero_mark--;
+	GUI_DispStringAt("→",0,dispdev.wave_ystart + dispdev.wave_height - dispdev.ver_zero_mark*dispdev.wave_height/16);
+}
+
+//绘制时间位置
+void HorZeroMarkDisp(u8 hor_zero_mark){
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_HCENTER | GUI_TA_TOP);
+	if(hor_zero_mark >= 1 && hor_zero_mark <= 19){
+		GUI_DispStringAt("  ",dispdev.wave_xstart + dispdev.wave_width - dispdev.hor_zero_mark*dispdev.wave_width/20,dispdev.wave_ystart-16);
+		dispdev.hor_zero_mark = hor_zero_mark;
+		GUI_SetTextAlign(GUI_TA_HCENTER | GUI_TA_TOP);
+		GUI_DispStringAt("↓",dispdev.wave_xstart + dispdev.wave_width - dispdev.hor_zero_mark*dispdev.wave_width/20,dispdev.wave_ystart-16);
+	}
+}
+
+//绘制时间位置加1
+void HorZeroAddDisp(){
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_HCENTER | GUI_TA_TOP);
+	GUI_DispStringAt("  ",dispdev.wave_xstart + dispdev.wave_width - dispdev.hor_zero_mark*dispdev.wave_width/20,dispdev.wave_ystart-16);
+	dispdev.hor_zero_mark++;
+	GUI_SetTextAlign(GUI_TA_HCENTER | GUI_TA_TOP);
+	GUI_DispStringAt("↓",dispdev.wave_xstart + dispdev.wave_width - dispdev.hor_zero_mark*dispdev.wave_width/20,dispdev.wave_ystart-16);
+}
+
+//绘制时间位置减1
+void HorZeroSubDisp(){
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_HCENTER | GUI_TA_TOP);
+	GUI_DispStringAt("  ",dispdev.wave_xstart + dispdev.wave_width - dispdev.hor_zero_mark*dispdev.wave_width/20,dispdev.wave_ystart-16);
+	dispdev.hor_zero_mark--;
+	GUI_SetTextAlign(GUI_TA_HCENTER | GUI_TA_TOP);
+	GUI_DispStringAt("↓",dispdev.wave_xstart + dispdev.wave_width - dispdev.hor_zero_mark*dispdev.wave_width/20,dispdev.wave_ystart-16);
+}
+
+void Draw_EdgeDisp(u8 trig_type){
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_BLACK);    //设置GUI背景色
+	GUI_SetTextMode(GUI_TM_NORMAL);
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+	if(trig_type == 0)
+		GUI_DispStringAt("▲:",data_xcoord[EdgeData]-24,data_ycoord[EdgeData]);
+	else
+		GUI_DispStringAt("▼:",data_xcoord[EdgeData]-24,data_ycoord[EdgeData]);
+}
+
+void GetDataDisp(){
+	GetFreq();
+	FreqDataDisp(dispdev.freq);
+	alt_dcache_flush_all();
+
+	GetVpp();
+	VppDataDisp(dispdev.vpp);
+	alt_dcache_flush_all();
+}
+
+//发送配置参数
+void SendCfgPara(){
+	SendHorRes();	    //发送抽样率
+	SendVerRes();
+	SendTrigType();
+	SendTriglevel();
+	SendRunState();
+	SendHorZeroPixel();
+	SendVerZeroPixel();
+}
+
+//获取频率值
+void GetFreq(){
+	dispdev.freq = IORD(AVALON_MM_BRIDGE_1_BASE,0);		//获取频率值
+}
+
+//获取幅值
+void GetVpp(){
+	u32 temp = IORD(AVALON_MM_BRIDGE_1_BASE,1);
+	u8 ad_vpp = (temp & 0xff0000)>>16;
+	u8 ad_min_v = temp & 0xff;
+	dispdev.vpp = ad_vpp * (u32)(max_voltage-min_voltage)/(u32)(max_addata-1);
+	if(ad_min_v >= max_addata/2-1)
+		dispdev.min_voltage = (ad_min_v - (max_addata/2-1)) * (u32)(max_voltage-min_voltage)/(u32)(max_addata-1);
+	else{
+		dispdev.min_voltage = ((max_addata/2-1) - ad_min_v) * (u32)(max_voltage-min_voltage)/(u32)(max_addata-1);
+		dispdev.min_voltage = -1 * dispdev.min_voltage;
+	}
+}
+
+//发送抽样率(水平方向分辨率)
+void SendHorRes(){
+	IOWR(AVALON_MM_BRIDGE_1_BASE,2,sample_rate_arr[dispdev.hor_res_gears]);
+}
+
+//发送垂直方向放大/缩小倍数(垂直方向分辨率)
+void SendVerRes(){
+	u8 zoom;       //放大/缩小标志   0：不缩放  1：放大  2：缩小
+	u8 zoom_mul;   //缩放倍数
+	switch(dispdev.ver_res_gears){
+		case 0 : zoom = 1;zoom_mul = zoom_nul_arr[dispdev.ver_res_gears];break; //放大10倍
+		case 1 : zoom = 1;zoom_mul = zoom_nul_arr[dispdev.ver_res_gears];break;	//放大5倍
+		case 2 : zoom = 1;zoom_mul = zoom_nul_arr[dispdev.ver_res_gears];break;	//放大2倍
+		case 3 : zoom = 1;zoom_mul = zoom_nul_arr[dispdev.ver_res_gears];break;	//不缩放
+		case 4 : zoom = 0;zoom_mul = zoom_nul_arr[dispdev.ver_res_gears];break;	//缩小2倍
+		case 5 : zoom = 0;zoom_mul = zoom_nul_arr[dispdev.ver_res_gears];break;	//缩小4倍
+		default : break;
+	}
+	IOWR(AVALON_MM_BRIDGE_1_BASE,8,(zoom<<4)|zoom_mul);
+}
+
+//发送触发类型
+void SendTrigType(){
+	IOWR(AVALON_MM_BRIDGE_1_BASE,4,dispdev.trig_type);
+}
+
+//发送触发电平值
+void SendTriglevel(){
+	s16 s_trig_addata = 0;
+	u16 trig_addata;
+	if(dispdev.trig_level < 0)
+		s_trig_addata = max_addata/2-(dispdev.trig_level*max_addata/2/min_voltage)-1;
+	else
+		s_trig_addata = max_addata/2+dispdev.trig_level*max_addata/2/max_voltage-1;
+	if(s_trig_addata<0)
+		s_trig_addata = 0;
+	if(s_trig_addata > 255)
+		s_trig_addata = 255;
+	trig_addata = s_trig_addata;
+	IOWR(AVALON_MM_BRIDGE_1_BASE,3,trig_addata);
+}
+
+//发送运行状态标志
+void SendRunState(){
+	IOWR(AVALON_MM_BRIDGE_1_BASE,5,dispdev.run_flag);
+}
+
+//发送水平方向零点位置
+void SendHorZeroPixel(){
+	u16 hor_pixel = dispdev.wave_xstart + dispdev.wave_width - dispdev.hor_zero_mark*dispdev.wave_width/20;
+	u16 dir,hor_skew;
+	if(hor_pixel >= dispdev.wave_xstart + dispdev.wave_width/2){
+		dir = 1;
+		hor_skew = hor_pixel - (dispdev.wave_xstart + dispdev.wave_width/2);
+	}
+	else{
+		dir = 0;
+		hor_skew = dispdev.wave_xstart + dispdev.wave_width/2 - hor_pixel;
+	}
+	IOWR(AVALON_MM_BRIDGE_1_BASE,6,(dir<<9)|hor_skew);
+}
+
+//发送垂直方向零点位置
+void SendVerZeroPixel(){
+	u16 ver_pixel = dispdev.wave_ystart + dispdev.wave_height - dispdev.ver_zero_mark*dispdev.wave_height/16;
+	u16 dir,ver_skew;
+	if(ver_pixel >= dispdev.wave_ystart + dispdev.wave_height/2){
+		dir = 1;
+		ver_skew = ver_pixel - (dispdev.wave_ystart + dispdev.wave_height/2);
+	}
+	else{
+		dir = 0;
+		ver_skew = dispdev.wave_ystart + dispdev.wave_height/2 -  ver_pixel;
+	}
+	IOWR(AVALON_MM_BRIDGE_1_BASE,7,(dir<<9)|ver_skew);
+}
+

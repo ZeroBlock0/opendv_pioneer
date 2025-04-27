@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="dual_ov5640_lcd">
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_lcd|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|rdfifo:u_rdfifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_jol1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_lcd|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_0ol1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_lcd|pll:u_pll|altpll:altpll_component" CBX_FILE_NAME="pll_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_lcd|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|rdfifo:u_rdfifo0|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_jol1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_lcd|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo0|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_0ol1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

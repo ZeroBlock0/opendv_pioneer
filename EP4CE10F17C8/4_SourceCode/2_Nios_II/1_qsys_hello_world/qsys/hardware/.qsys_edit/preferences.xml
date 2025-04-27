@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="189" />
+   <description preferredWidth="177" />
+   <export preferredWidth="120" />
+   <baseaddress preferredWidth="99" />
+   <endaddress preferredWidth="76" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="233" />
+   <clocksource preferredWidth="232" />
+   <frequency preferredWidth="214" />
+  </columns>
+ </clocktable>
+ <window width="1305" height="820" x="368" y="90" />
+ <library expandedCategories="Library,Project" />
+ <generation path="D:/project/1_qsys_hello_world/qsys/hardware" />
+ <hdlexample language="VERILOG" />
+</preferences>

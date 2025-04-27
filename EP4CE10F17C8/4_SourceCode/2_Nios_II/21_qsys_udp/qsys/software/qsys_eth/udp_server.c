@@ -1,0 +1,93 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           udp_server.c
+// Last modified Date:  2019/02/21 10:43:38
+// Last Version:        V1.0
+// Descriptions:        UDP服务器文件
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        2019/02/21 10:43:44
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+/* MicroC/OS-II definitions */
+#include "includes.h"
+
+/* Simple Socket Server definitions */
+#include "simple_socket_server.h"
+#include "alt_error_handler.h"
+
+/* Nichestack definitions */
+#include "ipport.h"
+#include "tcpport.h"
+
+/*
+ * sss_handle_msg()
+ *
+ * 接收UDP客户端发送过来的信息， 并将接收到的信息环回给UDP客户端 ，同时打印信息到控制台
+ *
+ */
+void sss_handle_msg(SSSConn* conn)
+{
+  int                 len, rx_code;
+  struct sockaddr_in  incoming_addr;
+
+  while(1){
+      memset(conn->rx_buffer, 0, SSS_RX_BUF_SIZE);
+      len = sizeof(incoming_addr);
+      rx_code = recvfrom(conn->fd, conn->rx_buffer,  SSS_RX_BUF_SIZE, 0,
+                  (struct sockaddr *)&incoming_addr ,&len); //接收客户端发送过来的信息
+      if(rx_code == -1){
+          printf("recieve data fail!\n");
+          return;
+      } //判断是否接收错误
+      conn->rx_wr_pos = conn->rx_buffer;    //将接收到的信息传递给rx_wr_pos指针
+      printf("client ip : %s\n", inet_ntoa(incoming_addr.sin_addr)); //打印客户端IP
+      printf("client msg: %s\n",conn->rx_buffer);       //打印客户端发过来的信息
+      sendto(conn->fd, conn->rx_wr_pos, strlen(conn->rx_wr_pos), 0,
+              (struct sockaddr *)&incoming_addr ,len);  //发送信息给客户端
+  }
+}
+
+/*
+ * SSSSimpleSocketServerTask()
+ *
+ * 定义SSSSimpleSocketServerTask任务函数,即UDP服务任务函数
+ *
+ */
+void SSSSimpleSocketServerTask()
+{
+  int socketfd;
+  struct sockaddr_in addr;
+  static SSSConn conn;
+
+  if ((socketfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)      //创建socket接口
+      alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,"[sss_task] Socket creation failed");
+
+  addr.sin_family = AF_INET;            //地址家族：IPv4
+  addr.sin_port = htons(SSS_PORT);      //端口由SSS_PORT宏定义，并转换为网络字节序
+  addr.sin_addr.s_addr = INADDR_ANY;    //通配地址，由内核指定
+
+  if ((bind(socketfd,(struct sockaddr *)&addr,sizeof(addr))) < 0) //绑定socket
+      alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,"[sss_task] Bind failed");
+
+  printf("[sss_task] UDP Server on port %d\n", SSS_PORT);
+
+  conn.fd = socketfd;
+
+  sss_handle_msg(&conn);
+  close(conn.fd);
+}

@@ -1,0 +1,40 @@
+obj/default/hello_world.o: hello_world.c \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp/system.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp/linker.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/sys/alt_irq.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/nios2.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/alt_types.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/sys/alt_sys_init.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/altera_avalon_pio_regs.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/io.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/alt_types.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/can_controller.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/sja1000_regs.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/segled_controller.h \
+ F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/segled_controller_regs.h
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp/system.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp/linker.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/sys/alt_irq.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/nios2.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/alt_types.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/sys/alt_sys_init.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/altera_avalon_pio_regs.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/io.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//HAL/inc/alt_types.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/can_controller.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/sja1000_regs.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/segled_controller.h:
+
+F:/Qsys/qsys_can_loopback/qsys/software/qsys_can_loopback_bsp//drivers/inc/segled_controller_regs.h:

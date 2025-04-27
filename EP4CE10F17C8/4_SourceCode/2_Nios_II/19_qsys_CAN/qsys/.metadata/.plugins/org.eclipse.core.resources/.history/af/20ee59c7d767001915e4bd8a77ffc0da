@@ -1,0 +1,21 @@
+obj/default/qsys_can_loopback.o: qsys_can_loopback.c \
+ ../qsys_can_loopback_bsp//drivers/inc/can_controller.h \
+ ../qsys_can_loopback_bsp/system.h ../qsys_can_loopback_bsp/linker.h \
+ ../qsys_can_loopback_bsp//HAL/inc/io.h \
+ ../qsys_can_loopback_bsp//HAL/inc/alt_types.h \
+ ../qsys_can_loopback_bsp//HAL/inc/alt_types.h \
+ ../qsys_can_loopback_bsp//drivers/inc/sja1000_regs.h
+
+../qsys_can_loopback_bsp//drivers/inc/can_controller.h:
+
+../qsys_can_loopback_bsp/system.h:
+
+../qsys_can_loopback_bsp/linker.h:
+
+../qsys_can_loopback_bsp//HAL/inc/io.h:
+
+../qsys_can_loopback_bsp//HAL/inc/alt_types.h:
+
+../qsys_can_loopback_bsp//HAL/inc/alt_types.h:
+
+../qsys_can_loopback_bsp//drivers/inc/sja1000_regs.h:

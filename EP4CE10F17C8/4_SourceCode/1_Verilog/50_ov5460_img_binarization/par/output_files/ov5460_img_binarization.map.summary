@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Dec 26 14:37:20 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : ov5460_img_binarization
+Top-level Entity Name : img_binarization
+Family : Cyclone IV E
+Total logic elements : 1,727
+    Total combinational functions : 1,291
+    Dedicated logic registers : 1,093
+Total registers : 1093
+Total pins : 74
+Total virtual pins : 0
+Total memory bits : 40,960
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

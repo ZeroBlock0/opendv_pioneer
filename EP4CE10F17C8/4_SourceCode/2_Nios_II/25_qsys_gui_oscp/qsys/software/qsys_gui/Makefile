@@ -1,0 +1,1749 @@
+#------------------------------------------------------------------------------
+#              VARIABLES APPENDED TO BY INCLUDED MAKEFILE FRAGMENTS
+#------------------------------------------------------------------------------
+
+# List of include directories for -I compiler option (-I added when used).
+# Includes the BSP.
+ALT_INCLUDE_DIRS :=
+
+# List of library directories for -L linker option (-L added when used).
+# Includes the BSP.
+ALT_LIBRARY_DIRS :=
+
+# List of library names for -l linker option (-l added when used).
+# Includes the BSP.
+ALT_LIBRARY_NAMES :=
+
+# List of library names for -msys-lib linker option (-msys-lib added when used).
+# These are libraries that might be located in the BSP and depend on the BSP
+# library, or vice versa
+ALT_BSP_DEP_LIBRARY_NAMES :=
+
+# List of dependencies for the linker.  This is usually the full pathname
+# of each library (*.a) file.
+# Includes the BSP.
+ALT_LDDEPS :=
+
+# List of root library directories that support running make to build them.
+# Includes the BSP and any ALT libraries.
+MAKEABLE_LIBRARY_ROOT_DIRS :=
+
+# Generic flags passed to the compiler for different types of input files.
+ALT_CFLAGS :=
+ALT_CXXFLAGS :=
+ALT_CPPFLAGS :=
+ALT_ASFLAGS :=
+ALT_LDFLAGS :=
+
+
+#------------------------------------------------------------------------------
+#                         The adjust-path macro
+# 
+# If COMSPEC/ComSpec is defined, Make is launched from Windows through
+# Cygwin.  The adjust-path macro converts absolute windows paths into
+# unix style paths (Example: c:/dir -> /c/dir). This will ensture
+# paths are readable by GNU Make.
+#
+# If COMSPEC/ComSpec is not defined, Make is launched from linux, and no 
+# adjustment is necessary
+#
+#------------------------------------------------------------------------------
+
+ifndef COMSPEC
+ifdef ComSpec
+COMSPEC = $(ComSpec)
+endif # ComSpec
+endif # COMSPEC
+
+ifdef COMSPEC # if Windows OS
+
+ifeq ($(MAKE_VERSION),3.81) 
+#
+# adjust-path/adjust-path-mixed for Mingw Gnu Make on Windows
+#
+# Example Usage:
+# $(call adjust-path,c:/aaa/bbb) => /c/aaa/bbb
+# $(call adjust-path-mixed,/c/aaa/bbb) => c:/aaa/bbb
+# $(call adjust-path-mixed,/cygdrive/c/aaa/bbb) => c:/aaa/bbb
+#
+
+#
+# adjust-path
+#  - converts back slash characters into forward slashes 
+#  - if input arg ($1) is an empty string then return the empty string
+#  - if input arg ($1) does not contain the string ":/", then return input arg
+#  - using sed, convert mixed path [c:/...] into mingw path [/c/...] 
+define adjust-path
+$(strip \
+$(if $1,\
+$(if $(findstring :/,$(subst \,/,$1)),\
+$(shell echo $(subst \,/,$1) | sed -e 's,^\([a-zA-Z]\):/,/\1/,'),\
+$(subst \,/,$1))))
+endef
+
+#
+# adjust-path-mixed
+#  - converts back slash characters into forward slashes 
+#  - if input arg ($1) is an empty string then return the empty string
+#  - if input arg ($1) does not begin with a forward slash '/' char, then 
+#    return input arg
+#  - using sed, convert mingw path [/c/...] or cygwin path [/c/cygdrive/...] 
+#    into a mixed path [c:/...] 
+define adjust-path-mixed 
+$(strip \
+$(if $1,\
+$(if $(findstring $(subst \,/,$1),$(patsubst /%,%,$(subst \,/,$1))),\
+$(subst \,/,$1),\
+$(shell echo $(subst \,/,$1) | sed -e 's,^/cygdrive/\([a-zA-Z]\)/,\1:/,' -e 's,^/\([a-zA-Z]\)/,\1:/,'))))
+endef
+
+else # MAKE_VERSION != 3.81 (MAKE_VERSION == 3.80 or MAKE_VERSION == 3.79) 
+#
+#  adjust-path for Cygwin Gnu Make
+# $(call adjust-path,c:/aaa/bbb) = /cygdrive/c/aaa/bbb
+# $(call adjust-path-mixed,/cygdrive/c/aaa/bbb) = c:/aaa/bbb
+#
+adjust-path = $(if $1,$(shell cygpath -u "$1"),)
+adjust-path-mixed = $(if $1,$(shell cygpath -m "$1"),)
+endif
+
+else # !COMSPEC
+
+adjust-path = $1
+adjust-path-mixed = $1
+
+endif # COMSPEC
+
+
+#vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+#                           GENERATED SETTINGS START                         v
+#vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+#START GENERATED
+ACTIVE_BUILD_CONFIG := default
+BUILD_CONFIGS := default
+
+# The following TYPE comment allows tools to identify the 'type' of target this 
+# makefile is associated with. 
+# TYPE: APP_MAKEFILE
+
+# This following VERSION comment indicates the version of the tool used to 
+# generate this makefile. A makefile variable is provided for VERSION as well. 
+# ACDS_VERSION: 13.1
+ACDS_VERSION := 13.1
+
+# This following BUILD_NUMBER comment indicates the build number of the tool 
+# used to generate this makefile. 
+# BUILD_NUMBER: 162
+
+# Define path to the application ELF. 
+# It may be used by the makefile fragments so is defined before including them. 
+# 
+ELF := qsys_gui.elf
+
+# Paths to C, C++, and assembly source files.
+C_SRCS += APP/delay.c
+C_SRCS += uCGUI/AntiAlias/GUIAAArc.c
+C_SRCS += uCGUI/AntiAlias/GUIAAChar.c
+C_SRCS += uCGUI/AntiAlias/GUIAAChar2.c
+C_SRCS += uCGUI/AntiAlias/GUIAAChar4.c
+C_SRCS += uCGUI/AntiAlias/GUIAACircle.c
+C_SRCS += uCGUI/AntiAlias/GUIAALib.c
+C_SRCS += uCGUI/AntiAlias/GUIAALine.c
+C_SRCS += uCGUI/AntiAlias/GUIAAPoly.c
+C_SRCS += uCGUI/AntiAlias/GUIAAPolyOut.c
+C_SRCS += uCGUI/ConvertColor/LCDP111.c
+C_SRCS += uCGUI/ConvertColor/LCDP222.c
+C_SRCS += uCGUI/ConvertColor/LCDP233.c
+C_SRCS += uCGUI/ConvertColor/LCDP323.c
+C_SRCS += uCGUI/ConvertColor/LCDP332.c
+C_SRCS += uCGUI/ConvertColor/LCDP444_12.c
+C_SRCS += uCGUI/ConvertColor/LCDP444_12_1.c
+C_SRCS += uCGUI/ConvertColor/LCDP444_16.c
+C_SRCS += uCGUI/ConvertColor/LCDP555.c
+C_SRCS += uCGUI/ConvertColor/LCDP556.c
+C_SRCS += uCGUI/ConvertColor/LCDP565.c
+C_SRCS += uCGUI/ConvertColor/LCDP655.c
+C_SRCS += uCGUI/ConvertColor/LCDP8666.c
+C_SRCS += uCGUI/ConvertColor/LCDP8666_1.c
+C_SRCS += uCGUI/ConvertColor/LCDPM233.c
+C_SRCS += uCGUI/ConvertColor/LCDPM323.c
+C_SRCS += uCGUI/ConvertColor/LCDPM332.c
+C_SRCS += uCGUI/ConvertColor/LCDPM444_12.c
+C_SRCS += uCGUI/ConvertColor/LCDPM444_16.c
+C_SRCS += uCGUI/ConvertColor/LCDPM555.c
+C_SRCS += uCGUI/ConvertColor/LCDPM556.c
+C_SRCS += uCGUI/ConvertColor/LCDPM565.c
+C_SRCS += uCGUI/ConvertColor/LCDPM655.c
+C_SRCS += uCGUI/ConvertMono/LCDP0.c
+C_SRCS += uCGUI/ConvertMono/LCDP2.c
+C_SRCS += uCGUI/ConvertMono/LCDP4.c
+C_SRCS += uCGUI/Core/GUI2DLib.c
+C_SRCS += uCGUI/Core/GUIAlloc.c
+C_SRCS += uCGUI/Core/GUIArc.c
+C_SRCS += uCGUI/Core/GUIChar.c
+C_SRCS += uCGUI/Core/GUICharLine.c
+C_SRCS += uCGUI/Core/GUICharM.c
+C_SRCS += uCGUI/Core/GUICharP.c
+C_SRCS += uCGUI/Core/GUICirc.c
+C_SRCS += uCGUI/Core/GUIColor2Index.c
+C_SRCS += uCGUI/Core/GUICore.c
+C_SRCS += uCGUI/Core/GUICurs.c
+C_SRCS += uCGUI/Core/GUIEncJS.c
+C_SRCS += uCGUI/Core/GUIIndex2Color.c
+C_SRCS += uCGUI/Core/GUIPolyE.c
+C_SRCS += uCGUI/Core/GUIPolyM.c
+C_SRCS += uCGUI/Core/GUIPolyR.c
+C_SRCS += uCGUI/Core/GUIRealloc.c
+C_SRCS += uCGUI/Core/GUIStream.c
+C_SRCS += uCGUI/Core/GUITask.c
+C_SRCS += uCGUI/Core/GUITime.c
+C_SRCS += uCGUI/Core/GUITimer.c
+C_SRCS += uCGUI/Core/GUIUC0.c
+C_SRCS += uCGUI/Core/GUIVal.c
+C_SRCS += uCGUI/Core/GUIValf.c
+C_SRCS += uCGUI/Core/GUI_ALLOC_AllocInit.c
+C_SRCS += uCGUI/Core/GUI_ALLOC_AllocZero.c
+C_SRCS += uCGUI/Core/GUI_AddBin.c
+C_SRCS += uCGUI/Core/GUI_AddDec.c
+C_SRCS += uCGUI/Core/GUI_AddDecMin.c
+C_SRCS += uCGUI/Core/GUI_AddDecShift.c
+C_SRCS += uCGUI/Core/GUI_AddHex.c
+C_SRCS += uCGUI/Core/GUI_AddKeyMsgHook.c
+C_SRCS += uCGUI/Core/GUI_BMP.c
+C_SRCS += uCGUI/Core/GUI_BMP_Serialize.c
+C_SRCS += uCGUI/Core/GUI_CalcColorDist.c
+C_SRCS += uCGUI/Core/GUI_ClearRectEx.c
+C_SRCS += uCGUI/Core/GUI_Color2VisColor.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowL.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowLI.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowLPx.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowM.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowMI.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowMPx.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowS.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowSI.c
+C_SRCS += uCGUI/Core/GUI_CursorArrowSPx.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossL.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossLI.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossLPx.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossM.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossMI.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossMPx.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossS.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossSI.c
+C_SRCS += uCGUI/Core/GUI_CursorCrossSPx.c
+C_SRCS += uCGUI/Core/GUI_CursorHeaderM.c
+C_SRCS += uCGUI/Core/GUI_CursorHeaderMI.c
+C_SRCS += uCGUI/Core/GUI_CursorHeaderMPx.c
+C_SRCS += uCGUI/Core/GUI_CursorPal.c
+C_SRCS += uCGUI/Core/GUI_CursorPalI.c
+C_SRCS += uCGUI/Core/GUI_DispBin.c
+C_SRCS += uCGUI/Core/GUI_DispCEOL.c
+C_SRCS += uCGUI/Core/GUI_DispChar.c
+C_SRCS += uCGUI/Core/GUI_DispChars.c
+C_SRCS += uCGUI/Core/GUI_DispHex.c
+C_SRCS += uCGUI/Core/GUI_DispString.c
+C_SRCS += uCGUI/Core/GUI_DispStringAt.c
+C_SRCS += uCGUI/Core/GUI_DispStringAtCEOL.c
+C_SRCS += uCGUI/Core/GUI_DispStringHCenter.c
+C_SRCS += uCGUI/Core/GUI_DispStringInRect.c
+C_SRCS += uCGUI/Core/GUI_DispStringInRectEx.c
+C_SRCS += uCGUI/Core/GUI_DispStringInRectMax.c
+C_SRCS += uCGUI/Core/GUI_DispStringLen.c
+C_SRCS += uCGUI/Core/GUI_DrawBitmap.c
+C_SRCS += uCGUI/Core/GUI_DrawBitmapEx.c
+C_SRCS += uCGUI/Core/GUI_DrawBitmapExp.c
+C_SRCS += uCGUI/Core/GUI_DrawBitmapMag.c
+C_SRCS += uCGUI/Core/GUI_DrawFocusRect.c
+C_SRCS += uCGUI/Core/GUI_DrawGraph.c
+C_SRCS += uCGUI/Core/GUI_DrawHLine.c
+C_SRCS += uCGUI/Core/GUI_DrawPie.c
+C_SRCS += uCGUI/Core/GUI_DrawPixel.c
+C_SRCS += uCGUI/Core/GUI_DrawPolyline.c
+C_SRCS += uCGUI/Core/GUI_DrawRectEx.c
+C_SRCS += uCGUI/Core/GUI_DrawVLine.c
+C_SRCS += uCGUI/Core/GUI_ErrorOut.c
+C_SRCS += uCGUI/Core/GUI_Exec.c
+C_SRCS += uCGUI/Core/GUI_FillPolygon.c
+C_SRCS += uCGUI/Core/GUI_FillRect.c
+C_SRCS += uCGUI/Core/GUI_FillRectEx.c
+C_SRCS += uCGUI/Core/GUI_GetBitmapPixelColor.c
+C_SRCS += uCGUI/Core/GUI_GetBitmapPixelIndex.c
+C_SRCS += uCGUI/Core/GUI_GetClientRect.c
+C_SRCS += uCGUI/Core/GUI_GetColor.c
+C_SRCS += uCGUI/Core/GUI_GetDispPos.c
+C_SRCS += uCGUI/Core/GUI_GetFont.c
+C_SRCS += uCGUI/Core/GUI_GetFontInfo.c
+C_SRCS += uCGUI/Core/GUI_GetFontSizeY.c
+C_SRCS += uCGUI/Core/GUI_GetLineStyle.c
+C_SRCS += uCGUI/Core/GUI_GetStringDistX.c
+C_SRCS += uCGUI/Core/GUI_GetTextAlign.c
+C_SRCS += uCGUI/Core/GUI_GetTextExtend.c
+C_SRCS += uCGUI/Core/GUI_GetTextMode.c
+C_SRCS += uCGUI/Core/GUI_GetVersionString.c
+C_SRCS += uCGUI/Core/GUI_GetYSizeOfFont.c
+C_SRCS += uCGUI/Core/GUI_Goto.c
+C_SRCS += uCGUI/Core/GUI_InitLUT.c
+C_SRCS += uCGUI/Core/GUI_InvertRect.c
+C_SRCS += uCGUI/Core/GUI_IsInFont.c
+C_SRCS += uCGUI/Core/GUI_Log.c
+C_SRCS += uCGUI/Core/GUI_MOUSE.c
+C_SRCS += uCGUI/Core/GUI_MOUSE_DriverPS2.c
+C_SRCS += uCGUI/Core/GUI_MergeRect.c
+C_SRCS += uCGUI/Core/GUI_MoveRect.c
+C_SRCS += uCGUI/Core/GUI_OnKey.c
+C_SRCS += uCGUI/Core/GUI_PID.c
+C_SRCS += uCGUI/Core/GUI_Pen.c
+C_SRCS += uCGUI/Core/GUI_RectsIntersect.c
+C_SRCS += uCGUI/Core/GUI_SIF.c
+C_SRCS += uCGUI/Core/GUI_SIF_Prop.c
+C_SRCS += uCGUI/Core/GUI_SaveContext.c
+C_SRCS += uCGUI/Core/GUI_SelectLCD.c
+C_SRCS += uCGUI/Core/GUI_SelectLayer.c
+C_SRCS += uCGUI/Core/GUI_SetColor.c
+C_SRCS += uCGUI/Core/GUI_SetColorIndex.c
+C_SRCS += uCGUI/Core/GUI_SetDecChar.c
+C_SRCS += uCGUI/Core/GUI_SetDefault.c
+C_SRCS += uCGUI/Core/GUI_SetDrawMode.c
+C_SRCS += uCGUI/Core/GUI_SetFont.c
+C_SRCS += uCGUI/Core/GUI_SetLBorder.c
+C_SRCS += uCGUI/Core/GUI_SetLUTColor.c
+C_SRCS += uCGUI/Core/GUI_SetLUTColorEx.c
+C_SRCS += uCGUI/Core/GUI_SetLUTEntry.c
+C_SRCS += uCGUI/Core/GUI_SetLineStyle.c
+C_SRCS += uCGUI/Core/GUI_SetOrg.c
+C_SRCS += uCGUI/Core/GUI_SetPixelIndex.c
+C_SRCS += uCGUI/Core/GUI_SetTextAlign.c
+C_SRCS += uCGUI/Core/GUI_SetTextMode.c
+C_SRCS += uCGUI/Core/GUI_SetTextStyle.c
+C_SRCS += uCGUI/Core/GUI_TOUCH.c
+C_SRCS += uCGUI/Core/GUI_TOUCH_DriverAnalog.c
+C_SRCS += uCGUI/Core/GUI_TOUCH_StoreState.c
+C_SRCS += uCGUI/Core/GUI_TOUCH_StoreUnstable.c
+C_SRCS += uCGUI/Core/GUI_UC.c
+C_SRCS += uCGUI/Core/GUI_UC_DispString.c
+C_SRCS += uCGUI/Core/GUI_UC_EncodeNone.c
+C_SRCS += uCGUI/Core/GUI_UC_EncodeUTF8.c
+C_SRCS += uCGUI/Core/GUI_WaitEvent.c
+C_SRCS += uCGUI/Core/GUI_WaitKey.c
+C_SRCS += uCGUI/Core/GUI_Warn.c
+C_SRCS += uCGUI/Core/GUI__AddSpaceHex.c
+C_SRCS += uCGUI/Core/GUI__CalcTextRect.c
+C_SRCS += uCGUI/Core/GUI__DivideRound.c
+C_SRCS += uCGUI/Core/GUI__DivideRound32.c
+C_SRCS += uCGUI/Core/GUI__GetFontSizeY.c
+C_SRCS += uCGUI/Core/GUI__GetNumChars.c
+C_SRCS += uCGUI/Core/GUI__HandleEOLine.c
+C_SRCS += uCGUI/Core/GUI__IntersectRect.c
+C_SRCS += uCGUI/Core/GUI__IntersectRects.c
+C_SRCS += uCGUI/Core/GUI__Read.c
+C_SRCS += uCGUI/Core/GUI__ReduceRect.c
+C_SRCS += uCGUI/Core/GUI__SetText.c
+C_SRCS += uCGUI/Core/GUI__Wrap.c
+C_SRCS += uCGUI/Core/GUI__memset.c
+C_SRCS += uCGUI/Core/GUI__memset16.c
+C_SRCS += uCGUI/Core/GUI__strcmp.c
+C_SRCS += uCGUI/Core/GUI__strlen.c
+C_SRCS += uCGUI/Core/LCD.c
+C_SRCS += uCGUI/Core/LCDAA.c
+C_SRCS += uCGUI/Core/LCDColor.c
+C_SRCS += uCGUI/Core/LCDGetP.c
+C_SRCS += uCGUI/Core/LCDInfo.c
+C_SRCS += uCGUI/Core/LCDInfo0.c
+C_SRCS += uCGUI/Core/LCDInfo1.c
+C_SRCS += uCGUI/Core/LCDL0Delta.c
+C_SRCS += uCGUI/Core/LCDL0Mag.c
+C_SRCS += uCGUI/Core/LCDP1.c
+C_SRCS += uCGUI/Core/LCDP565_Index2Color.c
+C_SRCS += uCGUI/Core/LCDPM565_Index2Color.c
+C_SRCS += uCGUI/Core/LCDRLE4.c
+C_SRCS += uCGUI/Core/LCDRLE8.c
+C_SRCS += uCGUI/Core/LCD_API.c
+C_SRCS += uCGUI/Core/LCD_DrawBitmap_565.c
+C_SRCS += uCGUI/Core/LCD_DrawBitmap_M565.c
+C_SRCS += uCGUI/Core/LCD_DrawVLine.c
+C_SRCS += uCGUI/Core/LCD_GetColorIndex.c
+C_SRCS += uCGUI/Core/LCD_GetEx.c
+C_SRCS += uCGUI/Core/LCD_GetNumDisplays.c
+C_SRCS += uCGUI/Core/LCD_GetPixelColor.c
+C_SRCS += uCGUI/Core/LCD_Index2ColorEx.c
+C_SRCS += uCGUI/Core/LCD_L0_Generic.c
+C_SRCS += uCGUI/Core/LCD_Mirror.c
+C_SRCS += uCGUI/Core/LCD_MixColors256.c
+C_SRCS += uCGUI/Core/LCD_Rotate180.c
+C_SRCS += uCGUI/Core/LCD_RotateCCW.c
+C_SRCS += uCGUI/Core/LCD_RotateCW.c
+C_SRCS += uCGUI/Core/LCD_SelectLCD.c
+C_SRCS += uCGUI/Core/LCD_SetAPI.c
+C_SRCS += uCGUI/Core/LCD_SetClipRectEx.c
+C_SRCS += uCGUI/Core/LCD_UpdateColorIndices.c
+C_SRCS += uCGUI/Font/F08_1.c
+C_SRCS += uCGUI/Font/F08_ASCII.c
+C_SRCS += uCGUI/Font/F10S_1.c
+C_SRCS += uCGUI/Font/F10S_ASCII.c
+C_SRCS += uCGUI/Font/F10_1.c
+C_SRCS += uCGUI/Font/F10_ASCII.c
+C_SRCS += uCGUI/Font/F13B_1.c
+C_SRCS += uCGUI/Font/F13B_ASCII.c
+C_SRCS += uCGUI/Font/F13HB_1.c
+C_SRCS += uCGUI/Font/F13HB_ASCII.c
+C_SRCS += uCGUI/Font/F13H_1.c
+C_SRCS += uCGUI/Font/F13H_ASCII.c
+C_SRCS += uCGUI/Font/F13_1.c
+C_SRCS += uCGUI/Font/F13_ASCII.c
+C_SRCS += uCGUI/Font/F16B_1.c
+C_SRCS += uCGUI/Font/F16B_ASCII.c
+C_SRCS += uCGUI/Font/F16_1.c
+C_SRCS += uCGUI/Font/F16_1HK.c
+C_SRCS += uCGUI/Font/F16_ASCII.c
+C_SRCS += uCGUI/Font/F16_HK.c
+C_SRCS += uCGUI/Font/F24B_1.c
+C_SRCS += uCGUI/Font/F24B_ASCII.c
+C_SRCS += uCGUI/Font/F24_1.c
+C_SRCS += uCGUI/Font/F24_ASCII.c
+C_SRCS += uCGUI/Font/F32B_1.c
+C_SRCS += uCGUI/Font/F32B_ASCII.c
+C_SRCS += uCGUI/Font/F32_1.c
+C_SRCS += uCGUI/Font/F32_ASCII.c
+C_SRCS += uCGUI/Font/F4x6.c
+C_SRCS += uCGUI/Font/F6x8.c
+C_SRCS += uCGUI/Font/F8x10_ASCII.c
+C_SRCS += uCGUI/Font/F8x12_ASCII.c
+C_SRCS += uCGUI/Font/F8x13_1.c
+C_SRCS += uCGUI/Font/F8x13_ASCII.c
+C_SRCS += uCGUI/Font/F8x15B_1.c
+C_SRCS += uCGUI/Font/F8x15B_ASCII.c
+C_SRCS += uCGUI/Font/F8x16.c
+C_SRCS += uCGUI/Font/F8x8.c
+C_SRCS += uCGUI/Font/FComic18B_1.c
+C_SRCS += uCGUI/Font/FComic18B_ASCII.c
+C_SRCS += uCGUI/Font/FComic24B_1.c
+C_SRCS += uCGUI/Font/FComic24B_ASCII.c
+C_SRCS += uCGUI/Font/FD24x32.c
+C_SRCS += uCGUI/Font/FD32.c
+C_SRCS += uCGUI/Font/FD36x48.c
+C_SRCS += uCGUI/Font/FD48.c
+C_SRCS += uCGUI/Font/FD48x64.c
+C_SRCS += uCGUI/Font/FD60x80.c
+C_SRCS += uCGUI/Font/FD64.c
+C_SRCS += uCGUI/Font/FD80.c
+C_SRCS += uCGUI/GUI_X/GUI_X.c
+C_SRCS += uCGUI/GUI_X/GUI_X_Touch.c
+C_SRCS += uCGUI/JPEG/GUI_JPEG.c
+C_SRCS += uCGUI/JPEG/jcomapi.c
+C_SRCS += uCGUI/JPEG/jdapimin.c
+C_SRCS += uCGUI/JPEG/jdapistd.c
+C_SRCS += uCGUI/JPEG/jdcoefct.c
+C_SRCS += uCGUI/JPEG/jdcolor.c
+C_SRCS += uCGUI/JPEG/jddctmgr.c
+C_SRCS += uCGUI/JPEG/jdhuff.c
+C_SRCS += uCGUI/JPEG/jdinput.c
+C_SRCS += uCGUI/JPEG/jdmainct.c
+C_SRCS += uCGUI/JPEG/jdmarker.c
+C_SRCS += uCGUI/JPEG/jdmaster.c
+C_SRCS += uCGUI/JPEG/jdmerge.c
+C_SRCS += uCGUI/JPEG/jdphuff.c
+C_SRCS += uCGUI/JPEG/jdpostct.c
+C_SRCS += uCGUI/JPEG/jdsample.c
+C_SRCS += uCGUI/JPEG/jdtrans.c
+C_SRCS += uCGUI/JPEG/jerror.c
+C_SRCS += uCGUI/JPEG/jfdctflt.c
+C_SRCS += uCGUI/JPEG/jfdctfst.c
+C_SRCS += uCGUI/JPEG/jfdctint.c
+C_SRCS += uCGUI/JPEG/jidctflt.c
+C_SRCS += uCGUI/JPEG/jidctfst.c
+C_SRCS += uCGUI/JPEG/jidctint.c
+C_SRCS += uCGUI/JPEG/jidctred.c
+C_SRCS += uCGUI/JPEG/jmemmgr.c
+C_SRCS += uCGUI/JPEG/jquant1.c
+C_SRCS += uCGUI/JPEG/jquant2.c
+C_SRCS += uCGUI/JPEG/jutils.c
+C_SRCS += uCGUI/LCDDriver/LCD_driver.c
+C_SRCS += uCGUI/MemDev/GUIDEV.c
+C_SRCS += uCGUI/MemDev/GUIDEV_1.c
+C_SRCS += uCGUI/MemDev/GUIDEV_16.c
+C_SRCS += uCGUI/MemDev/GUIDEV_8.c
+C_SRCS += uCGUI/MemDev/GUIDEV_AA.c
+C_SRCS += uCGUI/MemDev/GUIDEV_Auto.c
+C_SRCS += uCGUI/MemDev/GUIDEV_Banding.c
+C_SRCS += uCGUI/MemDev/GUIDEV_Clear.c
+C_SRCS += uCGUI/MemDev/GUIDEV_CmpWithLCD.c
+C_SRCS += uCGUI/MemDev/GUIDEV_CopyFromLCD.c
+C_SRCS += uCGUI/MemDev/GUIDEV_CreateFixed.c
+C_SRCS += uCGUI/MemDev/GUIDEV_GetDataPtr.c
+C_SRCS += uCGUI/MemDev/GUIDEV_GetXSize.c
+C_SRCS += uCGUI/MemDev/GUIDEV_GetYSize.c
+C_SRCS += uCGUI/MemDev/GUIDEV_Measure.c
+C_SRCS += uCGUI/MemDev/GUIDEV_ReduceYSize.c
+C_SRCS += uCGUI/MemDev/GUIDEV_SetOrg.c
+C_SRCS += uCGUI/MemDev/GUIDEV_Usage.c
+C_SRCS += uCGUI/MemDev/GUIDEV_UsageBM.c
+C_SRCS += uCGUI/MemDev/GUIDEV_Write.c
+C_SRCS += uCGUI/MemDev/GUIDEV_WriteAlpha.c
+C_SRCS += uCGUI/MemDev/GUIDEV_WriteEx.c
+C_SRCS += uCGUI/MemDev/GUIDEV_XY2PTR.c
+C_SRCS += uCGUI/MultiLayer/LCD_1.c
+C_SRCS += uCGUI/MultiLayer/LCD_2.c
+C_SRCS += uCGUI/MultiLayer/LCD_3.c
+C_SRCS += uCGUI/MultiLayer/LCD_4.c
+C_SRCS += uCGUI/WM/WM.c
+C_SRCS += uCGUI/WM/WMMemDev.c
+C_SRCS += uCGUI/WM/WMTouch.c
+C_SRCS += uCGUI/WM/WM_AttachWindow.c
+C_SRCS += uCGUI/WM/WM_BringToBottom.c
+C_SRCS += uCGUI/WM/WM_BringToTop.c
+C_SRCS += uCGUI/WM/WM_Broadcast.c
+C_SRCS += uCGUI/WM/WM_CheckScrollPos.c
+C_SRCS += uCGUI/WM/WM_CriticalHandle.c
+C_SRCS += uCGUI/WM/WM_DIAG.c
+C_SRCS += uCGUI/WM/WM_EnableWindow.c
+C_SRCS += uCGUI/WM/WM_ForEachDesc.c
+C_SRCS += uCGUI/WM/WM_GetBkColor.c
+C_SRCS += uCGUI/WM/WM_GetClientRect.c
+C_SRCS += uCGUI/WM/WM_GetClientWindow.c
+C_SRCS += uCGUI/WM/WM_GetDesktopWindow.c
+C_SRCS += uCGUI/WM/WM_GetDesktopWindowEx.c
+C_SRCS += uCGUI/WM/WM_GetDiagInfo.c
+C_SRCS += uCGUI/WM/WM_GetDialogItem.c
+C_SRCS += uCGUI/WM/WM_GetFirstChild.c
+C_SRCS += uCGUI/WM/WM_GetFlags.c
+C_SRCS += uCGUI/WM/WM_GetFocussedWindow.c
+C_SRCS += uCGUI/WM/WM_GetId.c
+C_SRCS += uCGUI/WM/WM_GetInsideRect.c
+C_SRCS += uCGUI/WM/WM_GetInsideRectExScrollbar.c
+C_SRCS += uCGUI/WM/WM_GetInvalidRect.c
+C_SRCS += uCGUI/WM/WM_GetNextSibling.c
+C_SRCS += uCGUI/WM/WM_GetOrg.c
+C_SRCS += uCGUI/WM/WM_GetParent.c
+C_SRCS += uCGUI/WM/WM_GetPrevSibling.c
+C_SRCS += uCGUI/WM/WM_GetScrollPartner.c
+C_SRCS += uCGUI/WM/WM_GetScrollState.c
+C_SRCS += uCGUI/WM/WM_GetScrollbar.c
+C_SRCS += uCGUI/WM/WM_GetWindowRect.c
+C_SRCS += uCGUI/WM/WM_GetWindowSize.c
+C_SRCS += uCGUI/WM/WM_HasCaptured.c
+C_SRCS += uCGUI/WM/WM_HasFocus.c
+C_SRCS += uCGUI/WM/WM_Hide.c
+C_SRCS += uCGUI/WM/WM_IsCompletelyVisible.c
+C_SRCS += uCGUI/WM/WM_IsEnabled.c
+C_SRCS += uCGUI/WM/WM_IsFocussable.c
+C_SRCS += uCGUI/WM/WM_IsVisible.c
+C_SRCS += uCGUI/WM/WM_IsWindow.c
+C_SRCS += uCGUI/WM/WM_MakeModal.c
+C_SRCS += uCGUI/WM/WM_Move.c
+C_SRCS += uCGUI/WM/WM_MoveChildTo.c
+C_SRCS += uCGUI/WM/WM_NotifyParent.c
+C_SRCS += uCGUI/WM/WM_OnKey.c
+C_SRCS += uCGUI/WM/WM_PID__GetPrevState.c
+C_SRCS += uCGUI/WM/WM_Paint.c
+C_SRCS += uCGUI/WM/WM_ResizeWindow.c
+C_SRCS += uCGUI/WM/WM_Screen2Win.c
+C_SRCS += uCGUI/WM/WM_SendMessageNoPara.c
+C_SRCS += uCGUI/WM/WM_SendToParent.c
+C_SRCS += uCGUI/WM/WM_SetAnchor.c
+C_SRCS += uCGUI/WM/WM_SetCallback.c
+C_SRCS += uCGUI/WM/WM_SetCapture.c
+C_SRCS += uCGUI/WM/WM_SetCaptureMove.c
+C_SRCS += uCGUI/WM/WM_SetCreateFlags.c
+C_SRCS += uCGUI/WM/WM_SetDesktopColor.c
+C_SRCS += uCGUI/WM/WM_SetFocus.c
+C_SRCS += uCGUI/WM/WM_SetFocusOnNextChild.c
+C_SRCS += uCGUI/WM/WM_SetFocusOnPrevChild.c
+C_SRCS += uCGUI/WM/WM_SetId.c
+C_SRCS += uCGUI/WM/WM_SetpfPollPID.c
+C_SRCS += uCGUI/Widget/BUTTON.c
+C_SRCS += uCGUI/Widget/BUTTON_BMP.c
+C_SRCS += uCGUI/Widget/BUTTON_Bitmap.c
+C_SRCS += uCGUI/Widget/BUTTON_Create.c
+C_SRCS += uCGUI/Widget/BUTTON_CreateIndirect.c
+C_SRCS += uCGUI/Widget/BUTTON_Default.c
+C_SRCS += uCGUI/Widget/BUTTON_Get.c
+C_SRCS += uCGUI/Widget/BUTTON_IsPressed.c
+C_SRCS += uCGUI/Widget/BUTTON_SelfDraw.c
+C_SRCS += uCGUI/Widget/BUTTON_SetTextAlign.c
+C_SRCS += uCGUI/Widget/BUTTON_StreamedBitmap.c
+C_SRCS += uCGUI/Widget/BUTTON__SetBitmapObj.c
+C_SRCS += uCGUI/Widget/CHECKBOX.c
+C_SRCS += uCGUI/Widget/CHECKBOX_Create.c
+C_SRCS += uCGUI/Widget/CHECKBOX_CreateIndirect.c
+C_SRCS += uCGUI/Widget/CHECKBOX_Default.c
+C_SRCS += uCGUI/Widget/CHECKBOX_GetState.c
+C_SRCS += uCGUI/Widget/CHECKBOX_Image.c
+C_SRCS += uCGUI/Widget/CHECKBOX_IsChecked.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetBkColor.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetDefaultImage.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetFont.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetImage.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetNumStates.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetSpacing.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetState.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetText.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetTextAlign.c
+C_SRCS += uCGUI/Widget/CHECKBOX_SetTextColor.c
+C_SRCS += uCGUI/Widget/DIALOG.c
+C_SRCS += uCGUI/Widget/DROPDOWN.c
+C_SRCS += uCGUI/Widget/DROPDOWN_Create.c
+C_SRCS += uCGUI/Widget/DROPDOWN_CreateIndirect.c
+C_SRCS += uCGUI/Widget/DROPDOWN_DeleteItem.c
+C_SRCS += uCGUI/Widget/DROPDOWN_InsertString.c
+C_SRCS += uCGUI/Widget/DROPDOWN_ItemSpacing.c
+C_SRCS += uCGUI/Widget/DROPDOWN_SetAutoScroll.c
+C_SRCS += uCGUI/Widget/DROPDOWN_SetTextAlign.c
+C_SRCS += uCGUI/Widget/DROPDOWN_SetTextHeight.c
+C_SRCS += uCGUI/Widget/EDIT.c
+C_SRCS += uCGUI/Widget/EDITBin.c
+C_SRCS += uCGUI/Widget/EDITDec.c
+C_SRCS += uCGUI/Widget/EDITFloat.c
+C_SRCS += uCGUI/Widget/EDITHex.c
+C_SRCS += uCGUI/Widget/EDIT_Create.c
+C_SRCS += uCGUI/Widget/EDIT_CreateIndirect.c
+C_SRCS += uCGUI/Widget/EDIT_Default.c
+C_SRCS += uCGUI/Widget/EDIT_GetNumChars.c
+C_SRCS += uCGUI/Widget/EDIT_SetCursorAtChar.c
+C_SRCS += uCGUI/Widget/EDIT_SetInsertMode.c
+C_SRCS += uCGUI/Widget/EDIT_SetSel.c
+C_SRCS += uCGUI/Widget/EDIT_SetpfAddKeyEx.c
+C_SRCS += uCGUI/Widget/EDIT_SetpfUpdateBuffer.c
+C_SRCS += uCGUI/Widget/FRAMEWIN.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_AddMenu.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_Button.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_ButtonClose.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_ButtonMax.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_ButtonMin.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_Create.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_CreateIndirect.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_Default.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_Get.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_IsMinMax.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_MinMaxRest.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_SetBorderSize.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_SetColors.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_SetFont.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_SetResizeable.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_SetTitleHeight.c
+C_SRCS += uCGUI/Widget/FRAMEWIN_SetTitleVis.c
+C_SRCS += uCGUI/Widget/FRAMEWIN__UpdateButtons.c
+C_SRCS += uCGUI/Widget/GUI_ARRAY.c
+C_SRCS += uCGUI/Widget/GUI_ARRAY_DeleteItem.c
+C_SRCS += uCGUI/Widget/GUI_ARRAY_InsertItem.c
+C_SRCS += uCGUI/Widget/GUI_ARRAY_ResizeItem.c
+C_SRCS += uCGUI/Widget/GUI_DRAW.c
+C_SRCS += uCGUI/Widget/GUI_DRAW_BITMAP.c
+C_SRCS += uCGUI/Widget/GUI_DRAW_BMP.c
+C_SRCS += uCGUI/Widget/GUI_DRAW_STREAMED.c
+C_SRCS += uCGUI/Widget/GUI_DRAW_Self.c
+C_SRCS += uCGUI/Widget/GUI_EditBin.c
+C_SRCS += uCGUI/Widget/GUI_EditDec.c
+C_SRCS += uCGUI/Widget/GUI_EditFloat.c
+C_SRCS += uCGUI/Widget/GUI_EditHex.c
+C_SRCS += uCGUI/Widget/GUI_EditString.c
+C_SRCS += uCGUI/Widget/GUI_HOOK.c
+C_SRCS += uCGUI/Widget/HEADER.c
+C_SRCS += uCGUI/Widget/HEADER_BMP.c
+C_SRCS += uCGUI/Widget/HEADER_Bitmap.c
+C_SRCS += uCGUI/Widget/HEADER_Create.c
+C_SRCS += uCGUI/Widget/HEADER_CreateIndirect.c
+C_SRCS += uCGUI/Widget/HEADER_StreamedBitmap.c
+C_SRCS += uCGUI/Widget/HEADER__SetDrawObj.c
+C_SRCS += uCGUI/Widget/LISTBOX.c
+C_SRCS += uCGUI/Widget/LISTBOX_Create.c
+C_SRCS += uCGUI/Widget/LISTBOX_CreateIndirect.c
+C_SRCS += uCGUI/Widget/LISTBOX_Default.c
+C_SRCS += uCGUI/Widget/LISTBOX_DeleteItem.c
+C_SRCS += uCGUI/Widget/LISTBOX_Font.c
+C_SRCS += uCGUI/Widget/LISTBOX_GetItemText.c
+C_SRCS += uCGUI/Widget/LISTBOX_GetNumItems.c
+C_SRCS += uCGUI/Widget/LISTBOX_InsertString.c
+C_SRCS += uCGUI/Widget/LISTBOX_ItemDisabled.c
+C_SRCS += uCGUI/Widget/LISTBOX_ItemSpacing.c
+C_SRCS += uCGUI/Widget/LISTBOX_MultiSel.c
+C_SRCS += uCGUI/Widget/LISTBOX_ScrollStep.c
+C_SRCS += uCGUI/Widget/LISTBOX_SetAutoScroll.c
+C_SRCS += uCGUI/Widget/LISTBOX_SetBkColor.c
+C_SRCS += uCGUI/Widget/LISTBOX_SetOwner.c
+C_SRCS += uCGUI/Widget/LISTBOX_SetOwnerDraw.c
+C_SRCS += uCGUI/Widget/LISTBOX_SetScrollbarWidth.c
+C_SRCS += uCGUI/Widget/LISTBOX_SetString.c
+C_SRCS += uCGUI/Widget/LISTBOX_SetTextColor.c
+C_SRCS += uCGUI/Widget/LISTVIEW.c
+C_SRCS += uCGUI/Widget/LISTVIEW_Create.c
+C_SRCS += uCGUI/Widget/LISTVIEW_CreateIndirect.c
+C_SRCS += uCGUI/Widget/LISTVIEW_Default.c
+C_SRCS += uCGUI/Widget/LISTVIEW_DeleteColumn.c
+C_SRCS += uCGUI/Widget/LISTVIEW_DeleteRow.c
+C_SRCS += uCGUI/Widget/LISTVIEW_GetBkColor.c
+C_SRCS += uCGUI/Widget/LISTVIEW_GetFont.c
+C_SRCS += uCGUI/Widget/LISTVIEW_GetHeader.c
+C_SRCS += uCGUI/Widget/LISTVIEW_GetNumColumns.c
+C_SRCS += uCGUI/Widget/LISTVIEW_GetNumRows.c
+C_SRCS += uCGUI/Widget/LISTVIEW_GetSel.c
+C_SRCS += uCGUI/Widget/LISTVIEW_GetTextColor.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetBkColor.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetColumnWidth.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetFont.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetGridVis.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetItemColor.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetItemText.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetLBorder.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetRBorder.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetRowHeight.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetSel.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetTextAlign.c
+C_SRCS += uCGUI/Widget/LISTVIEW_SetTextColor.c
+C_SRCS += uCGUI/Widget/MENU.c
+C_SRCS += uCGUI/Widget/MENU_Attach.c
+C_SRCS += uCGUI/Widget/MENU_CreateIndirect.c
+C_SRCS += uCGUI/Widget/MENU_Default.c
+C_SRCS += uCGUI/Widget/MENU_DeleteItem.c
+C_SRCS += uCGUI/Widget/MENU_DisableItem.c
+C_SRCS += uCGUI/Widget/MENU_EnableItem.c
+C_SRCS += uCGUI/Widget/MENU_GetItem.c
+C_SRCS += uCGUI/Widget/MENU_GetItemText.c
+C_SRCS += uCGUI/Widget/MENU_GetNumItems.c
+C_SRCS += uCGUI/Widget/MENU_InsertItem.c
+C_SRCS += uCGUI/Widget/MENU_Popup.c
+C_SRCS += uCGUI/Widget/MENU_SetBkColor.c
+C_SRCS += uCGUI/Widget/MENU_SetBorderSize.c
+C_SRCS += uCGUI/Widget/MENU_SetFont.c
+C_SRCS += uCGUI/Widget/MENU_SetItem.c
+C_SRCS += uCGUI/Widget/MENU_SetTextColor.c
+C_SRCS += uCGUI/Widget/MENU__FindItem.c
+C_SRCS += uCGUI/Widget/MESSAGEBOX.c
+C_SRCS += uCGUI/Widget/MULTIEDIT.c
+C_SRCS += uCGUI/Widget/MULTIEDIT_Create.c
+C_SRCS += uCGUI/Widget/MULTIEDIT_CreateIndirect.c
+C_SRCS += uCGUI/Widget/MULTIPAGE.c
+C_SRCS += uCGUI/Widget/MULTIPAGE_Create.c
+C_SRCS += uCGUI/Widget/MULTIPAGE_CreateIndirect.c
+C_SRCS += uCGUI/Widget/MULTIPAGE_Default.c
+C_SRCS += uCGUI/Widget/PROGBAR.c
+C_SRCS += uCGUI/Widget/PROGBAR_Create.c
+C_SRCS += uCGUI/Widget/PROGBAR_CreateIndirect.c
+C_SRCS += uCGUI/Widget/RADIO.c
+C_SRCS += uCGUI/Widget/RADIO_Create.c
+C_SRCS += uCGUI/Widget/RADIO_CreateIndirect.c
+C_SRCS += uCGUI/Widget/RADIO_Default.c
+C_SRCS += uCGUI/Widget/RADIO_Image.c
+C_SRCS += uCGUI/Widget/RADIO_SetBkColor.c
+C_SRCS += uCGUI/Widget/RADIO_SetDefaultImage.c
+C_SRCS += uCGUI/Widget/RADIO_SetFont.c
+C_SRCS += uCGUI/Widget/RADIO_SetGroupId.c
+C_SRCS += uCGUI/Widget/RADIO_SetImage.c
+C_SRCS += uCGUI/Widget/RADIO_SetText.c
+C_SRCS += uCGUI/Widget/RADIO_SetTextColor.c
+C_SRCS += uCGUI/Widget/SCROLLBAR.c
+C_SRCS += uCGUI/Widget/SCROLLBAR_Create.c
+C_SRCS += uCGUI/Widget/SCROLLBAR_CreateIndirect.c
+C_SRCS += uCGUI/Widget/SCROLLBAR_Defaults.c
+C_SRCS += uCGUI/Widget/SCROLLBAR_GetValue.c
+C_SRCS += uCGUI/Widget/SCROLLBAR_SetWidth.c
+C_SRCS += uCGUI/Widget/SLIDER.c
+C_SRCS += uCGUI/Widget/SLIDER_Create.c
+C_SRCS += uCGUI/Widget/SLIDER_CreateIndirect.c
+C_SRCS += uCGUI/Widget/TEXT.c
+C_SRCS += uCGUI/Widget/TEXT_Create.c
+C_SRCS += uCGUI/Widget/TEXT_CreateIndirect.c
+C_SRCS += uCGUI/Widget/TEXT_SetBkColor.c
+C_SRCS += uCGUI/Widget/TEXT_SetFont.c
+C_SRCS += uCGUI/Widget/TEXT_SetText.c
+C_SRCS += uCGUI/Widget/TEXT_SetTextAlign.c
+C_SRCS += uCGUI/Widget/TEXT_SetTextColor.c
+C_SRCS += uCGUI/Widget/WIDGET.c
+C_SRCS += uCGUI/Widget/WIDGET_Effect_3D.c
+C_SRCS += uCGUI/Widget/WIDGET_Effect_3D1L.c
+C_SRCS += uCGUI/Widget/WIDGET_Effect_3D2L.c
+C_SRCS += uCGUI/Widget/WIDGET_Effect_None.c
+C_SRCS += uCGUI/Widget/WIDGET_Effect_Simple.c
+C_SRCS += uCGUI/Widget/WIDGET_FillStringInRect.c
+C_SRCS += uCGUI/Widget/WIDGET_SetEffect.c
+C_SRCS += uCGUI/Widget/WIDGET_SetWidth.c
+C_SRCS += uCGUI/Widget/WINDOW.c
+C_SRCS += uCGUI/Widget/WINDOW_Default.c
+C_SRCS += uCGUI/WM/WM_SetScrollState.c
+C_SRCS += uCGUI/WM/WM_SetScrollbar.c
+C_SRCS += uCGUI/WM/WM_SetSize.c
+C_SRCS += uCGUI/WM/WM_SetTrans.c
+C_SRCS += uCGUI/WM/WM_SetTransState.c
+C_SRCS += uCGUI/WM/WM_SetUserClipRect.c
+C_SRCS += uCGUI/WM/WM_SetXSize.c
+C_SRCS += uCGUI/WM/WM_SetYSize.c
+C_SRCS += uCGUI/WM/WM_Show.c
+C_SRCS += uCGUI/WM/WM_StayOnTop.c
+C_SRCS += uCGUI/WM/WM_Timer.c
+C_SRCS += uCGUI/WM/WM_TimerExternal.c
+C_SRCS += uCGUI/WM/WM_UserData.c
+C_SRCS += uCGUI/WM/WM_Validate.c
+C_SRCS += uCGUI/WM/WM_ValidateWindow.c
+C_SRCS += uCGUI/WM/WM__ForEachDesc.c
+C_SRCS += uCGUI/WM/WM__GetFirstSibling.c
+C_SRCS += uCGUI/WM/WM__GetFocussedChild.c
+C_SRCS += uCGUI/WM/WM__GetLastSibling.c
+C_SRCS += uCGUI/WM/WM__GetOrg_AA.c
+C_SRCS += uCGUI/WM/WM__GetPrevSibling.c
+C_SRCS += uCGUI/WM/WM__IsAncestor.c
+C_SRCS += uCGUI/WM/WM__IsChild.c
+C_SRCS += uCGUI/WM/WM__IsEnabled.c
+C_SRCS += uCGUI/WM/WM__NotifyVisChanged.c
+C_SRCS += uCGUI/WM/WM__Screen2Client.c
+C_SRCS += uCGUI/WM/WM__SendMessage.c
+C_SRCS += uCGUI/WM/WM__SendMessageIfEnabled.c
+C_SRCS += uCGUI/WM/WM__SendMessageNoPara.c
+C_SRCS += uCGUI/WM/WM__UpdateChildPositions.c
+C_SRCS += main.c
+C_SRCS += APP/draw_disp.c
+C_SRCS += uCGUI/Font/Chinese_ST20.c
+C_SRCS += uCGUI/Font/Chinese_ST16.c
+C_SRCS += APP/touch.c
+CXX_SRCS :=
+ASM_SRCS :=
+
+
+# Path to root of object file tree.
+OBJ_ROOT_DIR := obj
+
+# Options to control objdump.
+CREATE_OBJDUMP := 1
+OBJDUMP_INCLUDE_SOURCE := 1
+OBJDUMP_FULL_CONTENTS := 0
+
+# Options to enable/disable optional files.
+CREATE_ELF_DERIVED_FILES := 0
+CREATE_LINKER_MAP := 1
+
+# Common arguments for ALT_CFLAGSs
+APP_CFLAGS_DEFINED_SYMBOLS :=
+APP_CFLAGS_UNDEFINED_SYMBOLS :=
+APP_CFLAGS_OPTIMIZATION := -O0
+APP_CFLAGS_DEBUG_LEVEL := -g
+APP_CFLAGS_WARNINGS := -Wall
+APP_CFLAGS_USER_FLAGS :=
+
+APP_ASFLAGS_USER :=
+APP_LDFLAGS_USER :=
+
+# Linker options that have default values assigned later if not
+# assigned here.
+LINKER_SCRIPT :=
+CRT0 :=
+SYS_LIB :=
+
+# Define path to the root of the BSP.
+BSP_ROOT_DIR := ../qsys_gui_bsp/
+
+# List of application specific include directories, library directories and library names
+APP_INCLUDE_DIRS += uCGUI/AntiAlias
+APP_INCLUDE_DIRS += uCGUI/Config
+APP_INCLUDE_DIRS += uCGUI/ConvertColor
+APP_INCLUDE_DIRS += uCGUI/ConvertMono
+APP_INCLUDE_DIRS += uCGUI/Core
+APP_INCLUDE_DIRS += uCGUI/Font
+APP_INCLUDE_DIRS += uCGUI/GUI_X
+APP_INCLUDE_DIRS += uCGUI/JPEG
+APP_INCLUDE_DIRS += uCGUI/LCDDriver
+APP_INCLUDE_DIRS += uCGUI/MemDev
+APP_INCLUDE_DIRS += uCGUI/MultiLayer
+APP_INCLUDE_DIRS += uCGUI/Widget
+APP_INCLUDE_DIRS += uCGUI/WM
+APP_INCLUDE_DIRS += APP
+APP_LIBRARY_DIRS :=
+APP_LIBRARY_NAMES :=
+
+# Pre- and post- processor settings.
+BUILD_PRE_PROCESS :=
+BUILD_POST_PROCESS :=
+
+QUARTUS_PROJECT_DIR := ../../hardware/
+
+
+#END GENERATED
+
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#                            GENERATED SETTINGS END                           ^
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+#------------------------------------------------------------------------------
+#                           DEFAULT TARGET
+#------------------------------------------------------------------------------
+
+# Define the variable used to echo output if not already defined.
+ifeq ($(ECHO),)
+ECHO := echo
+endif
+
+# Put "all" rule before included makefile fragments because they may
+# define rules and we don't want one of those to become the default rule.
+.PHONY : all
+
+all:
+	@$(ECHO) [$(APP_NAME) build complete]
+
+all : build_pre_process libs app build_post_process 
+
+
+#------------------------------------------------------------------------------
+#                 VARIABLES DEPENDENT ON GENERATED CONTENT
+#------------------------------------------------------------------------------
+
+# Define object file directory per build configuration
+CONFIG_OBJ_DIR := $(OBJ_ROOT_DIR)/$(ACTIVE_BUILD_CONFIG)
+
+ifeq ($(BSP_ROOT_DIR),)
+$(error Edit Makefile and provide a value for BSP_ROOT_DIR)
+endif
+
+ifeq ($(wildcard $(BSP_ROOT_DIR)),)
+$(error BSP directory does not exist: $(BSP_ROOT_DIR))
+endif
+
+# Define absolute path to the root of the BSP.
+ABS_BSP_ROOT_DIR := $(call adjust-path-mixed,$(shell cd "$(BSP_ROOT_DIR)"; pwd))
+
+# Include makefile fragments.  Define variable ALT_LIBRARY_ROOT_DIR before
+# including each makefile fragment so that it knows the path to itself.
+BSP_INCLUDE_FILE := $(BSP_ROOT_DIR)/public.mk
+ALT_LIBRARY_ROOT_DIR := $(BSP_ROOT_DIR)
+include $(BSP_INCLUDE_FILE)
+# C2H will need this to touch the BSP public.mk and avoid the sopc file 
+# out-of-date error during a BSP make
+ABS_BSP_INCLUDE_FILE := $(ABS_BSP_ROOT_DIR)/public.mk
+
+
+ifneq ($(WARNING.SMALL_STACK_SIZE),)
+# This WARNING is here to protect you from unknowingly using a very small stack
+# If the warning is set, increase your stack size or enable the BSP small stack 
+# setting to eliminate the warning
+$(warning WARNING: $(WARNING.SMALL_STACK_SIZE))
+endif
+
+
+# If the BSP public.mk indicates that ALT_SIM_OPTIMIZE is set, rename the ELF 
+# by prefixing it with RUN_ON_HDL_SIMULATOR_ONLY_.  
+ifneq ($(filter -DALT_SIM_OPTIMIZE,$(ALT_CPPFLAGS)),)
+ELF := RUN_ON_HDL_SIMULATOR_ONLY_$(ELF)
+endif
+
+# If the BSP public.mk indicates that ALT_PROVIDE_GMON is set, add option to 
+# download_elf target
+ifneq ($(filter -DALT_PROVIDE_GMON,$(ALT_CPPFLAGS)),)
+GMON_OUT_FILENAME := gmon.out
+WRITE_GMON_OPTION := --write-gmon $(GMON_OUT_FILENAME)
+endif
+
+# Name of ELF application.
+APP_NAME := $(basename $(ELF))
+
+# Set to defaults if variables not already defined in settings.
+ifeq ($(LINKER_SCRIPT),)
+LINKER_SCRIPT := $(BSP_LINKER_SCRIPT)
+endif
+ifeq ($(CRT0),)
+CRT0 := $(BSP_CRT0)
+endif
+ifeq ($(SYS_LIB),)
+SYS_LIB := $(BSP_SYS_LIB)
+endif
+
+OBJDUMP_NAME := $(APP_NAME).objdump
+OBJDUMP_FLAGS := --disassemble --syms --all-header
+ifeq ($(OBJDUMP_INCLUDE_SOURCE),1)
+OBJDUMP_FLAGS += --source
+endif
+ifeq ($(OBJDUMP_FULL_CONTENTS),1)
+OBJDUMP_FLAGS += --full-contents
+endif
+
+# Create list of linker dependencies (*.a files).
+APP_LDDEPS := $(ALT_LDDEPS) $(LDDEPS)
+
+# Take lists and add required prefixes.
+APP_INC_DIRS := $(addprefix -I, $(ALT_INCLUDE_DIRS) $(APP_INCLUDE_DIRS) $(INC_DIRS))
+ASM_INC_PREFIX := -Wa,-I
+APP_ASM_INC_DIRS := $(addprefix $(ASM_INC_PREFIX), $(ALT_INCLUDE_DIRS) $(APP_INCLUDE_DIRS) $(INC_DIRS))
+APP_LIB_DIRS := $(addprefix -L, $(ALT_LIBRARY_DIRS) $(APP_LIBRARY_DIRS) $(LIB_DIRS))
+APP_LIBS := $(addprefix -l, $(ALT_LIBRARY_NAMES) $(APP_LIBRARY_NAMES) $(LIBS))
+
+ifneq ($(AVOID_NIOS2_GCC3_OPTIONS),)
+
+#
+# Avoid Nios II GCC 3.X options.
+#
+
+# Detect if small newlib C library is requested.
+# If yes, remove the -msmallc option because it is
+# now handled by other means.
+ifneq ($(filter -msmallc,$(ALT_LDFLAGS)),)
+	ALT_LDFLAGS := $(filter-out -msmallc,$(ALT_LDFLAGS))
+	ALT_C_LIBRARY := smallc
+else
+	ALT_C_LIBRARY := c
+endif
+
+# Put each BSP dependent library in a group to avoid circular dependencies.
+APP_BSP_DEP_LIBS := $(foreach l,$(ALT_BSP_DEP_LIBRARY_NAMES),-Wl,--start-group -l$(ALT_C_LIBRARY) -lgcc -l$(l) -Wl,--end-group)
+
+else # !AVOID_NIOS2_GCC3_OPTIONS
+
+#
+# Use Nios II GCC 3.X options.
+#
+APP_BSP_DEP_LIBS := $(addprefix -msys-lib=, $(ALT_BSP_DEP_LIBRARY_NAMES))
+
+endif # !AVOID_NIOS2_GCC3_OPTIONS
+
+# Arguments for the C preprocessor, C/C++ compiler, assembler, and linker.
+APP_CFLAGS := $(APP_CFLAGS_DEFINED_SYMBOLS) \
+              $(APP_CFLAGS_UNDEFINED_SYMBOLS) \
+              $(APP_CFLAGS_OPTIMIZATION) \
+              $(APP_CFLAGS_DEBUG_LEVEL) \
+              $(APP_CFLAGS_WARNINGS) \
+              $(APP_CFLAGS_USER_FLAGS) \
+              $(ALT_CFLAGS) \
+              $(CFLAGS)
+
+# Arguments only for the C++ compiler.
+APP_CXXFLAGS := $(ALT_CXXFLAGS) $(CXXFLAGS)
+
+# Arguments only for the C preprocessor.
+# Prefix each include directory with -I.
+APP_CPPFLAGS := $(APP_INC_DIRS) \
+                $(ALT_CPPFLAGS) \
+                $(CPPFLAGS)
+
+# Arguments only for the assembler.
+APP_ASFLAGS := $(APP_ASM_INC_DIRS) \
+               $(ALT_ASFLAGS) \
+               $(APP_ASFLAGS_USER) \
+               $(ASFLAGS)
+
+# Arguments only for the linker.
+APP_LDFLAGS := $(APP_LDFLAGS_USER)
+
+ifneq ($(LINKER_SCRIPT),)
+APP_LDFLAGS += -T'$(LINKER_SCRIPT)'
+endif
+
+ifneq ($(AVOID_NIOS2_GCC3_OPTIONS),)
+
+# Avoid Nios II GCC 3.x options.
+ifneq ($(CRT0),)
+APP_LDFLAGS += $(CRT0)
+endif
+
+# The equivalent of the -msys-lib option is provided
+# by the GROUP() command in the linker script.
+# Note this means the SYS_LIB variable is now ignored.
+
+else # !AVOID_NIOS2_GCC3_OPTIONS
+
+# Use Nios II GCC 3.x options.
+ifneq ($(CRT0),)
+APP_LDFLAGS += -msys-crt0='$(CRT0)'
+endif
+ifneq ($(SYS_LIB),)
+APP_LDFLAGS += -msys-lib=$(SYS_LIB)
+endif
+
+endif # !AVOID_NIOS2_GCC3_OPTIONS
+
+APP_LDFLAGS += \
+           $(APP_LIB_DIRS) \
+           $(ALT_LDFLAGS) \
+           $(LDFLAGS)
+
+LINKER_MAP_NAME := $(APP_NAME).map
+ifeq ($(CREATE_LINKER_MAP), 1)
+APP_LDFLAGS += -Wl,-Map=$(LINKER_MAP_NAME)
+endif
+
+# QUARTUS_PROJECT_DIR and SOPC_NAME need to be defined if you want the 
+# mem_init_install target of the mem_init.mk (located in the associated BSP) 
+# to know how to copy memory initialization files (e.g. .dat, .hex) into 
+# directories required for Quartus compilation or RTL simulation.
+
+# Defining QUARTUS_PROJECT_DIR causes mem_init_install to copy memory 
+# initialization files into your Quartus project directory. This is required 
+# to provide the initial memory contents of FPGA memories that can be 
+# initialized by the programming file (.sof) or Hardcopy ROMs. It is also used 
+# for VHDL simulation of on-chip memories.
+
+# Defining SOPC_NAME causes the mem_init_install target to copy memory 
+# initialization files into your RTL simulation directory.  This is required 
+# to provide the initial memory contents of all memories that can be 
+# initialized by RTL simulation. This variable should be set to the same name 
+# as your SOPC Builder system name. For example, if you have a system called 
+# "foo.sopc", this variable should be set to "foo".
+
+# If SOPC_NAME is not set and QUARTUS_PROJECT_DIR is set, then derive SOPC_NAME.
+ifeq ($(SOPC_NAME),)
+ifneq ($(QUARTUS_PROJECT_DIR),)
+SOPC_NAME := $(basename $(notdir $(wildcard $(QUARTUS_PROJECT_DIR)/*.sopcinfo)))
+endif
+endif
+
+# Defining JDI_FILE is required to specify the JTAG Debug Information File 
+# path. This file is generated by Quartus, and is needed along with the 
+# .sopcinfo file to resolve processor instance ID's from names in a multi-CPU 
+# systems. For multi-CPU systems, the processor instance ID is used to select 
+# from multiple CPU's during ELF download.
+
+# Both JDI_FILE and SOPCINFO_FILE are provided by the BSP if they found during 
+# BSP creation. If JDI_FILE is not set and QUARTUS_PROJECT_DIR is set, then 
+# derive JDI_FILE. We do not attempt to derive SOPCINFO_FILE since there may be 
+# multiple .sopcinfo files in a Quartus project. 
+ifeq ($(JDI_FILE),)
+ifneq ($(QUARTUS_PROJECT_DIR),)
+JDI_FILE := $(wildcard $(QUARTUS_PROJECT_DIR)/*.jdi)
+endif
+endif
+
+# Path to root runtime directory used for hdl simulation 
+RUNTIME_ROOT_DIR := $(CONFIG_OBJ_DIR)/runtime
+
+
+
+#------------------------------------------------------------------------------
+#           MAKEFILE INCLUDES DEPENDENT ON GENERATED CONTENT
+#------------------------------------------------------------------------------
+# mem_init.mk is a generated makefile fragment. This file defines all targets
+# used to generate HDL initialization simulation files and pre-initialized
+# onchip memory files.
+MEM_INIT_FILE :=  $(BSP_ROOT_DIR)/mem_init.mk
+include $(MEM_INIT_FILE)
+
+# Create list of object files to be built using the list of source files.
+# The source file hierarchy is preserved in the object tree.
+# The supported file extensions are:
+#
+# .c            - for C files
+# .cxx .cc .cpp - for C++ files
+# .S .s         - for assembler files
+#
+# Handle source files specified by --src-dir & --src-rdir differently, to
+# save some processing time in calling the adjust-path macro.
+
+OBJ_LIST_C 		:= $(patsubst %.c,%.o,$(filter %.c,$(C_SRCS)))
+OBJ_LIST_CPP	:= $(patsubst %.cpp,%.o,$(filter %.cpp,$(CXX_SRCS)))
+OBJ_LIST_CXX 	:= $(patsubst %.cxx,%.o,$(filter %.cxx,$(CXX_SRCS)))
+OBJ_LIST_CC 	:= $(patsubst %.cc,%.o,$(filter %.cc,$(CXX_SRCS)))
+OBJ_LIST_S 		:= $(patsubst %.S,%.o,$(filter %.S,$(ASM_SRCS)))
+OBJ_LIST_SS		:= $(patsubst %.s,%.o,$(filter %.s,$(ASM_SRCS)))
+
+OBJ_LIST := $(sort $(OBJ_LIST_C) $(OBJ_LIST_CPP) $(OBJ_LIST_CXX) \
+				$(OBJ_LIST_CC) $(OBJ_LIST_S) $(OBJ_LIST_SS))
+
+SDIR_OBJ_LIST_C		:= $(patsubst %.c,%.o,$(filter %.c,$(SDIR_C_SRCS)))
+SDIR_OBJ_LIST_CPP	:= $(patsubst %.cpp,%.o,$(filter %.cpp,$(SDIR_CXX_SRCS)))
+SDIR_OBJ_LIST_CXX 	:= $(patsubst %.cxx,%.o,$(filter %.cxx,$(SDIR_CXX_SRCS)))
+SDIR_OBJ_LIST_CC 	:= $(patsubst %.cc,%.o,$(filter %.cc,$(SDIR_CXX_SRCS)))
+SDIR_OBJ_LIST_S		:= $(patsubst %.S,%.o,$(filter %.S,$(SDIR_ASM_SRCS)))
+SDIR_OBJ_LIST_SS	:= $(patsubst %.s,%.o,$(filter %.s,$(SDIR_ASM_SRCS)))
+
+SDIR_OBJ_LIST := $(sort $(SDIR_OBJ_LIST_C) $(SDIR_OBJ_LIST_CPP) \
+				$(SDIR_OBJ_LIST_CXX) $(SDIR_OBJ_LIST_CC) $(SDIR_OBJ_LIST_S) \
+				$(SDIR_OBJ_LIST_SS))
+
+# Relative-pathed objects that being with "../" are handled differently.
+#
+# Regular objects are created as 
+#   $(CONFIG_OBJ_DIR)/<path>/<filename>.o
+# where the path structure is maintained under the obj directory.  This
+# applies for both absolute and relative paths; in the absolute path
+# case this means the entire source path will be recreated under the obj
+# directory.  This is done to allow two source files with the same name
+# to be included as part of the project.
+#
+# Note: On Cygwin, the path recreated under the obj directory will be 
+# the cygpath -u output path.
+#
+# Relative-path objects that begin with "../" cause problems under this 
+# scheme, as $(CONFIG_OBJ_DIR)/../<rest of path>/ can potentially put the object
+# files anywhere in the system, creating clutter and polluting the source tree.
+# As such, their paths are flattened - the object file created will be 
+# $(CONFIG_OBJ_DIR)/<filename>.o.  Due to this, two files specified with 
+# "../" in the beginning cannot have the same name in the project.  VPATH 
+# will be set for these sources to allow make to relocate the source file 
+# via %.o rules.
+#
+# The following lines separate the object list into the flatten and regular
+# lists, and then handles them as appropriate.
+
+FLATTEN_OBJ_LIST := $(filter ../%,$(OBJ_LIST))
+FLATTEN_APP_OBJS := $(addprefix $(CONFIG_OBJ_DIR)/,$(notdir $(FLATTEN_OBJ_LIST)))
+
+REGULAR_OBJ_LIST 		:= $(filter-out $(FLATTEN_OBJ_LIST),$(OBJ_LIST))
+REGULAR_OBJ_LIST_C 		:= $(filter $(OBJ_LIST_C),$(REGULAR_OBJ_LIST))
+REGULAR_OBJ_LIST_CPP	:= $(filter $(OBJ_LIST_CPP),$(REGULAR_OBJ_LIST))
+REGULAR_OBJ_LIST_CXX 	:= $(filter $(OBJ_LIST_CXX),$(REGULAR_OBJ_LIST))
+REGULAR_OBJ_LIST_CC 	:= $(filter $(OBJ_LIST_CC),$(REGULAR_OBJ_LIST))
+REGULAR_OBJ_LIST_S 		:= $(filter $(OBJ_LIST_S),$(REGULAR_OBJ_LIST))
+REGULAR_OBJ_LIST_SS		:= $(filter $(OBJ_LIST_SS),$(REGULAR_OBJ_LIST))
+
+FLATTEN_SDIR_OBJ_LIST := $(filter ../%,$(SDIR_OBJ_LIST))
+FLATTEN_SDIR_APP_OBJS := $(addprefix $(CONFIG_OBJ_DIR)/,$(notdir $(FLATTEN_SDIR_OBJ_LIST)))
+
+REGULAR_SDIR_OBJ_LIST 		:= $(filter-out $(FLATTEN_SDIR_OBJ_LIST),$(SDIR_OBJ_LIST))
+REGULAR_SDIR_OBJ_LIST_C 	:= $(filter $(SDIR_OBJ_LIST_C),$(REGULAR_SDIR_OBJ_LIST))
+REGULAR_SDIR_OBJ_LIST_CPP	:= $(filter $(SDIR_OBJ_LIST_CPP),$(REGULAR_SDIR_OBJ_LIST))
+REGULAR_SDIR_OBJ_LIST_CXX 	:= $(filter $(SDIR_OBJ_LIST_CXX),$(REGULAR_SDIR_OBJ_LIST))
+REGULAR_SDIR_OBJ_LIST_CC 	:= $(filter $(SDIR_OBJ_LIST_CC),$(REGULAR_SDIR_OBJ_LIST))
+REGULAR_SDIR_OBJ_LIST_S 	:= $(filter $(SDIR_OBJ_LIST_S),$(REGULAR_SDIR_OBJ_LIST))
+REGULAR_SDIR_OBJ_LIST_SS	:= $(filter $(SDIR_OBJ_LIST_SS),$(REGULAR_SDIR_OBJ_LIST))
+
+VPATH := $(sort $(dir $(FLATTEN_OBJ_LIST)) $(dir $(FLATTEN_SDIR_OBJ_LIST)))
+
+APP_OBJS_C := $(addprefix $(CONFIG_OBJ_DIR)/,\
+	$(REGULAR_SDIR_OBJ_LIST_C) \
+	$(foreach s,$(REGULAR_OBJ_LIST_C),$(call adjust-path,$s)))
+
+APP_OBJS_CPP := $(addprefix $(CONFIG_OBJ_DIR)/,\
+	$(REGULAR_SDIR_OBJ_LIST_CPP) \
+	$(foreach s,$(REGULAR_OBJ_LIST_CPP),$(call adjust-path,$s)))
+
+APP_OBJS_CXX := $(addprefix $(CONFIG_OBJ_DIR)/,\
+	$(REGULAR_SDIR_OBJ_LIST_CXX) \
+	$(foreach s,$(REGULAR_OBJ_LIST_CXX),$(call adjust-path,$s)))
+
+APP_OBJS_CC := $(addprefix $(CONFIG_OBJ_DIR)/,\
+	$(REGULAR_SDIR_OBJ_LIST_CC) \
+	$(foreach s,$(REGULAR_OBJ_LIST_CC),$(call adjust-path,$s)))
+
+APP_OBJS_S := $(addprefix $(CONFIG_OBJ_DIR)/,\
+	$(REGULAR_SDIR_OBJ_LIST_S) \
+	$(foreach s,$(REGULAR_OBJ_LIST_S),$(call adjust-path,$s)))
+
+APP_OBJS_SS := $(addprefix $(CONFIG_OBJ_DIR)/,\
+	$(REGULAR_SDIR_OBJ_LIST_SS) \
+	$(foreach s,$(REGULAR_OBJ_LIST_SS),$(call adjust-path,$s)))
+
+APP_OBJS := $(APP_OBJS_C) $(APP_OBJS_CPP) $(APP_OBJS_CXX) $(APP_OBJS_CC) \
+	$(APP_OBJS_S) $(APP_OBJS_SS) \
+	$(FLATTEN_APP_OBJS) $(FLATTEN_SDIR_APP_OBJS)
+
+# Add any extra user-provided object files.
+APP_OBJS += $(OBJS)
+
+# Create list of dependancy files for each object file.
+APP_DEPS := $(APP_OBJS:.o=.d)
+
+# Patch the Elf file with system specific information
+
+# Patch the Elf with the name of the sopc system
+ifneq ($(SOPC_NAME),)
+ELF_PATCH_FLAG += --sopc_system_name $(SOPC_NAME)
+endif
+
+# Patch the Elf with the absolute path to the Quartus Project Directory
+ifneq ($(QUARTUS_PROJECT_DIR),)
+ABS_QUARTUS_PROJECT_DIR := $(call adjust-path-mixed,$(shell cd "$(QUARTUS_PROJECT_DIR)"; pwd))
+ELF_PATCH_FLAG += --quartus_project_dir "$(ABS_QUARTUS_PROJECT_DIR)"
+endif
+
+# Patch the Elf and download args with the JDI_FILE if specified
+ifneq ($(wildcard $(JDI_FILE)),)
+ELF_PATCH_FLAG += --jdi $(JDI_FILE)
+DOWNLOAD_JDI_FLAG := --jdi $(JDI_FILE)
+endif
+
+# Patch the Elf with the SOPCINFO_FILE if specified
+ifneq ($(wildcard $(SOPCINFO_FILE)),)
+ELF_PATCH_FLAG += --sopcinfo $(SOPCINFO_FILE)
+endif
+
+# Use the DOWNLOAD_CABLE variable to specify which JTAG cable to use. 
+# This is not needed if you only have one cable.
+ifneq ($(DOWNLOAD_CABLE),)
+DOWNLOAD_CABLE_FLAG := --cable '$(DOWNLOAD_CABLE)'
+endif
+
+
+#------------------------------------------------------------------------------
+#                           BUILD PRE/POST PROCESS
+#------------------------------------------------------------------------------
+build_pre_process :
+	$(BUILD_PRE_PROCESS)
+
+build_post_process :
+	$(BUILD_POST_PROCESS)
+
+.PHONY: build_pre_process build_post_process
+
+
+#------------------------------------------------------------------------------
+#                                 TOOLS
+#------------------------------------------------------------------------------
+
+#
+# Set tool default variables if not already defined.
+# If these are defined, they would typically be defined in an
+# included makefile fragment.
+#
+ifeq ($(DEFAULT_CROSS_COMPILE),)
+DEFAULT_CROSS_COMPILE := nios2-elf-
+endif
+
+ifeq ($(DEFAULT_STACKREPORT),)
+DEFAULT_STACKREPORT := nios2-stackreport
+endif
+
+ifeq ($(DEFAULT_DOWNLOAD),)
+DEFAULT_DOWNLOAD := nios2-download
+endif
+
+ifeq ($(DEFAULT_FLASHPROG),)
+DEFAULT_FLASHPROG := nios2-flash-programmer
+endif
+
+ifeq ($(DEFAULT_ELFPATCH),)
+DEFAULT_ELFPATCH := nios2-elf-insert
+endif
+
+ifeq ($(DEFAULT_RM),)
+DEFAULT_RM := rm -f
+endif
+
+ifeq ($(DEFAULT_CP),)
+DEFAULT_CP := cp -f
+endif
+
+ifeq ($(DEFAULT_MKDIR),)
+DEFAULT_MKDIR := mkdir -p
+endif
+
+#
+# Set tool variables to defaults if not already defined.
+# If these are defined, they would typically be defined by a
+# setting in the generated portion of this makefile.
+#
+ifeq ($(CROSS_COMPILE),)
+CROSS_COMPILE := $(DEFAULT_CROSS_COMPILE)
+endif
+
+ifeq ($(origin CC),default)
+CC := $(CROSS_COMPILE)gcc -xc
+endif
+
+ifeq ($(origin CXX),default)
+CXX := $(CROSS_COMPILE)gcc -xc++
+endif
+
+ifeq ($(origin AS),default)
+AS := $(CROSS_COMPILE)gcc
+endif
+
+ifeq ($(origin AR),default)
+AR := $(CROSS_COMPILE)ar
+endif
+
+ifeq ($(origin LD),default)
+LD := $(CROSS_COMPILE)g++
+endif
+
+ifeq ($(origin RM),default)
+RM := $(DEFAULT_RM)
+endif
+
+ifeq ($(NM),)
+NM := $(CROSS_COMPILE)nm
+endif
+
+ifeq ($(CP),)
+CP := $(DEFAULT_CP)
+endif
+
+ifeq ($(OBJDUMP),)
+OBJDUMP := $(CROSS_COMPILE)objdump
+endif
+
+ifeq ($(OBJCOPY),)
+OBJCOPY := $(CROSS_COMPILE)objcopy
+endif
+
+ifeq ($(STACKREPORT),)
+STACKREPORT := $(DEFAULT_STACKREPORT) --prefix $(CROSS_COMPILE)
+else
+DISABLE_STACKREPORT := 1
+endif
+
+ifeq ($(DOWNLOAD),)
+DOWNLOAD := $(DEFAULT_DOWNLOAD)
+endif
+
+ifeq ($(FLASHPROG),)
+FLASHPROG := $(DEFAULT_FLASHPROG)
+endif
+
+ifeq ($(ELFPATCH),)
+ELFPATCH := $(DEFAULT_ELFPATCH)
+endif
+
+ifeq ($(MKDIR),)
+MKDIR := $(DEFAULT_MKDIR)
+endif
+
+#------------------------------------------------------------------------------
+#                     PATTERN RULES TO BUILD OBJECTS
+#------------------------------------------------------------------------------
+
+define compile.c
+@$(ECHO) Info: Compiling $< to $@
+@$(MKDIR) $(@D)
+$(CC) -MP -MMD -c $(APP_CPPFLAGS) $(APP_CFLAGS) -o $@ $<
+$(CC_POST_PROCESS)
+endef
+
+define compile.cpp
+@$(ECHO) Info: Compiling $< to $@
+@$(MKDIR) $(@D)
+$(CXX) -MP -MMD -c $(APP_CPPFLAGS) $(APP_CXXFLAGS) $(APP_CFLAGS) -o $@ $<
+$(CXX_POST_PROCESS)
+endef
+
+# If assembling with the compiler, ensure "-Wa," is prepended to all APP_ASFLAGS
+ifeq ($(AS),$(patsubst %as,%,$(AS)))
+COMMA := ,
+APP_ASFLAGS :=  $(filter-out $(APP_CFLAGS),$(addprefix -Wa$(COMMA),$(patsubst -Wa$(COMMA)%,%,$(APP_ASFLAGS))))
+endif
+
+define compile.s
+@$(ECHO) Info: Assembling $< to $@
+@$(MKDIR) $(@D)
+$(AS) -MP -MMD -c $(APP_CPPFLAGS) $(APP_CFLAGS) $(APP_ASFLAGS) -o $@ $<
+$(AS_POST_PROCESS)
+endef
+
+ifeq ($(MAKE_VERSION),3.81) 
+.SECONDEXPANSION:
+
+$(APP_OBJS_C): $(CONFIG_OBJ_DIR)/%.o: $$(call adjust-path-mixed,%.c)
+	$(compile.c)
+
+$(APP_OBJS_CPP): $(CONFIG_OBJ_DIR)/%.o: $$(call adjust-path-mixed,%.cpp)
+	$(compile.cpp)
+
+$(APP_OBJS_CC): $(CONFIG_OBJ_DIR)/%.o: $$(call adjust-path-mixed,%.cc)
+	$(compile.cpp)
+
+$(APP_OBJS_CXX): $(CONFIG_OBJ_DIR)/%.o: $$(call adjust-path-mixed,%.cxx)
+	$(compile.cpp)
+
+$(APP_OBJS_S): $(CONFIG_OBJ_DIR)/%.o: $$(call adjust-path-mixed,%.S)
+	$(compile.s)
+
+$(APP_OBJS_SS): $(CONFIG_OBJ_DIR)/%.o: $$(call adjust-path-mixed,%.s)
+	$(compile.s)
+
+endif # MAKE_VERSION != 3.81
+
+$(CONFIG_OBJ_DIR)/%.o: %.c
+	$(compile.c)
+
+$(CONFIG_OBJ_DIR)/%.o: %.cpp
+	$(compile.cpp)
+
+$(CONFIG_OBJ_DIR)/%.o: %.cc
+	$(compile.cpp)
+
+$(CONFIG_OBJ_DIR)/%.o: %.cxx
+	$(compile.cpp)
+
+$(CONFIG_OBJ_DIR)/%.o: %.S
+	$(compile.s)
+
+$(CONFIG_OBJ_DIR)/%.o: %.s
+	$(compile.s)
+
+
+#------------------------------------------------------------------------------
+#                     PATTERN RULES TO INTERMEDIATE FILES
+#------------------------------------------------------------------------------
+
+$(CONFIG_OBJ_DIR)/%.s: %.c
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CC) -S $(APP_CPPFLAGS) $(APP_CFLAGS) -o $@ $<
+
+$(CONFIG_OBJ_DIR)/%.s: %.cpp
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CXX) -S $(APP_CPPFLAGS) $(APP_CXXFLAGS) $(APP_CFLAGS) -o $@ $<
+
+$(CONFIG_OBJ_DIR)/%.s: %.cc
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CXX) -S $(APP_CPPFLAGS) $(APP_CXXFLAGS) $(APP_CFLAGS) -o $@ $<
+
+$(CONFIG_OBJ_DIR)/%.s: %.cxx
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CXX) -S $(APP_CPPFLAGS) $(APP_CXXFLAGS) $(APP_CFLAGS) -o $@ $<
+
+$(CONFIG_OBJ_DIR)/%.i: %.c
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CC) -E $(APP_CPPFLAGS) $(APP_CFLAGS) -o $@ $<
+
+$(CONFIG_OBJ_DIR)/%.i: %.cpp
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CXX) -E $(APP_CPPFLAGS) $(APP_CXXFLAGS) $(APP_CFLAGS) -o $@ $<
+
+$(CONFIG_OBJ_DIR)/%.i: %.cc
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CXX) -E $(APP_CPPFLAGS) $(APP_CXXFLAGS) $(APP_CFLAGS) -o $@ $<
+
+$(CONFIG_OBJ_DIR)/%.i: %.cxx
+	@$(ECHO) Info: Compiling $< to $@
+	@$(MKDIR) $(@D)
+	$(CXX) -E $(APP_CPPFLAGS) $(APP_CXXFLAGS) $(APP_CFLAGS) -o $@ $<
+
+
+#------------------------------------------------------------------------------
+#                        TARGET RULES
+#------------------------------------------------------------------------------
+
+.PHONY : help
+help :
+	@$(ECHO) "Summary of Makefile targets"
+	@$(ECHO) "  Build targets:"
+	@$(ECHO) "    all (default)     - Application and all libraries (including BSP)"
+	@$(ECHO) "    bsp               - Just the BSP"
+	@$(ECHO) "    libs              - All libraries (including BSP)"
+	@$(ECHO) "    flash             - All flash files"	
+	@$(ECHO) "    mem_init_generate - All memory initialization files"
+ifeq ($(QSYS),1)
+	@$(ECHO) "    mem_init_install  - This target is deprecated for QSys Systems"
+	@$(ECHO) "                         --> Use the mem_init_generate target and then"
+	@$(ECHO) "                             add the generated meminit.qip file to your"
+	@$(ECHO) "                             Quartus II Project."
+else # if QSYS != 1
+	@$(ECHO) "    mem_init_install  - Copy memory initialization files to Quartus II project"
+endif # QSYS == 1
+	@$(ECHO)
+	@$(ECHO) "  Clean targets:"
+	@$(ECHO) "    clean_all         - Application and all libraries (including BSP)"
+	@$(ECHO) "    clean             - Just the application"
+	@$(ECHO) "    clean_bsp         - Just the BSP"
+	@$(ECHO) "    clean_libs        - All libraries (including BSP)"
+	@$(ECHO)
+	@$(ECHO) "  Run targets:"
+	@$(ECHO) "    download-elf      - Download and run your elf executable"
+	@$(ECHO) "    program-flash     - Program flash contents to the board"
+
+# Handy rule to skip making libraries and just make application.
+.PHONY : app
+app : $(ELF)
+
+ifeq ($(CREATE_OBJDUMP), 1)
+app : $(OBJDUMP_NAME)
+endif
+
+ifeq ($(CREATE_ELF_DERIVED_FILES),1)
+app : elf_derived_files
+endif
+
+.PHONY: elf_derived_files
+elf_derived_files: default_mem_init
+
+# Handy rule for making just the BSP.
+.PHONY : bsp
+bsp :
+	@$(ECHO) Info: Building $(BSP_ROOT_DIR)
+	@$(MAKE) --no-print-directory -C $(BSP_ROOT_DIR)
+
+
+# Make sure all makeable libraries (including the BSP) are up-to-date.
+LIB_TARGETS := $(patsubst %,%-recurs-make-lib,$(MAKEABLE_LIBRARY_ROOT_DIRS))
+
+.PHONY : libs
+libs : $(LIB_TARGETS)
+
+ifneq ($(strip $(LIB_TARGETS)),)
+$(LIB_TARGETS): %-recurs-make-lib:
+	@$(ECHO) Info: Building $*
+	$(MAKE) --no-print-directory -C $*
+endif
+
+ifneq ($(strip $(APP_LDDEPS)),)
+$(APP_LDDEPS): libs
+	@true
+endif
+
+# Rules to force your project to rebuild or relink
+# .force_relink file will cause any application that depends on this project to relink 
+# .force_rebuild file will cause this project to rebuild object files
+# .force_rebuild_all file will cause this project and any project that depends on this project to rebuild object files
+
+FORCE_RELINK_DEP  := .force_relink
+FORCE_REBUILD_DEP := .force_rebuild
+FORCE_REBUILD_ALL_DEP := .force_rebuild_all
+FORCE_REBUILD_DEP_LIST := $(CONFIG_OBJ_DIR)/$(FORCE_RELINK_DEP) $(CONFIG_OBJ_DIR)/$(FORCE_REBUILD_DEP) $(FORCE_REBUILD_ALL_DEP)
+
+$(FORCE_REBUILD_DEP_LIST):
+
+$(APP_OBJS): $(wildcard $(CONFIG_OBJ_DIR)/$(FORCE_REBUILD_DEP)) $(wildcard $(addsuffix /$(FORCE_REBUILD_ALL_DEP), . $(ALT_LIBRARY_DIRS)))
+
+$(ELF): $(wildcard $(addsuffix /$(FORCE_RELINK_DEP), $(CONFIG_OBJ_DIR) $(ALT_LIBRARY_DIRS)))
+
+
+# Clean just the application.
+.PHONY : clean
+ifeq ($(CREATE_ELF_DERIVED_FILES),1)
+clean : clean_elf_derived_files
+endif
+
+clean :
+	@$(RM) -r $(ELF) $(OBJDUMP_NAME) $(LINKER_MAP_NAME) $(OBJ_ROOT_DIR) $(RUNTIME_ROOT_DIR) $(FORCE_REBUILD_DEP_LIST)
+	@$(ECHO) [$(APP_NAME) clean complete]
+
+# Clean just the BSP.
+.PHONY : clean_bsp
+clean_bsp :
+	@$(ECHO) Info: Cleaning $(BSP_ROOT_DIR)
+	@$(MAKE) --no-print-directory -C $(BSP_ROOT_DIR) clean
+
+# Clean all makeable libraries including the BSP.
+LIB_CLEAN_TARGETS := $(patsubst %,%-recurs-make-clean-lib,$(MAKEABLE_LIBRARY_ROOT_DIRS))
+
+.PHONY : clean_libs
+clean_libs : $(LIB_CLEAN_TARGETS)
+
+ifneq ($(strip $(LIB_CLEAN_TARGETS)),)
+$(LIB_CLEAN_TARGETS): %-recurs-make-clean-lib:
+	@$(ECHO) Info: Cleaning $*
+	$(MAKE) --no-print-directory -C $* clean
+endif
+
+.PHONY: clean_elf_derived_files
+clean_elf_derived_files: mem_init_clean
+
+# Clean application and all makeable libraries including the BSP.
+.PHONY : clean_all
+clean_all : clean mem_init_clean clean_libs
+
+# Include the dependency files unless the make goal is performing a clean
+# of the application.
+ifneq ($(firstword $(MAKECMDGOALS)),clean)
+ifneq ($(firstword $(MAKECMDGOALS)),clean_all)
+-include $(APP_DEPS)
+endif
+endif
+
+.PHONY : download-elf
+download-elf : $(ELF)
+	@if [ "$(DOWNLOAD)" = "none" ]; \
+	then \
+		$(ECHO) Downloading $(ELF) not supported; \
+	else \
+		$(ECHO) Info: Downloading $(ELF); \
+		$(DOWNLOAD) --go --cpu_name=$(CPU_NAME) $(DOWNLOAD_CABLE_FLAG) $(SOPC_SYSID_FLAG) $(DOWNLOAD_JDI_FLAG) $(WRITE_GMON_OPTION) $(ELF); \
+	fi	
+
+# Delete the target of a rule if it has changed and its commands exit 
+# with a nonzero exit status.
+.DELETE_ON_ERROR:
+
+# Rules for flash programming commands
+PROGRAM_FLASH_SUFFIX := -program
+PROGRAM_FLASH_TARGET := $(addsuffix $(PROGRAM_FLASH_SUFFIX), $(FLASH_FILES))
+
+.PHONY : program-flash
+program-flash : $(PROGRAM_FLASH_TARGET)
+
+.PHONY : $(PROGRAM_FLASH_TARGET)
+$(PROGRAM_FLASH_TARGET) : flash
+	@if [ "$(FLASHPROG)" = "none" ]; \
+	then \
+		$(ECHO) Programming flash not supported; \
+	else \
+		$(ECHO) Info: Programming $(basename $@).flash; \
+		if [ -z "$($(basename $@)_EPCS_FLAGS)" ]; \
+		then \
+			$(ECHO) $(FLASHPROG) $(SOPC_SYSID_FLAG) --base=$($(basename $@)_START) $(basename $@).flash; \
+			$(FLASHPROG) $(DOWNLOAD_CABLE_FLAG) $(SOPC_SYSID_FLAG) --base=$($(basename $@)_START) $(basename $@).flash; \
+		else \
+			$(ECHO) $(FLASHPROG) $(SOPC_SYSID_FLAG) --epcs --base=$($(basename $@)_START) $(basename $@).flash; \
+			$(FLASHPROG) $(DOWNLOAD_CABLE_FLAG) $(SOPC_SYSID_FLAG) --epcs --base=$($(basename $@)_START) $(basename $@).flash; \
+		fi \
+	fi
+
+
+# Rules for simulating with an HDL Simulator [QSYS only]
+ifeq ($(QSYS),1)
+IP_MAKE_SIMSCRIPT := ip-make-simscript
+
+ifeq ($(VSIM),)
+VSIM_EXE := "$(if $(VSIM_DIR),$(VSIM_DIR)/,)vsim"
+ifeq ($(ENABLE_VSIM_GUI),1)
+VSIM := $(VSIM_EXE) -gui
+else
+VSIM := $(VSIM_EXE) -c
+endif # ENABLE_VSIM_GUI == 1
+endif # VSIM not set
+
+ifeq ($(SPD),)
+ifneq ($(ABS_QUARTUS_PROJECT_DIR),)
+ifneq ($(SOPC_NAME),)
+SPD := $(ABS_QUARTUS_PROJECT_DIR)/$(SOPC_NAME)_tb.spd
+endif # SOPC_NAME set
+endif # ABS_QUARTUS_PROJECT_DIR set
+endif # SPD == empty string
+
+ifeq ($(MSIM_SCRIPT),)
+SIM_SCRIPT_DIR := $(RUNTIME_ROOT_DIR)/sim
+MSIM_SCRIPT := $(SIM_SCRIPT_DIR)/mentor/msim_setup.tcl
+endif # MSIM_SCRIPT == empty string
+
+ifeq ($(MAKE_VERSION),3.81)
+ABS_MEM_INIT_DESCRIPTOR_FILE := $(abspath $(MEM_INIT_DESCRIPTOR_FILE))
+else
+ABS_MEM_INIT_DESCRIPTOR_FILE := $(call adjust-path-mixed,$(shell pwd))/$(MEM_INIT_DESCRIPTOR_FILE)
+endif
+
+$(MSIM_SCRIPT): $(SPD) $(MEM_INIT_DESCRIPTOR_FILE)
+ifeq ($(SPD),)
+	$(error No SPD file specified. Ensure QUARTUS_PROJECT_DIR variable is set)
+endif
+	@$(MKDIR) $(SIM_SCRIPT_DIR)
+	$(IP_MAKE_SIMSCRIPT) --spd=$(SPD) --spd=$(MEM_INIT_DESCRIPTOR_FILE) --output-directory=$(SIM_SCRIPT_DIR)
+
+VSIM_COMMAND = \
+	cd $(dir $(MSIM_SCRIPT)) && \
+	$(VSIM) -do "do $(notdir $(MSIM_SCRIPT)); ld; $(if $(VSIM_RUN_TIME),run ${VSIM_RUN_TIME};quit;)"
+
+.PHONY: sim
+sim: $(MSIM_SCRIPT) mem_init_generate
+ifeq ($(MSIM_SCRIPT),)
+	$(error MSIM_SCRIPT not set)
+endif
+	$(VSIM_COMMAND)
+
+endif # QSYS == 1
+
+
+#------------------------------------------------------------------------------
+#                         ELF TARGET RULE
+#------------------------------------------------------------------------------
+# Rule for constructing the executable elf file.
+$(ELF) : $(APP_OBJS) $(LINKER_SCRIPT) $(APP_LDDEPS)
+	@$(ECHO) Info: Linking $@
+	$(LD) $(APP_LDFLAGS) $(APP_CFLAGS) -o $@ $(filter-out $(CRT0),$(APP_OBJS)) $(APP_LIBS) $(APP_BSP_DEP_LIBS)
+ifneq ($(DISABLE_ELFPATCH),1)
+	$(ELFPATCH) $@ $(ELF_PATCH_FLAG)
+endif
+ifneq ($(DISABLE_STACKREPORT),1)
+	@bash -c "$(STACKREPORT) $@"
+endif
+
+$(OBJDUMP_NAME) : $(ELF)
+	@$(ECHO) Info: Creating $@
+	$(OBJDUMP) $(OBJDUMP_FLAGS) $< >$@
+
+# Rule for printing the name of the elf file
+.PHONY: print-elf-name
+print-elf-name:
+	@$(ECHO) $(ELF)
+
+

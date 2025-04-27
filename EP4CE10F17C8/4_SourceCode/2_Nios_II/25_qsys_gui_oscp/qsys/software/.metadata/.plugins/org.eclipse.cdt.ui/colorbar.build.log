@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project colorbar ****
+
+make all 
+Info: Building D:/lcd_all_colorbar/qsys/software/colorbar_bsp/
+make --no-print-directory -C D:/lcd_all_colorbar/qsys/software/colorbar_bsp/
+[BSP build complete]
+[colorbar build complete]
+
+**** Build Finished ****

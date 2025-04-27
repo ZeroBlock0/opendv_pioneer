@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project qsys_touch ****
+
+make all 
+Info: Building ../qsys_touch_bsp/
+make --no-print-directory -C ../qsys_touch_bsp/
+[BSP build complete]
+[qsys_touch build complete]
+
+**** Build Finished ****

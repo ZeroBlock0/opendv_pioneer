@@ -1,0 +1,497 @@
+Analysis & Synthesis report for lcd_rgb_colorbar
+Mon Sep 21 09:38:53 2020
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: lcd_display:u_lcd_display
+ 13. Parameter Settings for User Entity Instance: lcd_driver:u_lcd_driver
+ 14. Parameter Settings for Inferred Entity Instance: lcd_display:u_lcd_display|lpm_divide:Div0
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Sep 21 09:38:53 2020       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; lcd_rgb_colorbar                            ;
+; Top-level Entity Name              ; lcd_rgb_colorbar                            ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 365                                         ;
+;     Total combinational functions  ; 361                                         ;
+;     Dedicated logic registers      ; 49                                          ;
+; Total registers                    ; 49                                          ;
+; Total pins                         ; 24                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE10F17C8       ;                    ;
+; Top-level entity name                                                      ; lcd_rgb_colorbar   ; lcd_rgb_colorbar   ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                    ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
+; ../rtl/lcd_rgb_colorbar.v        ; yes             ; User Verilog HDL File        ; F:/gong_cheng_1/lcd_rgb_colorbar/rtl/lcd_rgb_colorbar.v         ;         ;
+; ../rtl/clk_div.v                 ; yes             ; User Verilog HDL File        ; F:/gong_cheng_1/lcd_rgb_colorbar/rtl/clk_div.v                  ;         ;
+; ../rtl/rd_id.v                   ; yes             ; User Verilog HDL File        ; F:/gong_cheng_1/lcd_rgb_colorbar/rtl/rd_id.v                    ;         ;
+; ../rtl/lcd_driver.v              ; yes             ; User Verilog HDL File        ; F:/gong_cheng_1/lcd_rgb_colorbar/rtl/lcd_driver.v               ;         ;
+; ../rtl/lcd_display.v             ; yes             ; User Verilog HDL File        ; F:/gong_cheng_1/lcd_rgb_colorbar/rtl/lcd_display.v              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; e:/quartus/libraries/megafunctions/lpm_divide.tdf               ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; e:/quartus/libraries/megafunctions/abs_divider.inc              ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; e:/quartus/libraries/megafunctions/sign_div_unsign.inc          ;         ;
+; aglobal131.inc                   ; yes             ; Megafunction                 ; e:/quartus/libraries/megafunctions/aglobal131.inc               ;         ;
+; db/lpm_divide_sim.tdf            ; yes             ; Auto-Generated Megafunction  ; F:/gong_cheng_1/lcd_rgb_colorbar/par/db/lpm_divide_sim.tdf      ;         ;
+; db/sign_div_unsign_klh.tdf       ; yes             ; Auto-Generated Megafunction  ; F:/gong_cheng_1/lcd_rgb_colorbar/par/db/sign_div_unsign_klh.tdf ;         ;
+; db/alt_u_div_s6f.tdf             ; yes             ; Auto-Generated Megafunction  ; F:/gong_cheng_1/lcd_rgb_colorbar/par/db/alt_u_div_s6f.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; F:/gong_cheng_1/lcd_rgb_colorbar/par/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; F:/gong_cheng_1/lcd_rgb_colorbar/par/db/add_sub_8pc.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 365             ;
+;                                             ;                 ;
+; Total combinational functions               ; 361             ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 45              ;
+;     -- 3 input functions                    ; 163             ;
+;     -- <=2 input functions                  ; 153             ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 152             ;
+;     -- arithmetic mode                      ; 209             ;
+;                                             ;                 ;
+; Total registers                             ; 49              ;
+;     -- Dedicated logic registers            ; 49              ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 24              ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+; Maximum fan-out node                        ; sys_rst_n~input ;
+; Maximum fan-out                             ; 42              ;
+; Total fan-out                               ; 1195            ;
+; Average fan-out                             ; 2.52            ;
++---------------------------------------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                         ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |lcd_rgb_colorbar                         ; 361 (0)           ; 49 (0)       ; 0           ; 0            ; 0       ; 0         ; 24   ; 0            ; |lcd_rgb_colorbar                                                                                                                           ; work         ;
+;    |clk_div:u_clk_div|                    ; 5 (5)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|clk_div:u_clk_div                                                                                                         ; work         ;
+;    |lcd_display:u_lcd_display|            ; 131 (54)          ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|lcd_display:u_lcd_display                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 77 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|lcd_display:u_lcd_display|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_sim:auto_generated|  ; 77 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|lcd_display:u_lcd_display|lpm_divide:Div0|lpm_divide_sim:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_klh:divider| ; 77 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|lcd_display:u_lcd_display|lpm_divide:Div0|lpm_divide_sim:auto_generated|sign_div_unsign_klh:divider                       ; work         ;
+;                |alt_u_div_s6f:divider|    ; 77 (77)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|lcd_display:u_lcd_display|lpm_divide:Div0|lpm_divide_sim:auto_generated|sign_div_unsign_klh:divider|alt_u_div_s6f:divider ; work         ;
+;    |lcd_driver:u_lcd_driver|              ; 215 (215)         ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|lcd_driver:u_lcd_driver                                                                                                   ; work         ;
+;    |rd_id:u_rd_id|                        ; 10 (10)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lcd_rgb_colorbar|rd_id:u_rd_id                                                                                                             ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                  ;
++----------------------------------------------+------------------------------------------------------+
+; Register name                                ; Reason for Removal                                   ;
++----------------------------------------------+------------------------------------------------------+
+; lcd_driver:u_lcd_driver|h_back[0,5,8..10]    ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|h_disp[0..4]         ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|h_total[1,4]         ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|v_sync[2,4..10]      ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|v_sync[1]            ; Stuck at VCC due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|v_back[6..10]        ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|v_disp[0..2,10]      ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|v_total[7,10]        ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|h_sync[6,8..10]      ; Stuck at GND due to stuck port data_in               ;
+; rd_id:u_rd_id|lcd_id[0,5,10,11,15]           ; Stuck at GND due to stuck port data_in               ;
+; lcd_driver:u_lcd_driver|h_sync[2]            ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|h_back[2,7]          ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|h_total[6]           ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|v_back[2,4]          ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|v_disp[3]            ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|v_total[6]           ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|h_disp[8]            ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|v_disp[8]            ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|v_total[2]           ; Merged with lcd_driver:u_lcd_driver|h_sync[4]        ;
+; lcd_driver:u_lcd_driver|v_back[1]            ; Merged with lcd_driver:u_lcd_driver|h_sync[3]        ;
+; lcd_driver:u_lcd_driver|v_total[8]           ; Merged with lcd_driver:u_lcd_driver|h_sync[3]        ;
+; lcd_driver:u_lcd_driver|v_disp[6]            ; Merged with lcd_driver:u_lcd_driver|h_sync[3]        ;
+; lcd_driver:u_lcd_driver|h_back[3]            ; Merged with lcd_driver:u_lcd_driver|h_sync[3]        ;
+; lcd_driver:u_lcd_driver|h_total[7]           ; Merged with lcd_driver:u_lcd_driver|h_sync[1]        ;
+; lcd_driver:u_lcd_driver|v_back[3]            ; Merged with lcd_driver:u_lcd_driver|h_sync[1]        ;
+; lcd_driver:u_lcd_driver|v_total[3]           ; Merged with lcd_driver:u_lcd_driver|h_sync[1]        ;
+; lcd_driver:u_lcd_driver|h_disp[6,7]          ; Merged with lcd_driver:u_lcd_driver|h_sync[0]        ;
+; lcd_driver:u_lcd_driver|h_back[1]            ; Merged with lcd_driver:u_lcd_driver|h_sync[0]        ;
+; lcd_driver:u_lcd_driver|h_total[0,2,3,9]     ; Merged with lcd_driver:u_lcd_driver|h_sync[0]        ;
+; lcd_driver:u_lcd_driver|v_sync[3]            ; Merged with lcd_driver:u_lcd_driver|h_sync[0]        ;
+; lcd_driver:u_lcd_driver|h_sync[5]            ; Merged with lcd_driver:u_lcd_driver|h_sync[0]        ;
+; lcd_driver:u_lcd_driver|h_total[10]          ; Merged with lcd_driver:u_lcd_driver|h_sync[0]        ;
+; lcd_driver:u_lcd_driver|v_total[0,9]         ; Merged with lcd_driver:u_lcd_driver|h_sync[0]        ;
+; lcd_driver:u_lcd_driver|v_disp[4,5]          ; Merged with lcd_driver:u_lcd_driver|h_back[6]        ;
+; lcd_driver:u_lcd_driver|h_back[4]            ; Merged with lcd_driver:u_lcd_driver|h_back[6]        ;
+; lcd_driver:u_lcd_driver|h_total[5]           ; Merged with lcd_driver:u_lcd_driver|h_back[6]        ;
+; lcd_driver:u_lcd_driver|v_disp[9]            ; Merged with lcd_driver:u_lcd_driver|h_disp[10]       ;
+; lcd_driver:u_lcd_driver|h_total[8]           ; Merged with lcd_driver:u_lcd_driver|h_disp[10]       ;
+; lcd_driver:u_lcd_driver|v_sync[0]            ; Merged with lcd_driver:u_lcd_driver|h_disp[10]       ;
+; lcd_driver:u_lcd_driver|v_total[5]           ; Merged with lcd_driver:u_lcd_driver|h_disp[10]       ;
+; lcd_driver:u_lcd_driver|h_disp[5]            ; Merged with lcd_driver:u_lcd_driver|h_disp[10]       ;
+; lcd_driver:u_lcd_driver|v_disp[7]            ; Merged with lcd_driver:u_lcd_driver|h_disp[9]        ;
+; lcd_driver:u_lcd_driver|v_back[0,5]          ; Merged with lcd_driver:u_lcd_driver|h_disp[9]        ;
+; lcd_driver:u_lcd_driver|h_sync[7]            ; Merged with lcd_driver:u_lcd_driver|h_disp[9]        ;
+; lcd_driver:u_lcd_driver|v_total[1,4]         ; Merged with lcd_driver:u_lcd_driver|h_disp[9]        ;
+; lcd_display:u_lcd_display|pixel_data[1..4]   ; Merged with lcd_display:u_lcd_display|pixel_data[0]  ;
+; lcd_display:u_lcd_display|pixel_data[11..14] ; Merged with lcd_display:u_lcd_display|pixel_data[15] ;
+; lcd_display:u_lcd_display|pixel_data[5..9]   ; Merged with lcd_display:u_lcd_display|pixel_data[10] ;
+; Total Number of Removed Registers = 99       ;                                                      ;
++----------------------------------------------+------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                            ;
++------------------------------------+---------------------------+-----------------------------------------------------------------------+
+; Register name                      ; Reason for Removal        ; Registers Removed due to This Register                                ;
++------------------------------------+---------------------------+-----------------------------------------------------------------------+
+; lcd_driver:u_lcd_driver|h_back[10] ; Stuck at GND              ; lcd_driver:u_lcd_driver|h_back[9], lcd_driver:u_lcd_driver|h_back[8], ;
+;                                    ; due to stuck port data_in ; lcd_driver:u_lcd_driver|h_back[5]                                     ;
++------------------------------------+---------------------------+-----------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 49    ;
+; Number of registers using Synchronous Clear  ; 22    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 42    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 22    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |lcd_rgb_colorbar|lcd_display:u_lcd_display|pixel_data[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd_display:u_lcd_display ;
++----------------+------------------+------------------------------------+
+; Parameter Name ; Value            ; Type                               ;
++----------------+------------------+------------------------------------+
+; WHITE          ; 1111111111111111 ; Unsigned Binary                    ;
+; BLACK          ; 0000000000000000 ; Unsigned Binary                    ;
+; RED            ; 1111100000000000 ; Unsigned Binary                    ;
+; GREEN          ; 0000011111100000 ; Unsigned Binary                    ;
+; BLUE           ; 0000000000011111 ; Unsigned Binary                    ;
++----------------+------------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lcd_driver:u_lcd_driver ;
++----------------+-------------+---------------------------------------+
+; Parameter Name ; Value       ; Type                                  ;
++----------------+-------------+---------------------------------------+
+; H_SYNC_4342    ; 00000101001 ; Unsigned Binary                       ;
+; H_BACK_4342    ; 00000000010 ; Unsigned Binary                       ;
+; H_DISP_4342    ; 00111100000 ; Unsigned Binary                       ;
+; H_FRONT_4342   ; 00000000010 ; Unsigned Binary                       ;
+; H_TOTAL_4342   ; 01000001101 ; Unsigned Binary                       ;
+; V_SYNC_4342    ; 00000001010 ; Unsigned Binary                       ;
+; V_BACK_4342    ; 00000000010 ; Unsigned Binary                       ;
+; V_DISP_4342    ; 00100010000 ; Unsigned Binary                       ;
+; V_FRONT_4342   ; 00000000010 ; Unsigned Binary                       ;
+; V_TOTAL_4342   ; 00100011110 ; Unsigned Binary                       ;
+; H_SYNC_7084    ; 00010000000 ; Unsigned Binary                       ;
+; H_BACK_7084    ; 00001011000 ; Unsigned Binary                       ;
+; H_DISP_7084    ; 01100100000 ; Unsigned Binary                       ;
+; H_FRONT_7084   ; 00000101000 ; Unsigned Binary                       ;
+; H_TOTAL_7084   ; 10000100000 ; Unsigned Binary                       ;
+; V_SYNC_7084    ; 00000000010 ; Unsigned Binary                       ;
+; V_BACK_7084    ; 00000100001 ; Unsigned Binary                       ;
+; V_DISP_7084    ; 00111100000 ; Unsigned Binary                       ;
+; V_FRONT_7084   ; 00000001010 ; Unsigned Binary                       ;
+; V_TOTAL_7084   ; 01000001101 ; Unsigned Binary                       ;
+; H_SYNC_7016    ; 00000010100 ; Unsigned Binary                       ;
+; H_BACK_7016    ; 00010001100 ; Unsigned Binary                       ;
+; H_DISP_7016    ; 10000000000 ; Unsigned Binary                       ;
+; H_FRONT_7016   ; 00010100000 ; Unsigned Binary                       ;
+; H_TOTAL_7016   ; 10101000000 ; Unsigned Binary                       ;
+; V_SYNC_7016    ; 00000000011 ; Unsigned Binary                       ;
+; V_BACK_7016    ; 00000010100 ; Unsigned Binary                       ;
+; V_DISP_7016    ; 01001011000 ; Unsigned Binary                       ;
+; V_FRONT_7016   ; 00000001100 ; Unsigned Binary                       ;
+; V_TOTAL_7016   ; 01001111011 ; Unsigned Binary                       ;
+; H_SYNC_1018    ; 00000001010 ; Unsigned Binary                       ;
+; H_BACK_1018    ; 00001010000 ; Unsigned Binary                       ;
+; H_DISP_1018    ; 10100000000 ; Unsigned Binary                       ;
+; H_FRONT_1018   ; 00001000110 ; Unsigned Binary                       ;
+; H_TOTAL_1018   ; 10110100000 ; Unsigned Binary                       ;
+; V_SYNC_1018    ; 00000000011 ; Unsigned Binary                       ;
+; V_BACK_1018    ; 00000001010 ; Unsigned Binary                       ;
+; V_DISP_1018    ; 01100100000 ; Unsigned Binary                       ;
+; V_FRONT_1018   ; 00000001010 ; Unsigned Binary                       ;
+; V_TOTAL_1018   ; 01100110111 ; Unsigned Binary                       ;
+; H_SYNC_4384    ; 00010000000 ; Unsigned Binary                       ;
+; H_BACK_4384    ; 00001011000 ; Unsigned Binary                       ;
+; H_DISP_4384    ; 01100100000 ; Unsigned Binary                       ;
+; H_FRONT_4384   ; 00000101000 ; Unsigned Binary                       ;
+; H_TOTAL_4384   ; 10000100000 ; Unsigned Binary                       ;
+; V_SYNC_4384    ; 00000000010 ; Unsigned Binary                       ;
+; V_BACK_4384    ; 00000100001 ; Unsigned Binary                       ;
+; V_DISP_4384    ; 00111100000 ; Unsigned Binary                       ;
+; V_FRONT_4384   ; 00000001010 ; Unsigned Binary                       ;
+; V_TOTAL_4384   ; 01000001101 ; Unsigned Binary                       ;
++----------------+-------------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lcd_display:u_lcd_display|lpm_divide:Div0 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 11             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_sim ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Mon Sep 21 09:38:50 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lcd_rgb_colorbar -c lcd_rgb_colorbar
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /gong_cheng_1/lcd_rgb_colorbar/rtl/lcd_rgb_colorbar.v
+    Info (12023): Found entity 1: lcd_rgb_colorbar
+Info (12021): Found 1 design units, including 1 entities, in source file /gong_cheng_1/lcd_rgb_colorbar/rtl/clk_div.v
+    Info (12023): Found entity 1: clk_div
+Info (12021): Found 1 design units, including 1 entities, in source file /gong_cheng_1/lcd_rgb_colorbar/rtl/rd_id.v
+    Info (12023): Found entity 1: rd_id
+Info (12021): Found 1 design units, including 1 entities, in source file /gong_cheng_1/lcd_rgb_colorbar/rtl/lcd_driver.v
+    Info (12023): Found entity 1: lcd_driver
+Info (12021): Found 1 design units, including 1 entities, in source file /gong_cheng_1/lcd_rgb_colorbar/rtl/lcd_display.v
+    Info (12023): Found entity 1: lcd_display
+Info (12127): Elaborating entity "lcd_rgb_colorbar" for the top level hierarchy
+Info (12128): Elaborating entity "rd_id" for hierarchy "rd_id:u_rd_id"
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:u_clk_div"
+Info (12128): Elaborating entity "lcd_display" for hierarchy "lcd_display:u_lcd_display"
+Info (12128): Elaborating entity "lcd_driver" for hierarchy "lcd_driver:u_lcd_driver"
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "lcd_display:u_lcd_display|Div0"
+Info (12130): Elaborated megafunction instantiation "lcd_display:u_lcd_display|lpm_divide:Div0"
+Info (12133): Instantiated megafunction "lcd_display:u_lcd_display|lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "11"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_sim.tdf
+    Info (12023): Found entity 1: lpm_divide_sim
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_klh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_klh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_s6f.tdf
+    Info (12023): Found entity 1: alt_u_div_s6f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "lcd_hs" is stuck at VCC
+    Warning (13410): Pin "lcd_vs" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 394 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21060): Implemented 16 bidirectional pins
+    Info (21061): Implemented 370 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4663 megabytes
+    Info: Processing ended: Mon Sep 21 09:38:53 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

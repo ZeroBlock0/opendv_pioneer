@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jul 24 10:52:57 2018
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : Pio_irq
+Top-level Entity Name : Pio_irq
+Family : Cyclone IV E
+Total logic elements : 3,655
+    Total combinational functions : 3,145
+    Dedicated logic registers : 2,068
+Total registers : 2068
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 227,008
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 1

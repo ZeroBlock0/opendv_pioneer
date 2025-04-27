@@ -1,0 +1,140 @@
+/******************************************************************************
+* Copyright (c) 2006 Altera Corporation, San Jose, California, USA.           *
+* All rights reserved. All use of this software and documentation is          *
+* subject to the License Agreement located at the end of this file below.     *
+*******************************************************************************
+* Date - October 24, 2006                                                     *
+* Module - simple_socket_server.c                                             *
+*                                                                             *
+******************************************************************************/
+ 
+/******************************************************************************
+ * Simple Socket Server (SSS) example. 
+ * 
+ * This example demonstrates the use of MicroC/OS-II running on NIOS II.       
+ * In addition it is to serve as a good starting point for designs using       
+ * MicroC/OS-II and Altera NicheStack TCP/IP Stack - NIOS II Edition.                                          
+ *                                                                             
+ * -Known Issues                                                             
+ *     None.   
+ *      
+ * Please refer to the Altera NicheStack Tutorial documentation for details on this 
+ * software example, as well as details on how to configure the NicheStack TCP/IP 
+ * networking stack and MicroC/OS-II Real-Time Operating System.  
+ */
+ 
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h> 
+
+/* MicroC/OS-II definitions */
+#include "includes.h"
+
+/* Simple Socket Server definitions */
+#include "simple_socket_server.h"                                                                    
+#include "alt_error_handler.h"
+
+/* Nichestack definitions */
+#include "ipport.h"
+#include "tcpport.h"
+ 
+/*
+ * Global handles (pointers) to our MicroC/OS-II resources. All of resources 
+ * beginning with "SSS" are declared and created in this file.
+ */
+
+/*
+ * sss_reset_connection()
+ * 
+ * This routine will, when called, reset our SSSConn struct's members 
+ * to a reliable initial state. Note that we set our socket (FD) number to
+ * -1 to easily determine whether the connection is in a "reset, ready to go" 
+ * state.
+ */
+void sss_reset_connection(SSSConn* conn)
+{
+  memset(conn, 0, sizeof(SSSConn));
+
+  conn->fd = -1;
+  conn->state = READY;
+  conn->rx_wr_pos = conn->rx_buffer;
+  conn->rx_rd_pos = conn->rx_buffer;
+  return;
+}
+
+/*
+ * sss_handle_msg()
+ * 
+ * This routine is called when ever our listening socket has an incoming
+ * connection request. Since this example has only data transfer socket, 
+ * we just look at it to see whether its in use... if so, we accept the 
+ * connection request and call the telent_send_menu() routine to transmit
+ * instructions to the user. Otherwise, the connection is already in use; 
+ * reject the incoming request by immediately closing the new socket.
+ * 
+ * We'll also print out the client's IP address.
+ */
+void sss_handle_msg(SSSConn* conn)
+{
+  int                 len, rx_code;
+  struct sockaddr_in  incoming_addr;
+  
+  while(1){
+	  memset(conn->rx_buffer, 0, SSS_RX_BUF_SIZE);
+	  len = sizeof(incoming_addr);
+	  rx_code = recvfrom(conn->fd, conn->rx_buffer,  SSS_RX_BUF_SIZE, 0,
+			  	  (struct sockaddr *)&incoming_addr ,&len);
+	  if(rx_code == -1){
+		  printf("recieve data fail!\n");
+		  return;
+	  }
+	  conn->rx_rd_pos = conn->rx_buffer;
+	  conn->rx_wr_pos = conn->rx_buffer;
+      printf("client ip : %s\n", inet_ntoa(incoming_addr.sin_addr));
+      printf("client msg: %s\n",conn->rx_buffer);  //打印client发过来的信息
+	  //发送信息给client
+      sendto(conn->fd, conn->rx_buffer,  strlen(conn->rx_wr_pos), 0, (struct sockaddr *)&incoming_addr ,len);
+      printf("client msg: %s\n",strlen(conn->rx_wr_pos));
+  }
+}
+
+/*
+ * SSSSimpleSocketServerTask()
+ * 
+ * This MicroC/OS-II thread spins forever after first establishing a listening
+ * socket for our sss connection, binding it, and listening. Once setup,
+ * it perpetually waits for incoming data to either the listening socket, or
+ * (if a connection is active), the sss data socket. When data arrives, 
+ * the approrpriate routine is called to either accept/reject a connection 
+ * request, or process incoming data.
+ */
+void SSSSimpleSocketServerTask()
+{
+  int socketfd, max_socket;
+  struct sockaddr_in addr;
+
+  static SSSConn conn;
+
+  
+  if ((socketfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
+  {
+    alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,"[sss_task] Socket creation failed");
+  }
+  
+  addr.sin_family = AF_INET;
+  addr.sin_port = htons(SSS_PORT);
+  addr.sin_addr.s_addr = INADDR_ANY;
+  
+  if ((bind(socketfd,(struct sockaddr *)&addr,sizeof(addr))) < 0)
+  {
+    alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,"[sss_task] Bind failed");
+  }
+    
+  sss_reset_connection(&conn);
+  printf("[sss_task] Simple Socket Server listening on port %d\n", SSS_PORT);
+
+  conn.fd = socketfd;
+
+	  sss_handle_msg(&conn);
+	  printf("rdata fail!\n");
+}

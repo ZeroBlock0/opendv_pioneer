@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project qsys_sdram_rw ****
+
+make all 
+Info: Building F:/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw_bsp/
+make --no-print-directory -C F:/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw_bsp/
+[BSP build complete]
+[qsys_sdram_rw build complete]
+
+**** Build Finished ****

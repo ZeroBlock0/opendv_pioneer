@@ -1,0 +1,1141 @@
+Archive member included because of file (symbol)
+
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+                              obj/default/hello_world.o (memset)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+                              obj/default/hello_world.o (printf)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+                              obj/default/hello_world.o (putchar)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                              obj/default/hello_world.o (puts)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o) (strlen)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o) (___vfprintf_internal_r)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o) (__sfvwrite_small_dev)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o) (_impure_ptr)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o) (_putc_r)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o) (_write_r)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o) (errno)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o) (__udivsi3)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+                              obj/default/hello_world.o (alt_dcache_flush)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                              obj/default/hello_world.o (alt_flash_open_dev)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o (alt_main)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+                              d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o) (write)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_epcs_flash_init)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o) (epcs_sector_erase)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o) (close)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o) (alt_errno)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o) (_exit)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o) (alt_find_dev)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_ic_isr_register)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (_alt_tick_rate)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o) (alt_avalon_spi_command)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o) (memcmp)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                              D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o) (memcpy)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+onchip_ram_BEFORE_EXCEPTION 0x00008000         0x00000020
+onchip_ram       0x00008020         0x000077e0
+reset            0x00011000         0x00000020
+epcs_flash       0x00011020         0x000007e0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world.o
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libstdc++.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libm.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+START GROUP
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+LOAD D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a
+END GROUP
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+                0x00008000                __alt_mem_onchip_ram = 0x8000
+                0x00011000                __alt_mem_epcs_flash = 0x11000
+
+.entry          0x00011000        0x0
+ *(.entry)
+ .entry         0x00011000        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+                0x00011000                __reset
+
+.exceptions     0x00008020      0x198
+                0x00008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00008020        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00008020                alt_irq_entry
+ .exceptions.entry.label
+                0x00008020        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00008020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00008020       0x54 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00008074       0x10 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00008084        0x4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00008088        0x4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0000808c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0000808c        0x8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00008094        0x4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00008098        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00008098        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00008098       0x54 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000080ec       0xcc D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000080ec                alt_irq_handler
+                0x000081b8                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x000081b8     0x3fb8
+                0x000081b8                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000081b8       0x48 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+                0x000081b8                _start
+ .text          0x00008200      0x514 obj/default/hello_world.o
+                0x00008200                main
+ .text          0x00008714       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+                0x00008714                memset
+ .text          0x00008734       0x88 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+                0x00008734                _printf_r
+                0x00008770                printf
+ .text          0x000087bc       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+                0x000087bc                _putchar_r
+                0x000087c4                putchar
+ .text          0x000087e0       0x94 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                0x000087e0                _puts_r
+                0x00008860                puts
+ .text          0x00008874       0x28 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x00008874                strlen
+ .text          0x0000889c      0x6e8 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+                0x0000889c                ___vfprintf_internal_r
+                0x00008f60                __vfprintf_internal
+ .text          0x00008f84       0xe0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x00008f84                __sfvwrite_small_dev
+ .text          0x00009064        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .text          0x00009064       0xbc d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+                0x00009064                putc
+                0x000090c0                _putc_r
+ .text          0x00009120       0x6c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                0x00009120                _write_r
+ .text          0x0000918c        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .text          0x0000918c      0x130 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+                0x00009200                __divsi3
+                0x00009250                __modsi3
+                0x000092ac                __udivsi3
+                0x000092b4                __umodsi3
+ .text          0x000092bc       0x74 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+                0x000092bc                alt_dcache_flush
+ .text          0x00009330       0xb8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                0x00009330                alt_flash_open_dev
+                0x00009398                alt_flash_close_dev
+ .text          0x000093e8       0x68 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+                0x000093e8                alt_main
+ .text          0x00009450      0x13c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+                0x000094a0                write
+ .text          0x0000958c       0xc0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000095c4                alt_irq_init
+                0x000095f8                alt_sys_init
+ .text          0x0000964c      0x990 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+                0x00009684                alt_epcs_flash_init
+                0x00009a4c                alt_epcs_flash_write
+                0x00009cac                alt_epcs_flash_get_info
+                0x00009dcc                alt_epcs_flash_erase_block
+                0x00009e40                alt_epcs_flash_write_block
+                0x00009f44                alt_epcs_flash_read
+ .text          0x00009fdc      0x164 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00009fdc                altera_avalon_jtag_uart_read_fd
+                0x0000a03c                altera_avalon_jtag_uart_write_fd
+                0x0000a09c                altera_avalon_jtag_uart_close_fd
+                0x0000a0ec                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x0000a140      0x3d0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x0000a140                altera_avalon_jtag_uart_init
+                0x0000a4a8                altera_avalon_jtag_uart_close
+ .text          0x0000a510       0xf4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x0000a510                altera_avalon_jtag_uart_ioctl
+ .text          0x0000a604      0x218 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x0000a604                altera_avalon_jtag_uart_read
+ .text          0x0000a81c      0x224 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000a81c                altera_avalon_jtag_uart_write
+ .text          0x0000aa40      0x624 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+                0x0000aa40                epcs_read_status_register
+                0x0000ab0c                epcs_sector_erase
+                0x0000ac04                epcs_read_buffer
+                0x0000acf8                epcs_write_enable
+                0x0000ad48                epcs_write_status_register
+                0x0000adb0                epcs_write_buffer
+                0x0000aecc                epcs_read_electronic_signature
+                0x0000af34                epcs_read_device_id
+                0x0000afb4                epcs_enter_4_bytes_mode
+                0x0000b00c                epcs_exit_4_bytes_mode
+ .text          0x0000b064      0x140 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                0x0000b064                alt_alarm_start
+ .text          0x0000b1a4      0x118 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+                0x0000b1f4                close
+ .text          0x0000b2bc       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x0000b2e8       0xf0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x0000b338                alt_dev_llist_insert
+ .text          0x0000b3d8        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x0000b3d8       0x3c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+                0x0000b3d8                _exit
+ .text          0x0000b414       0x90 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x0000b414                alt_find_dev
+ .text          0x0000b4a4      0x1d8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+                0x0000b4a4                alt_ic_isr_register
+                0x0000b4f4                alt_ic_irq_enable
+                0x0000b590                alt_ic_irq_disable
+                0x0000b630                alt_ic_irq_enabled
+ .text          0x0000b67c       0xf0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x0000b67c                alt_iic_isr_register
+ .text          0x0000b76c      0x138 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x0000b82c                alt_io_redirect
+ .text          0x0000b8a4        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x0000b8a4        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x0000b8a4        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000b8a4      0x270 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+                0x0000b9c0                open
+ .text          0x0000bb14       0x60 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0000bb14                alt_release_fd
+ .text          0x0000bb74      0x19c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000bb74                alt_alarm_stop
+                0x0000bc0c                alt_tick
+ .text          0x0000bd10       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x0000bd10                altera_nios2_qsys_irq_init
+ .text          0x0000bd30      0x208 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                0x0000bd30                alt_avalon_spi_command
+ .text          0x0000bf38        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000bf38      0x114 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x0000bf38                alt_find_file
+ .text          0x0000c04c       0xb4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x0000c04c                alt_get_fd
+ .text          0x0000c100       0x48 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                0x0000c100                memcmp
+ .text          0x0000c148       0x28 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                0x0000c148                memcpy
+ *(.gnu.warning.*)
+ *(.fini)
+                0x0000c170                PROVIDE (__etext, ABSOLUTE (.))
+                0x0000c170                PROVIDE (_etext, ABSOLUTE (.))
+                0x0000c170                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x0000c170                . = ALIGN (0x4)
+                0x0000c170                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x0000c170                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x0000c170                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x0000c170                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x0000c170                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x0000c170                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x0000c170                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x0000c170                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x0000c170                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x0000c170                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x0000c170                . = ALIGN (0x4)
+
+.rodata         0x0000c170      0x1e4
+                0x0000c170                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x0000c170                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000c170      0x1a4 obj/default/hello_world.o
+ .rodata.str1.4
+                0x0000c314        0x4 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .rodata        0x0000c318       0x10 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x0000c328       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x0000c348        0xc D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x0000c354                . = ALIGN (0x4)
+                0x0000c354                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x0000c170                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x0000c354     0x13e4
+                0x0000c354                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000c354                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000c354        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+ .data          0x0000c354        0x0 obj/default/hello_world.o
+ .data          0x0000c354        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .data          0x0000c354        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .data          0x0000c354        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .data          0x0000c354        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .data          0x0000c354        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .data          0x0000c354        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .data          0x0000c354        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x0000c354       0xe0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .data          0x0000c434        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .data          0x0000c434        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .data          0x0000c434        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .data          0x0000c434        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .data          0x0000c434        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .data          0x0000c434        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .data          0x0000c434        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000c434        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .data          0x0000c434     0x1128 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .data          0x0000d55c        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x0000d55c      0x1a8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000d55c                alt_dev_null
+                0x0000d584                alt_fd_list
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x0000d704        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000d704        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .data          0x0000d704        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                0x00015704                _gp = ABSOLUTE ((. + 0x8000))
+                0x00015704                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x0000d704        0x8 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                0x0000d704                _global_impure_ptr
+                0x0000d708                _impure_ptr
+ .sdata         0x0000d70c        0x8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                0x0000d70c                alt_flash_dev_list
+ .sdata         0x0000d714       0x14 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000d714                alt_fs_list
+                0x0000d71c                alt_dev_list
+                0x0000d724                alt_max_fd
+ .sdata         0x0000d728        0x4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+                0x0000d728                alt_errno
+ .sdata         0x0000d72c        0x4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000d72c                alt_priority_mask
+ .sdata         0x0000d730        0x8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000d730                alt_alarm_list
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x0000d738                . = ALIGN (0x4)
+                0x0000d738                _edata = ABSOLUTE (.)
+                0x0000d738                PROVIDE (edata, ABSOLUTE (.))
+                0x0000d738                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000c354                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000d738      0x11c
+                0x0000d738                __bss_start = ABSOLUTE (.)
+                0x0000d738                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000d738                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000d738        0x4 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                0x0000d738                errno
+ .sbss          0x0000d73c        0xc D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000d73c                alt_argc
+                0x0000d740                alt_argv
+                0x0000d744                alt_envp
+ .sbss          0x0000d748        0x4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000d748                alt_irq_active
+ .sbss          0x0000d74c        0x8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000d74c                _alt_tick_rate
+                0x0000d750                _alt_nticks
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0000d754                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0000d754                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000d754        0x0 obj/default/hello_world.o
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x0000d754        0x0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .bss           0x0000d754        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+ *(COMMON)
+ COMMON         0x0000d754      0x100 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000d754                alt_irq
+                0x0000d854                . = ALIGN (0x4)
+                0x0000d854                __bss_end = ABSOLUTE (.)
+
+.onchip_ram     0x0000d854        0x0
+                0x0000d854                PROVIDE (_alt_partition_onchip_ram_start, ABSOLUTE (.))
+ *(.onchip_ram .onchip_ram. onchip_ram.*)
+                0x0000d854                . = ALIGN (0x4)
+                0x0000d854                PROVIDE (_alt_partition_onchip_ram_end, ABSOLUTE (.))
+                0x0000d854                _end = ABSOLUTE (.)
+                0x0000d854                end = ABSOLUTE (.)
+                0x0000d854                __alt_stack_base = ABSOLUTE (.)
+                0x0000d854                PROVIDE (_alt_partition_onchip_ram_load_addr, LOADADDR (.onchip_ram))
+
+.epcs_flash     0x00011020        0x0
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_start, ABSOLUTE (.))
+ *(.epcs_flash .epcs_flash. epcs_flash.*)
+                0x00011020                . = ALIGN (0x4)
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_end, ABSOLUTE (.))
+                0x00011020                PROVIDE (_alt_partition_epcs_flash_load_addr, LOADADDR (.epcs_flash))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/hello_world.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x628
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000020       0x20 obj/default/hello_world.o
+ .debug_aranges
+                0x00000040       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000060       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_aranges
+                0x00000080       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_aranges
+                0x000000a0       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_aranges
+                0x000000c0       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x000000e0       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_aranges
+                0x00000100       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_aranges
+                0x00000120       0x18 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x00000138       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_aranges
+                0x00000158       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_aranges
+                0x00000178       0x18 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x00000190       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x000001b0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .debug_aranges
+                0x000001d0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_aranges
+                0x000001f0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000210       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x00000230       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000250       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_aranges
+                0x00000270       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000290       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x000002b0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x000002d0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x000002f0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000310       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_aranges
+                0x00000330       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x00000350       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000370       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000390       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x000003b0       0x18 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x000003c8       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_aranges
+                0x000003e8       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x00000408       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000428       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000448       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000468       0x30 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000498       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x000004b8       0x18 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x000004d0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x000004f0       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x00000510       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x00000530       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000550       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_aranges
+                0x00000570       0x38 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x000005a8       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x000005c8       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x000005e8       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000608       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xae4e
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x6c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x0000006c      0x77a obj/default/hello_world.o
+ .debug_info    0x000007e6       0xd9 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .debug_info    0x000008bf      0x765 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_info    0x00001024      0x6d0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_info    0x000016f4      0x6f4 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_info    0x00001de8       0xc6 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x00001eae      0xc5d d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_info    0x00002b0b      0x6d9 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_info    0x000031e4      0x631 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x00003815      0x6ec d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_info    0x00003f01      0x6cb d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_info    0x000045cc       0x84 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00004650      0x289 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .debug_info    0x000048d9       0xda D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .debug_info    0x000049b3      0x3ce D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_info    0x00004d81      0x139 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00004eba      0x507 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x000053c1      0x821 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00005be2      0x8ae D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_info    0x00006490      0x58a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00006a1a      0x3d8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x00006df2      0x2a9 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0000709b      0x371 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000740c      0x36c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00007778      0x482 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_info    0x00007bfa      0x2e4 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x00007ede      0x350 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x0000822e      0x4e3 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00008711      0x1b9 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x000088ca       0xa3 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000896d       0xec D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_info    0x00008a59      0x30d D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x00008d66      0x364 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x000090ca      0x1f6 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x000092c0      0x4f0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x000097b0       0x71 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x00009821      0x190 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x000099b1       0x8a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00009a3b      0x3f0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x00009e2b      0x2dd D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x0000a108      0x2b1 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000a3b9       0x90 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x0000a449      0x18b D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_info    0x0000a5d4       0x77 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000a64b      0x30c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x0000a957      0x339 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x0000ac90       0xf1 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x0000ad81       0xcd d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_abbrev   0x00000000     0x346d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x14 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000014      0x16a obj/default/hello_world.o
+ .debug_abbrev  0x0000017e       0x8e d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .debug_abbrev  0x0000020c      0x1e2 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_abbrev  0x000003ee      0x1a6 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_abbrev  0x00000594      0x1d4 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_abbrev  0x00000768       0x7f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x000007e7      0x2db d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_abbrev  0x00000ac2      0x1a8 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_abbrev  0x00000c6a      0x13b d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x00000da5      0x19b d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_abbrev  0x00000f40      0x199 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_abbrev  0x000010d9       0x37 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x00001110      0x112 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x00001222       0x8c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .debug_abbrev  0x000012ae      0x11a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_abbrev  0x000013c8       0xba D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00001482      0x133 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x000015b5      0x17f D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00001734      0x1c9 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_abbrev  0x000018fd      0x118 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x00001a15      0x18f D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x00001ba4      0x102 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x00001ca6      0x19b D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00001e41      0x199 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00001fda      0x169 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_abbrev  0x00002143      0x162 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x000022a5      0x11f D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x000023c4       0xd9 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000249d      0x114 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x000025b1       0x5a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000260b       0xa6 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_abbrev  0x000026b1       0xf0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x000027a1      0x16a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x0000290b      0x169 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00002a74      0x114 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00002b88       0x12 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00002b9a      0x124 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00002cbe       0x40 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00002cfe      0x148 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00002e46       0xde D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00002f24      0x15a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x0000307e       0x42 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x000030c0       0x8a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_abbrev  0x0000314a       0x12 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x0000315c       0xf0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x0000324c      0x10d D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x00003359       0x7f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x000033d8       0x95 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_line     0x00000000     0x3b3f
+ *(.debug_line)
+ .debug_line    0x00000000       0x57 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000057      0x1fe obj/default/hello_world.o
+ .debug_line    0x00000255      0x17b d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .debug_line    0x000003d0      0x216 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_line    0x000005e6      0x1f9 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_line    0x000007df      0x20f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_line    0x000009ee      0x171 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x00000b5f      0x401 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_line    0x00000f60      0x222 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x00001182      0x169 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x000012eb      0x209 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_line    0x000014f4      0x209 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_line    0x000016fd       0x5d d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x0000175a       0xd3 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000182d       0x7e D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .debug_line    0x000018ab       0xc5 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_line    0x00001970       0x9e D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00001a0e      0x1f8 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x00001c06      0x189 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00001d8f      0x2af D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_line    0x0000203e      0x131 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x0000216f      0x199 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x00002308      0x129 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x00002431      0x174 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x000025a5      0x173 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00002718      0x118 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_line    0x00002830       0xfa D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x0000292a      0x186 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00002ab0      0x119 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00002bc9       0xd0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00002c99       0x51 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00002cea       0x71 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_line    0x00002d5b       0xb9 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x00002e14       0xed D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x00002f01       0xdb D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x00002fdc      0x154 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00003130       0x6b D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000319b       0xae D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00003249       0x50 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00003299      0x125 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x000033be       0xae D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000346c      0x102 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000356e       0x51 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x000035bf       0xb6 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_line    0x00003675       0xab D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00003720       0xd5 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x000037f5       0xd1 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x000038c6      0x17c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x00003a42       0xfd d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_frame    0x00000000      0xbf4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 obj/default/hello_world.o
+ .debug_frame   0x00000030       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .debug_frame   0x00000050       0x40 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_frame   0x00000090       0x30 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_frame   0x000000c0       0x3c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_frame   0x000000fc       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x0000011c       0x48 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_frame   0x00000164       0x30 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_frame   0x00000194       0x44 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_frame   0x000001d8       0x2c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_frame   0x00000204       0x70 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x00000274       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .debug_frame   0x000002a0       0x48 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_frame   0x000002e8       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000314       0x48 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_frame   0x0000035c       0x64 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x000003c0      0x128 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_frame   0x000004e8       0x80 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x00000568       0x80 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x000005e8       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x00000614       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000640       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x0000066c      0x160 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_frame   0x000007cc       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x000007f8       0x48 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000840       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000086c       0x48 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x000008b4       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_frame   0x000008e0       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x0000090c       0x80 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x0000098c       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x000009b8       0x48 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000a00       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000a2c       0x64 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x00000a90       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x00000abc       0x48 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x00000b04       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x00000b30       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_frame   0x00000b5c       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x00000b88       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x00000bb4       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000bd4       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_str      0x00000000     0x1c22
+ *(.debug_str)
+ .debug_str     0x00000000      0x2ac obj/default/hello_world.o
+                                0x344 (size before relaxing)
+ .debug_str     0x000002ac       0xd0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x0000037c      0x3ce d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+                                0x4a6 (size before relaxing)
+ .debug_str     0x0000074a       0x56 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+                                0x45d (size before relaxing)
+ .debug_str     0x000007a0       0x4c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                                0x455 (size before relaxing)
+ .debug_str     0x000007ec       0x3b d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                0x182 (size before relaxing)
+ .debug_str     0x00000827      0x193 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+                                0x626 (size before relaxing)
+ .debug_str     0x000009ba       0x7f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                                0x481 (size before relaxing)
+ .debug_str     0x00000a39       0xed d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                                0x45b (size before relaxing)
+ .debug_str     0x00000b26       0x44 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+                                0x453 (size before relaxing)
+ .debug_str     0x00000b6a       0x3a d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                                0x455 (size before relaxing)
+ .debug_str     0x00000ba4       0x3d d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x00000be1      0x104 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+                                0x15b (size before relaxing)
+ .debug_str     0x00000ce5       0x68 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+                                0x10c (size before relaxing)
+ .debug_str     0x00000d4d       0x4c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+                                0x2a0 (size before relaxing)
+ .debug_str     0x00000d99       0x44 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+                                0x14e (size before relaxing)
+ .debug_str     0x00000ddd      0x149 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+                                0x2a9 (size before relaxing)
+ .debug_str     0x00000f26      0x1b2 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x496 (size before relaxing)
+ .debug_str     0x000010d8      0x1d1 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+                                0x4f8 (size before relaxing)
+ .debug_str     0x000012a9       0xb2 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                0x355 (size before relaxing)
+ .debug_str     0x0000135b       0xd1 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                                0x2e9 (size before relaxing)
+ .debug_str     0x0000142c       0x4a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                                0x244 (size before relaxing)
+ .debug_str     0x00001476       0x7f D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                0x299 (size before relaxing)
+ .debug_str     0x000014f5       0x4a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x29a (size before relaxing)
+ .debug_str     0x0000153f      0x178 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+                                0x290 (size before relaxing)
+ .debug_str     0x000016b7       0x5f D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                                0x22f (size before relaxing)
+ .debug_str     0x00001716       0x1b D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+                                0x1bc (size before relaxing)
+ .debug_str     0x00001731       0x49 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+                                0x2b6 (size before relaxing)
+ .debug_str     0x0000177a       0x34 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                0x17d (size before relaxing)
+ .debug_str     0x000017ae       0x14 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_errno.o)
+                                 0xf6 (size before relaxing)
+ .debug_str     0x000017c2       0x2a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+                                0x102 (size before relaxing)
+ .debug_str     0x000017ec       0x24 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                0x19d (size before relaxing)
+ .debug_str     0x00001810       0xbd D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+                                0x1ef (size before relaxing)
+ .debug_str     0x000018cd       0x4c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                0x199 (size before relaxing)
+ .debug_str     0x00001919       0x56 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                0x2c7 (size before relaxing)
+ .debug_str     0x0000196f       0x3a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                0x148 (size before relaxing)
+ .debug_str     0x000019a9       0x17 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                 0xf7 (size before relaxing)
+ .debug_str     0x000019c0       0x29 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+                                0x1fc (size before relaxing)
+ .debug_str     0x000019e9       0x28 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                0x190 (size before relaxing)
+ .debug_str     0x00001a11       0x4a D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+                                0x203 (size before relaxing)
+ .debug_str     0x00001a5b       0x3b D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x10d (size before relaxing)
+ .debug_str     0x00001a96       0xa5 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+                                0x191 (size before relaxing)
+ .debug_str     0x00001b3b       0x26 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+                                0x1ab (size before relaxing)
+ .debug_str     0x00001b61       0x30 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                0x1cd (size before relaxing)
+ .debug_str     0x00001b91       0x3b d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x00001bcc       0x56 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+                                0x110 (size before relaxing)
+
+.debug_loc      0x00000000     0x2208
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x2d obj/default/hello_world.o
+ .debug_loc     0x0000002d       0x6c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memset.o)
+ .debug_loc     0x00000099      0x125 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-printf.o)
+ .debug_loc     0x000001be       0x6e d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putchar.o)
+ .debug_loc     0x0000022c       0xb7 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_loc     0x000002e3       0x29 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x0000030c      0xb02 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_loc     0x00000e0e      0x19e d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_loc     0x00000fac      0x138 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-putc.o)
+ .debug_loc     0x000010e4       0xde d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_loc     0x000011c2      0x338 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x000014fa       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dcache_flush.o)
+ .debug_loc     0x00001526       0x58 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_flash_dev.o)
+ .debug_loc     0x0000157e       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x000015aa       0x58 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_loc     0x00001602       0x84 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00001686      0x1b9 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_epcs_flash_controller.o)
+ .debug_loc     0x0000183f       0xb0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x000018ef       0xb0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_loc     0x0000199f       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_loc     0x000019cb       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x000019f7       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x00001a23      0x210 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(epcs_commands.o)
+ .debug_loc     0x00001c33       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_loc     0x00001c5f       0x58 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x00001cb7       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x00001ce3       0x58 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x00001d3b       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_loc     0x00001d67       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00001d93       0xb0 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x00001e43       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x00001e6f       0x58 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x00001ec7       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00001ef3       0x84 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x00001f77       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x00001fa3       0x58 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_loc     0x00001ffb       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x00002027       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_spi.o)
+ .debug_loc     0x00002053       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x0000207f       0x2c D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x000020ab       0x6f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x0000211a       0xee d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcpy.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x20
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x20 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp//obj/HAL/src/crt0.o
+                0x0000f800                __alt_data_end = 0xf800
+                0x0000f800                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0000d854                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0000d854                PROVIDE (__alt_heap_start, end)
+                0x0000f800                PROVIDE (__alt_heap_limit, 0xf800)
+OUTPUT(qsys_epcs_rw.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000      0x280
+ .debug_ranges  0x00000000      0x188 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-vfprintf.o)
+ .debug_ranges  0x00000188       0x18 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_ranges  0x000001a0       0x30 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_ranges  0x000001d0       0x18 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x000001e8       0x30 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_ranges  0x00000218       0x28 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000240       0x10 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000250       0x30 D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/\libhal_bsp.a(alt_exception_entry.o)

@@ -1,0 +1,94 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h> 
+
+/* MicroC/OS-II definitions */
+#include "includes.h"
+
+/* Simple Socket Server definitions */
+#include "simple_socket_server.h"                                                                    
+#include "alt_error_handler.h"
+
+/* Nichestack definitions */
+#include "ipport.h"
+#include "tcpport.h"
+ 
+/*
+ * sss_reset_connection()
+ * 
+ * This routine will, when called, reset our SSSConn struct's members 
+ * to a reliable initial state. Note that we set our socket (FD) number to
+ * -1 to easily determine whether the connection is in a "reset, ready to go" 
+ * state.
+ */
+void sss_reset_connection(SSSConn* conn)
+{
+  memset(conn, 0, sizeof(SSSConn));
+
+  conn->fd = -1;
+  conn->state = READY;
+  conn->rx_wr_pos = conn->rx_buffer;
+  conn->rx_rd_pos = conn->rx_buffer;
+  return;
+}
+
+/*
+ * sss_handle_msg()
+ * 
+ * 接收UDP客户端发送过来的信息， 并将接收到的信息环回给UDP客户端 ，同时打印信息到控制台
+ * 
+ */
+void sss_handle_msg(SSSConn* conn)
+{
+  int                 len, rx_code;
+  struct sockaddr_in  incoming_addr;
+  
+  while(1){
+	  memset(conn->rx_buffer, 0, SSS_RX_BUF_SIZE);
+	  len = sizeof(incoming_addr);
+	  rx_code = recvfrom(conn->fd, conn->rx_buffer,  SSS_RX_BUF_SIZE, 0,
+			  	  (struct sockaddr *)&incoming_addr ,&len);
+	  if(rx_code == -1){
+		  printf("recieve data fail!\n");
+		  return;
+	  }
+	  conn->rx_rd_pos = conn->rx_buffer;
+	  conn->rx_wr_pos = conn->rx_buffer;
+      printf("client ip : %s\n", inet_ntoa(incoming_addr.sin_addr));
+      printf("client msg: %s\n",conn->rx_buffer);  		//打印client发过来的信息
+      sendto(conn->fd, conn->rx_wr_pos, strlen(conn->rx_wr_pos), 0,
+    		  (struct sockaddr *)&incoming_addr ,len);	//发送信息给client
+  }
+}
+
+/*
+ * SSSSimpleSocketServerTask()
+ * 
+ * 定义SSSSimpleSocketServerTask任务函数.
+ *
+ */
+void SSSSimpleSocketServerTask()
+{
+  int socketfd, max_socket;
+  struct sockaddr_in addr;
+
+  static SSSConn conn;
+
+  if ((socketfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0)
+	  alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,"[sss_task] Socket creation failed");
+  
+  addr.sin_family = AF_INET;
+  addr.sin_port = htons(SSS_PORT);
+  addr.sin_addr.s_addr = INADDR_ANY;
+  
+  if ((bind(socketfd,(struct sockaddr *)&addr,sizeof(addr))) < 0)
+	  alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,"[sss_task] Bind failed");
+    
+  sss_reset_connection(&conn);
+  printf("[sss_task] Simple Socket Server listening on port %d\n", SSS_PORT);
+
+  conn.fd = socketfd;
+
+  sss_handle_msg(&conn);
+  printf("rdata fail!\n");
+}

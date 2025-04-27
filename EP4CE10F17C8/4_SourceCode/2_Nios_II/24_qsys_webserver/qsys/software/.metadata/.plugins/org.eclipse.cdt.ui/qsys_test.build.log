@@ -1,0 +1,7 @@
+
+**** Build of configuration Nios II for project qsys_test ****
+
+make all 
+make: *** [F:/Qsys/qsys_webserver/qsys/software/qsys_test_bsp/-recurs-make-lib] Error -1073741701
+
+**** Build Finished ****

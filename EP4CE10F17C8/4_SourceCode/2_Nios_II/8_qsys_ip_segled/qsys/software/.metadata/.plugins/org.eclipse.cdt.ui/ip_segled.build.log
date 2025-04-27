@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project ip_segled ****
+
+make all 
+Info: Building D:/project/qsys_ip_segled/qsys/software/ip_segled_bsp/
+make --no-print-directory -C D:/project/qsys_ip_segled/qsys/software/ip_segled_bsp/
+[BSP build complete]
+[ip_segled build complete]
+
+**** Build Finished ****

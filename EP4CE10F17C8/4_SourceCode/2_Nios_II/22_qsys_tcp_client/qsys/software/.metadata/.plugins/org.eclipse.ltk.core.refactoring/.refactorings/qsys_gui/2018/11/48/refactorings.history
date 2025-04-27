@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;qsys_gui/gui_main.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;gui_main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="gui_main.c" name="main.c" stamp="1543560649253" updateReferences="true"/>
+</session>

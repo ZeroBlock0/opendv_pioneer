@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="325" key="DIALOG_Y_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="1398" key="DIALOG_X_ORIGIN"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="TouchFBTrigTypeDisp" key="selection"/>
+		<list key="findhistory">
+			<item value="TouchFBTrigTypeDisp"/>
+			<item value="TouchAUTODisp"/>
+			<item value="max_addata"/>
+			<item value="touch"/>
+			<item value="icon"/>
+			<item value="20"/>
+			<item value="10"/>
+			<item value="9"/>
+		</list>
+		<list key="replacehistory">
+			<item value="lcddev"/>
+			<item value="ver_zero_mark"/>
+			<item value="ver_res_gears"/>
+			<item value="hor_res_gears"/>
+			<item value="ver_res"/>
+			<item value="hor_res"/>
+			<item value="10"/>
+			<item value="dispdev.wave_ystart"/>
+		</list>
+	</section>
+</section>

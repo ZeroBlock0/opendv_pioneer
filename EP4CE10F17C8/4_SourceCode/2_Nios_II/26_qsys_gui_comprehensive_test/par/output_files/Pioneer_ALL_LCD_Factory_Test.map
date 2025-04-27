@@ -1,0 +1,12 @@
+BLOCK		START ADDRESS		END ADDRESS
+
+Page_0		0x00000000		0x00032067
+swimage.hex		0x00032067		0x001A9076
+
+
+
+Notes:
+
+- Data checksum for this conversion is 0x10A04C8F
+
+- All the addresses in this file are byte addresses

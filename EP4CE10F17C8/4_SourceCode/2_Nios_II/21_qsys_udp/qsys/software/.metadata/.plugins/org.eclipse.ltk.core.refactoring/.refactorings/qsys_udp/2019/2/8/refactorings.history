@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;qsys_udp/simple_socket_server.c&apos; to &apos;udp_server.c&apos;" description="Rename resource &apos;simple_socket_server.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="simple_socket_server.c" name="udp_server.c" stamp="1550659917947" updateReferences="true"/>&#x0A;&#x0A;</session>

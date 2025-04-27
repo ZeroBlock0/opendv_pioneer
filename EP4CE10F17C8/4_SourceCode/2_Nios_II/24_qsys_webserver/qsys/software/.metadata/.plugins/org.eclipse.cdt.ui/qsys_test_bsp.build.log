@@ -1,0 +1,7 @@
+
+**** Build of configuration Nios II for project qsys_test_bsp ****
+
+make all 
+make: *** No rule to make target `/system.h', needed by `all'.  Stop.
+
+**** Build Finished ****

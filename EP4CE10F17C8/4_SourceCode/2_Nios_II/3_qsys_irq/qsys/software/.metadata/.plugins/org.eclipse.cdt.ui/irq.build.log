@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project irq ****
+
+make all 
+Info: Building D:/work/Pio_irq/qsys/software/irq_bsp/
+make --no-print-directory -C D:/work/Pio_irq/qsys/software/irq_bsp/
+[BSP build complete]
+[irq build complete]
+
+**** Build Finished ****

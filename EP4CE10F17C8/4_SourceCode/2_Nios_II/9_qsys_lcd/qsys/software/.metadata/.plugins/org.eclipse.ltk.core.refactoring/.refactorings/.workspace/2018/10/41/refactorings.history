@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;qsys_lcd/pic02.h&apos;" deleteContents="false" description="Delete resource &apos;qsys_lcd/pic02.h&apos;" element1="/qsys_lcd/pic02.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1539179026831"/>
+</session>

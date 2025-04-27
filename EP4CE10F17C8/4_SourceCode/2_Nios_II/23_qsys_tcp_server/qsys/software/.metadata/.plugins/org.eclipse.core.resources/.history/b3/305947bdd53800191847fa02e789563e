@@ -1,0 +1,143 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com 
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           tcp_server.c
+// Last modified Date:  2019/02/25 15:43:36
+// Last Version:        V1.0
+// Descriptions:        TCP服务器实现文件
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        2019/02/25 15:43:39
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h> 
+
+#include "includes.h"               //MicroC/OS-II definitions
+#include "simple_socket_server.h"   //Simple Socket Server definitions
+#include "alt_error_handler.h"      //错误处理
+/* Nichestack definitions */
+#include "ipport.h"
+#include "tcpport.h"
+
+/*
+ * sss_reset_connection()
+ * 
+ * 复位SSSConn结构体成员
+ */
+void sss_reset_connection(SSSConn* conn) {
+    memset(conn, 0, sizeof(SSSConn));
+
+    conn->fd = -1;                  //复位时置为-1
+    conn->state = READY;
+    conn->rx_wr_pos = conn->rx_buffer;
+    conn->rx_rd_pos = conn->rx_buffer;
+    return;
+}
+
+/*
+ * sss_handle_accept()
+ * 
+ * 处理连接请求，并打印客户端IP地址
+ */
+void sss_handle_accept(int listen_socket, SSSConn* conn) {
+    int socket, len;
+    struct sockaddr_in incoming_addr;
+
+    len = sizeof(incoming_addr);
+
+    if ((conn)->fd == -1) {
+        socket = accept(listen_socket,(struct sockaddr*)&incoming_addr,&len);
+        if (socket < 0) {
+            alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+                    "[sss_handle_accept] accept failed");
+        } else {
+            (conn)->fd = socket;
+            printf("[sss_handle_accept] accepted connection request from %s\n",
+                    inet_ntoa(incoming_addr.sin_addr));
+        }
+    } else {
+        printf("[sss_handle_accept] rejected connection request from %s\n",
+                inet_ntoa(incoming_addr.sin_addr));
+    }
+
+    return;
+}
+
+/*
+ * sss_handle_receive()
+ * 
+ * 处理接收自客户端的信息，实现环回功能，并打印接收到的信息
+ */
+void sss_handle_receive(SSSConn* conn) {
+    const char quit[] = "quit";
+
+    while ((conn->state != CLOSE)) {
+        if ((recv(conn->fd, conn->rx_buffer, SSS_RX_BUF_SIZE -1, 0)) > 0) {
+            conn->rx_rd_pos = conn->rx_buffer;
+            conn->rx_wr_pos = conn->rx_buffer;
+            printf("[sss_handle_receive] print RX data: %s\n", conn->rx_rd_pos);
+            send(conn->fd, conn->rx_wr_pos, strlen(conn->rx_wr_pos), 0);
+        }
+        if (strcmp(conn->rx_rd_pos, quit) == 0) {
+            conn->close = 1;
+        }
+        conn->state = conn->close ? CLOSE : READY;      //如果输入quit就结束连接
+        memset(conn->rx_buffer, 0, SSS_RX_BUF_SIZE);    //清空rx_buffer
+    }
+
+    printf("[sss_handle_receive] closing connection\n");
+    close(conn->fd);
+    sss_reset_connection(conn);
+
+    return;
+}
+
+/*
+ * SSSSimpleSocketServerTask()
+ * 
+ * 创建 MicroC/OS-II任务，实现TCP服务器功能
+ */
+void SSSSimpleSocketServerTask() {
+    int fd_listen, max_socket;
+    struct sockaddr_in addr;
+    static SSSConn conn;
+    fd_set readfds;
+
+    if ((fd_listen = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+        alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+                "[sss_task] Socket creation failed");
+    }
+    //构建本地地址信息
+    addr.sin_family = AF_INET;			//地址家族
+    addr.sin_port = htons(SSS_PORT);	//转换为网络字节序
+    addr.sin_addr.s_addr = INADDR_ANY;	//指示任何地址
+
+    if ((bind(fd_listen,(struct sockaddr *)&addr,sizeof(addr))) < 0) {
+        alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+                "[sss_task] Bind failed");
+    }
+    if ((listen(fd_listen,1)) < 0) {
+        alt_NetworkErrorHandler(EXPANDED_DIAGNOSIS_CODE,
+                "[sss_task] Listen failed");
+    }
+
+    sss_reset_connection(&conn);
+    printf("[sss_task] TCP Server listening on port %d\n", SSS_PORT);
+
+    while (1) {
+        sss_handle_accept(fd_listen, &conn);
+        if (conn.fd != -1)
+            sss_handle_receive(&conn);
+    } /* while(1) */
+}

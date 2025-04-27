@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Jan 21 16:18:11 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : top_Timer
+Top-level Entity Name : top_Timer
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 3,607 / 10,320 ( 35 % )
+    Total combinational functions : 3,297 / 10,320 ( 32 % )
+    Dedicated logic registers : 2,105 / 10,320 ( 20 % )
+Total registers : 2105
+Total pins : 3 / 180 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 227,008 / 423,936 ( 54 % )
+Embedded Multiplier 9-bit elements : 4 / 46 ( 9 % )
+Total PLLs : 1 / 2 ( 50 % )

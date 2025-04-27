@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project qsys_gui ****
+
+make all 
+Info: Building ../qsys_gui_bsp/
+make --no-print-directory -C ../qsys_gui_bsp/
+[BSP build complete]
+[qsys_gui build complete]
+
+**** Build Finished ****

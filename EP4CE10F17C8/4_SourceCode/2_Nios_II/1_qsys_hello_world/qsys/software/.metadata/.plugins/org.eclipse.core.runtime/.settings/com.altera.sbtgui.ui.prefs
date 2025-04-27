@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=D\:\\project\\1_qsys_hello_world\\qsys\\software\\hello_wrold
+newSoftwareExampleWizardPage.sopcinfoFile=D\:\\project\\1_qsys_hello_world\\qsys\\hardware\\system_qsys.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=D\:\\project\\1_qsys_hello_world\\qsys\\software\\hello_wrold_bsp

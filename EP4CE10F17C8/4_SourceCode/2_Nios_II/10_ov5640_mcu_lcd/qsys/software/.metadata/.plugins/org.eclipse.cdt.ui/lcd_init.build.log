@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project lcd_init ****
+
+make all 
+Info: Building F:/project/ov5640_mcu_lcd/qsys/software/lcd_init_bsp/
+make --no-print-directory -C F:/project/ov5640_mcu_lcd/qsys/software/lcd_init_bsp/
+[BSP build complete]
+[lcd_init build complete]
+
+**** Build Finished ****

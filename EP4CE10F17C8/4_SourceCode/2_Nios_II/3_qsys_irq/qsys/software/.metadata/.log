@@ -1,0 +1,28 @@
+!SESSION 2018-07-24 11:01:50.122 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-07-24 11:05:43.381
+!MESSAGE Indexed 'irq_bsp' (79 sources, 57 headers) in 0.57 sec: 937 declarations; 2,256 references; 113 unresolved inclusions; 5 syntax errors; 194 unresolved names (5.73%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-07-24 11:05:45.210
+!MESSAGE Indexed 'irq' (1 sources, 13 headers) in 0.01 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-24 11:11:57.598
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1020 --id=0x0 --timestamp=1532086233]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-24 11:12:00.492
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1020 --id=0x0 --timestamp=1532086233 /cygdrive/d/work/Pio_irq/qsys/software/irq/irq.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-24 11:33:38.062
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-24 11:33:38.878
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x1020 --id=0x0 --timestamp=1532086233]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-07-24 11:33:41.786
+!MESSAGE Executing: [D:/program/quartus/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x1020 --id=0x0 --timestamp=1532086233 /cygdrive/d/work/Pio_irq/qsys/software/irq/irq.elf]

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jan 21 16:17:48 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : top_Timer
+Top-level Entity Name : top_Timer
+Family : Cyclone IV E
+Total logic elements : 3,843
+    Total combinational functions : 3,292
+    Dedicated logic registers : 2,195
+Total registers : 2195
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 227,008
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 1

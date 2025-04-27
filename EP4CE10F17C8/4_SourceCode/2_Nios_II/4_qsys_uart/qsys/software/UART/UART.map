@@ -1,0 +1,958 @@
+Archive member included because of file (symbol)
+
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                              obj/default/hello_world.o (puts)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o) (strlen)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                              d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o) (__sfvwrite_small_dev)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                              d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o) (_impure_ptr)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                              d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o) (_write_r)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                              d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o) (errno)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/hello_world.o (alt_ic_isr_register)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+                              D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o (alt_load)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+                              D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o (alt_main)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+                              d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o) (write)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_uart_read_fd)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o) (altera_avalon_uart_read)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o) (altera_avalon_uart_write)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o) (close)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o) (alt_errno)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o) (_exit)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o) (alt_find_dev)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                              D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00008000         0x00000020
+onchip_ram       0x00008020         0x00004fe0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world.o
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libstdc++.a
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libm.a
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+START GROUP
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+LOAD D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a
+END GROUP
+LOAD d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+                0x00008000                __alt_mem_onchip_ram = 0x8000
+
+.entry          0x00008000       0x20
+ *(.entry)
+ .entry         0x00008000       0x20 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+                0x00008000                __reset
+
+.exceptions     0x00008020      0x198
+                0x00008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00008020        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00008020                alt_irq_entry
+ .exceptions.entry.label
+                0x00008020        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00008020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00008020       0x54 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00008074       0x10 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00008084        0x4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00008088        0x4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0000808c        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0000808c        0x8 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00008094        0x4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00008098        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00008098        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00008098       0x54 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000080ec       0xcc D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000080ec                alt_irq_handler
+                0x000081b8                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x000081b8     0x18bc
+                0x000081b8                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000081b8       0x4c D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+                0x000081b8                _start
+ .text          0x00008204       0xe4 obj/default/hello_world.o
+                0x00008204                main
+                0x0000823c                IRQ_init
+                0x00008294                IRQ_UART_Interrupts
+ .text          0x000082e8       0x94 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                0x000082e8                _puts_r
+                0x00008368                puts
+ .text          0x0000837c       0x28 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x0000837c                strlen
+ .text          0x000083a4       0xe0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x000083a4                __sfvwrite_small_dev
+ .text          0x00008484        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .text          0x00008484       0x6c d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                0x00008484                _write_r
+ .text          0x000084f0        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .text          0x000084f0      0x1d8 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+                0x000084f0                alt_ic_isr_register
+                0x00008540                alt_ic_irq_enable
+                0x000085dc                alt_ic_irq_disable
+                0x0000867c                alt_ic_irq_enabled
+ .text          0x000086c8       0xf0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x000086c8                alt_iic_isr_register
+ .text          0x000087b8        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x000087b8        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x000087b8        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x000087b8       0xec D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+                0x00008824                alt_load
+ .text          0x000088a4       0x68 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+                0x000088a4                alt_main
+ .text          0x0000890c      0x13c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+                0x0000895c                write
+ .text          0x00008a48       0xac D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00008a80                alt_irq_init
+                0x00008ab4                alt_sys_init
+ .text          0x00008af4       0xc0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00008af4                altera_avalon_jtag_uart_read_fd
+                0x00008b54                altera_avalon_jtag_uart_write_fd
+ .text          0x00008bb4       0xf4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00008bb4                altera_avalon_jtag_uart_read
+ .text          0x00008ca8       0x98 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00008ca8                altera_avalon_jtag_uart_write
+ .text          0x00008d40       0xc0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                0x00008d40                altera_avalon_uart_read_fd
+                0x00008da0                altera_avalon_uart_write_fd
+ .text          0x00008e00      0x110 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                0x00008e50                altera_avalon_uart_read
+ .text          0x00008f10      0x12c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                0x00008f60                altera_avalon_uart_write
+ .text          0x0000903c      0x118 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+                0x0000908c                close
+ .text          0x00009154       0x44 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00009154                alt_dcache_flush_all
+ .text          0x00009198       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x000091c4       0xf0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00009214                alt_dev_llist_insert
+ .text          0x000092b4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x000092b4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x000092b4       0x3c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+                0x000092b4                _exit
+ .text          0x000092f0       0x30 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000092f0                alt_icache_flush_all
+ .text          0x00009320      0x138 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x000093e0                alt_io_redirect
+ .text          0x00009458      0x270 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+                0x00009574                open
+ .text          0x000096c8       0x60 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x000096c8                alt_release_fd
+ .text          0x00009728       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00009728                altera_nios2_qsys_irq_init
+ .text          0x00009748       0x90 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x00009748                alt_find_dev
+ .text          0x000097d8      0x114 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x000097d8                alt_find_file
+ .text          0x000098ec       0xb4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x000098ec                alt_get_fd
+ .text          0x000099a0       0x8c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x000099a0                alt_icache_flush
+ .text          0x00009a2c       0x48 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                0x00009a2c                memcmp
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00009a74                PROVIDE (__etext, ABSOLUTE (.))
+                0x00009a74                PROVIDE (_etext, ABSOLUTE (.))
+                0x00009a74                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00009a74                . = ALIGN (0x4)
+                0x00009a74                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00009a74                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00009a74                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00009a74                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00009a74                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00009a74                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x00009a74                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x00009a74                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00009a74                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00009a74                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00009a74                . = ALIGN (0x4)
+
+.rodata         0x00009a74       0x50
+                0x00009a74                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00009a74                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00009a74       0x14 obj/default/hello_world.o
+ .rodata.str1.4
+                0x00009a88        0x4 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .rodata        0x00009a8c       0x10 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x00009a9c       0x1c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x00009ab8        0xc D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x00009ac4                . = ALIGN (0x4)
+                0x00009ac4                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00009a74                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00009ac4      0x304 load address 0x00009dc8
+                0x00009ac4                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00009ac4                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00009ac4        0x0 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+ .data          0x00009ac4        0x0 obj/default/hello_world.o
+ .data          0x00009ac4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .data          0x00009ac4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .data          0x00009ac4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x00009ac4       0xe0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .data          0x00009ba4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .data          0x00009ba4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00009ba4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .data          0x00009ba4       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x00009bfc        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00009bfc      0x1a8 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00009bfc                alt_dev_null
+                0x00009c24                alt_fd_list
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x00009da4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x00009da4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                0x00011da4                _gp = ABSOLUTE ((. + 0x8000))
+                0x00011da4                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00009da4        0x8 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                0x00009da4                _global_impure_ptr
+                0x00009da8                _impure_ptr
+ .sdata         0x00009dac        0x4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00009dac                alt_priority_mask
+ .sdata         0x00009db0       0x14 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00009db0                alt_fs_list
+                0x00009db8                alt_dev_list
+                0x00009dc0                alt_max_fd
+ .sdata         0x00009dc4        0x4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00009dc4                alt_errno
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00009dc8                . = ALIGN (0x4)
+                0x00009dc8                _edata = ABSOLUTE (.)
+                0x00009dc8                PROVIDE (edata, ABSOLUTE (.))
+                0x00009dc8                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00009dc8                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x0000a0cc      0x118
+                0x0000a0cc                __bss_start = ABSOLUTE (.)
+                0x0000a0cc                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x0000a0cc                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x0000a0cc        0x2 obj/default/hello_world.o
+ *fill*         0x0000a0ce        0x2 
+ .sbss          0x0000a0d0        0x4 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                0x0000a0d0                errno
+ .sbss          0x0000a0d4        0x4 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000a0d4                alt_irq_active
+ .sbss          0x0000a0d8        0xc D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000a0d8                alt_argc
+                0x0000a0dc                alt_argv
+                0x0000a0e0                alt_envp
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x0000a0e4                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x0000a0e4                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000a0e4        0x0 obj/default/hello_world.o
+ .bss           0x0000a0e4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .bss           0x0000a0e4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .bss           0x0000a0e4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x0000a0e4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .bss           0x0000a0e4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .bss           0x0000a0e4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x0000a0e4        0x0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x0000a0e4        0x0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ *(COMMON)
+ COMMON         0x0000a0e4      0x100 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000a0e4                alt_irq
+                0x0000a1e4                . = ALIGN (0x4)
+                0x0000a1e4                __bss_end = ABSOLUTE (.)
+
+.onchip_ram     0x0000a1e4        0x0
+                0x0000a1e4                PROVIDE (_alt_partition_onchip_ram_start, ABSOLUTE (.))
+ *(.onchip_ram .onchip_ram. onchip_ram.*)
+                0x0000a1e4                . = ALIGN (0x4)
+                0x0000a1e4                PROVIDE (_alt_partition_onchip_ram_end, ABSOLUTE (.))
+                0x0000a1e4                _end = ABSOLUTE (.)
+                0x0000a1e4                end = ABSOLUTE (.)
+                0x0000a1e4                __alt_stack_base = ABSOLUTE (.)
+                0x0000a1e4                PROVIDE (_alt_partition_onchip_ram_load_addr, LOADADDR (.onchip_ram))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/hello_world.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x00000000       0x24 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x510
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/hello_world.o
+ .debug_aranges
+                0x00000048       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_aranges
+                0x00000068       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000088       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_aranges
+                0x000000a8       0x18 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_aranges
+                0x000000c0       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_aranges
+                0x000000e0       0x18 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x000000f8       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000118       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000138       0x30 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000168       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000188       0x18 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x000001a0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x000001c0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x000001e0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x00000200       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000220       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000240       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x00000260       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x00000280       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_aranges
+                0x000002a0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_aranges
+                0x000002c0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_aranges
+                0x000002e0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x00000300       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000320       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000340       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000360       0x18 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x00000378       0x38 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x000003b0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_aranges
+                0x000003d0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x000003f0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000410       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000430       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x00000450       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000470       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x00000490       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x000004b0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x000004d0       0x20 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x000004f0       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x6422
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x58 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000058      0x114 obj/default/hello_world.o
+ .debug_info    0x0000016c      0x6f4 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_info    0x00000860       0xc6 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x00000926      0x6d9 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_info    0x00000fff      0x631 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x00001630      0x6cb d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_info    0x00001cfb       0x84 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00001d7f      0x364 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x000020e3      0x1f6 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x000022d9       0x61 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000233a      0x190 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x000024ca       0x8a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00002554      0x135 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00002689      0x139 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000027c2      0x507 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x00002cc9      0x471 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000313a      0x3da D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00003514      0x1bc D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x000036d0      0x19f D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000386f      0x3b7 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_info    0x00003c26      0x1b5 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_info    0x00003ddb      0x1c8 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_info    0x00003fa3      0x350 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x000042f3       0xa3 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00004396      0x4e3 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00004879      0x1b9 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x00004a32       0xa3 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x00004ad5       0x67 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00004b3c       0xec D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_info    0x00004c28       0x90 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00004cb8      0x4f0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x000051a8      0x3f0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x00005598      0x2dd D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x00005875       0x90 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x00005905      0x30d D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x00005c12      0x30c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x00005f1e      0x339 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00006257       0xda D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x00006331       0xf1 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+
+.debug_abbrev   0x00000000     0x215a
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012       0xa2 obj/default/hello_world.o
+ .debug_abbrev  0x000000b4      0x1d4 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_abbrev  0x00000288       0x7f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00000307      0x1a8 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_abbrev  0x000004af      0x13b d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x000005ea      0x199 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_abbrev  0x00000783       0x37 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x000007ba      0x16a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x00000924      0x169 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00000a8d       0x12 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000a9f      0x124 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x00000bc3       0x40 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000c03       0x9d D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000ca0       0xba D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000d5a      0x133 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x00000e8d      0x155 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000fe2       0xf7 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x000010d9       0xd5 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x000011ae       0xd5 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00001283       0xf0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_abbrev  0x00001373       0xd9 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_abbrev  0x0000144c       0xe0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_abbrev  0x0000152c      0x11f D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x0000164b       0x5a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x000016a5       0xd9 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000177e      0x114 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x00001892       0x5a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x000018ec       0x12 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x000018fe       0xa6 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_abbrev  0x000019a4       0x42 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x000019e6      0x114 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x00001afa      0x148 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00001c42       0xde D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00001d20       0x42 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x00001d62       0xf0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x00001e52       0xf0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x00001f42      0x10d D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x0000204f       0x8c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x000020db       0x7f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+
+.debug_line     0x00000000     0x25ce
+ *(.debug_line)
+ .debug_line    0x00000000       0x72 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000072       0xd8 obj/default/hello_world.o
+ .debug_line    0x0000014a      0x20f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_line    0x00000359      0x171 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x000004ca      0x222 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x000006ec      0x169 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x00000855      0x209 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_line    0x00000a5e       0x5d d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x00000abb       0xed D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x00000ba8       0xdb D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x00000c83       0x6b D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00000cee       0xae D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000d9c       0x50 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000dec       0x92 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x00000e7e       0x9e D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000f1c      0x200 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x0000111c      0x15b D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00001277      0x114 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x0000138b      0x101 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000148c       0xf8 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00001584       0xe7 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_line    0x0000166b       0xf7 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_line    0x00001762       0xff D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_line    0x00001861      0x18a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x000019eb       0x61 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00001a4c      0x11d D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00001b69       0xd0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00001c39       0x51 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00001c8a       0xab D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00001d35       0x71 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_line    0x00001da6       0x50 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00001df6      0x158 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00001f4e      0x125 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x00002073       0xae D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x00002121       0x51 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x00002172       0xb9 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x0000222b       0xd5 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x00002300       0xd1 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x000023d1       0x81 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x00002452      0x17c d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+
+.debug_frame    0x00000000      0x7a0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x64 obj/default/hello_world.o
+ .debug_frame   0x00000064       0x3c d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_frame   0x000000a0       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x000000c0       0x30 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_frame   0x000000f0       0x2c d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_frame   0x0000011c       0x80 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x0000019c       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x000001c8       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x000001f4       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x0000023c       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000268       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_frame   0x000002b0       0x64 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000314       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x0000035c       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000388       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x000003b4       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_frame   0x000003fc       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_frame   0x00000444       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_frame   0x0000048c       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x000004d4       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000500       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000052c       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000574       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_frame   0x000005a0       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x000005cc       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000614       0x64 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x00000678       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x000006a4       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x000006d0       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x000006fc       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x00000728       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x00000754       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x00000780       0x20 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+
+.debug_str      0x00000000     0x11f2
+ *(.debug_str)
+ .debug_str     0x00000000       0xee obj/default/hello_world.o
+                                0x12c (size before relaxing)
+ .debug_str     0x000000ee      0x383 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+                                0x455 (size before relaxing)
+ .debug_str     0x00000471       0xd0 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                0x182 (size before relaxing)
+ .debug_str     0x00000541       0x7f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                                0x481 (size before relaxing)
+ .debug_str     0x000005c0       0xed d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-impure.o)
+                                0x45b (size before relaxing)
+ .debug_str     0x000006ad       0x3a d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+                                0x455 (size before relaxing)
+ .debug_str     0x000006e7       0x3d d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x00000724       0xfe D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+                                0x1df (size before relaxing)
+ .debug_str     0x00000822       0x4c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                0x189 (size before relaxing)
+ .debug_str     0x0000086e       0x3a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                0x138 (size before relaxing)
+ .debug_str     0x000008a8       0x17 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                 0xe7 (size before relaxing)
+ .debug_str     0x000008bf       0xe9 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+                                0x1b3 (size before relaxing)
+ .debug_str     0x000009a8       0x70 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+                                0x13e (size before relaxing)
+ .debug_str     0x00000a18      0x15f D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+                                0x299 (size before relaxing)
+ .debug_str     0x00000b77      0x167 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x2dc (size before relaxing)
+ .debug_str     0x00000cde       0x77 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                0x276 (size before relaxing)
+ .debug_str     0x00000d55       0x48 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                0x1c0 (size before relaxing)
+ .debug_str     0x00000d9d       0x4a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x1b6 (size before relaxing)
+ .debug_str     0x00000de7       0x5b D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                                0x239 (size before relaxing)
+ .debug_str     0x00000e42       0x44 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                                0x1a2 (size before relaxing)
+ .debug_str     0x00000e86       0x40 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                                0x1aa (size before relaxing)
+ .debug_str     0x00000ec6       0x1b D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+                                0x1ac (size before relaxing)
+ .debug_str     0x00000ee1       0x34 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                 0xf6 (size before relaxing)
+ .debug_str     0x00000f15       0x50 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+                                0x2a6 (size before relaxing)
+ .debug_str     0x00000f65       0x4b D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                0x16d (size before relaxing)
+ .debug_str     0x00000fb0       0x14 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_errno.o)
+                                 0xe6 (size before relaxing)
+ .debug_str     0x00000fc4       0x2a D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+                                 0xf2 (size before relaxing)
+ .debug_str     0x00000fee       0x34 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                 0xf6 (size before relaxing)
+ .debug_str     0x00001022       0x56 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                0x2b7 (size before relaxing)
+ .debug_str     0x00001078       0x2f D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+                                0x1ec (size before relaxing)
+ .debug_str     0x000010a7       0x28 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                0x180 (size before relaxing)
+ .debug_str     0x000010cf       0x3b D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                 0xfd (size before relaxing)
+ .debug_str     0x0000110a       0x24 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                0x18d (size before relaxing)
+ .debug_str     0x0000112e       0x26 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+                                0x19b (size before relaxing)
+ .debug_str     0x00001154       0x30 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                0x1bd (size before relaxing)
+ .debug_str     0x00001184       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                 0xfc (size before relaxing)
+ .debug_str     0x000011b0       0x42 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                                0x17c (size before relaxing)
+
+.debug_loc      0x00000000      0xbb3
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x84 obj/default/hello_world.o
+ .debug_loc     0x00000084       0xb7 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-puts.o)
+ .debug_loc     0x0000013b       0x29 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x00000164      0x19e d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_loc     0x00000302       0xde d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-writer.o)
+ .debug_loc     0x000003e0       0xb0 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x00000490       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x000004bc       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x000004e8       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000540       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x0000056c       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_loc     0x000005c4       0x84 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000648       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x000006a0       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x000006cc       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x000006f8       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_loc     0x00000750       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_loc     0x000007a8       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_loc     0x00000800       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x00000858       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x00000884       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x000008b0       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x00000908       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_loc     0x00000934       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x00000960       0x58 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x000009b8       0x84 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x00000a3c       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x00000a68       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x00000a94       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00000ac0       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00000aec       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x00000b18       0x2c D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x00000b44       0x6f d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x30
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x30 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+                0x0000d000                __alt_data_end = 0xd000
+                0x0000d000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x0000a1e4                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x0000a1e4                PROVIDE (__alt_heap_start, end)
+                0x0000d000                PROVIDE (__alt_heap_limit, 0xd000)
+OUTPUT(UART.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0xe8
+ .debug_ranges  0x00000000       0x20 D:/work/UART/qsys/software/UART_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x18 d:/program/quartus/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_ranges  0x00000038       0x30 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_ranges  0x00000068       0x28 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000090       0x10 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x000000a0       0x18 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x000000b8       0x30 D:/work/UART/qsys/software/UART_bsp/\libhal_bsp.a(alt_exception_entry.o)

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Sep 24 16:47:10 2020
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : qsys_gui_oscp
+Top-level Entity Name : qsys_gui_oscp
+Family : Cyclone IV E
+Total logic elements : 8,653
+    Total combinational functions : 7,024
+    Dedicated logic registers : 4,300
+Total registers : 4300
+Total pins : 90
+Total virtual pins : 0
+Total memory bits : 96,000
+Embedded Multiplier 9-bit elements : 10
+Total PLLs : 1

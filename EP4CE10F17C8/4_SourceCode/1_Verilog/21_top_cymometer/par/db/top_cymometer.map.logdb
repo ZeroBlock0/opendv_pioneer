@@ -1,0 +1,8 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,cymometer:u_cymometer|lpm_mult:Mult0|mult_2ht:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,cymometer:u_cymometer|lpm_mult:Mult0|mult_2ht:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,cymometer:u_cymometer|lpm_mult:Mult0|mult_2ht:auto_generated|mac_out14,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,cymometer:u_cymometer|lpm_mult:Mult0|mult_2ht:auto_generated|mac_out12,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,cymometer:u_cymometer|lpm_mult:Mult0|mult_2ht:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,cymometer:u_cymometer|lpm_mult:Mult0|mult_2ht:auto_generated|mac_out10,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,cymometer:u_cymometer|lpm_mult:Mult0|mult_2ht:auto_generated|mac_out2,

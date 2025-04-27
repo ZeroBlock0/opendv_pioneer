@@ -1,0 +1,12 @@
+#include "system.h"
+#include <stdio.h>
+
+int main()
+{
+  IOWR(SEGLED_CONTROLLER_BASE,0,1024);
+  IOWR(SEGLED_CONTROLLER_BASE,1,0x4);
+  IOWR(SEGLED_CONTROLLER_BASE,2,1);
+  IOWR(SEGLED_CONTROLLER_BASE,3,1);
+
+  return 0;
+}

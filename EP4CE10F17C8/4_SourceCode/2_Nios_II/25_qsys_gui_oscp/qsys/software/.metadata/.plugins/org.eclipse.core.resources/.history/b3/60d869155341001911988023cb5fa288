@@ -1,0 +1,167 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           draw_disp.c
+// Last modified Date:  2019/3/6 13:28:14
+// Last Version:        V1.0
+// Descriptions:        绘制显示界面
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <unistd.h>
+#include "system.h"
+#include "draw_disp.h"
+#include "GUI.h"
+#include "mculcd.h";
+
+extern _disp_dev dispdev;	//界面显示参数
+extern _lcd_gui lcdgui;
+
+u16 data_xcoord[] = {132,220,20,160,260};
+u16 data_ycoord[] = {5,5,255,255,255};
+
+//绘制显示界面
+void Draw_Display(void){
+	u16 i= 0;
+	Disp_SiteInit();                    //显示区域位置初始化
+
+    GUI_SetBkColor(GUI_BLACK);  	    //设置GUI背景色
+    GUI_Clear();                        //GUI清屏
+
+    Draw_WaveBorder();                  //绘制波形区域边框
+    Draw_SetDisp();                     //绘制右侧设置窗口
+    Draw_DataCharDisp();                //绘制上侧和下测数据字符显示
+/*
+	//数据更新
+	HorSetDataDisp();
+	VerSetDataDisp();
+	EdgeSetDataDisp();
+	VppDataDisp();
+	FreqDataDisp();
+*/
+	//左侧区域触发
+	GUI_DispStringAt("→",0,dispdev.wave_height/2);
+
+	alt_dcache_flush_all();
+}
+
+//显示区域位置初始化
+void Disp_SiteInit(){
+	dispdev.wave_xstart = 16;           //波形起始区域x坐标
+	dispdev.wave_ystart = 26;           //波形起始区域y坐标
+	dispdev.wave_width = 360;           //波形窗口宽度
+	dispdev.wave_height = 224;          //波形窗口高度
+	dispdev.set_area_width = lcdgui.width - dispdev.wave_width - dispdev.wave_xstart;
+	dispdev.set_area_height = lcdgui.height/7;
+}
+
+//绘制波形区域边框
+void Draw_WaveBorder(){
+	u16 i = 0;
+	GUI_SetPenSize(1);                  //设置画笔大小
+	GUI_SetColor(GUI_WHITE);            //设置GUI前景色
+	GUI_DrawRect(dispdev.wave_xstart,dispdev.wave_ystart,dispdev.wave_xstart + dispdev.wave_width,dispdev.wave_ystart + dispdev.wave_height);  //矩形画线
+	GUI_SetColor(GUI_LIGHTDARK);        //设置GUI前景色，亮黑色
+	for(i = 1;i < 8;i++){
+		if(i == 4)
+			continue;
+		GUI_DrawLine(dispdev.wave_xstart+1,dispdev.wave_ystart + i*dispdev.wave_height/8,dispdev.wave_xstart + dispdev.wave_width-1,dispdev.wave_ystart+i*dispdev.wave_height/8);
+	}
+	for(i = 1;i < 10;i++){
+		if(i == 5)
+			continue;
+		GUI_DrawLine(dispdev.wave_xstart+i*dispdev.wave_width/10,dispdev.wave_ystart+1,dispdev.wave_xstart+i*dispdev.wave_width/10,dispdev.wave_ystart+dispdev.wave_height-1);
+	}
+	//绘制中间区域X轴和Y轴
+	GUI_SetColor(GUI_LIGHTGRAY);
+	GUI_DrawLine(dispdev.wave_xstart+1,dispdev.wave_ystart + 4*dispdev.wave_height/8,dispdev.wave_xstart + dispdev.wave_width-1,dispdev.wave_ystart+4*dispdev.wave_height/8);
+	GUI_DrawLine(dispdev.wave_xstart+5*dispdev.wave_width/10,dispdev.wave_ystart+1,dispdev.wave_xstart+5*dispdev.wave_width/10,dispdev.wave_ystart+dispdev.wave_height-1);
+}
+
+//绘制右侧设置窗口
+void Draw_SetDisp(){
+	u16 i = 0;
+	GUI_SetPenSize(1);                  //设置画笔大小
+	//绘制边框线
+	GUI_SetColor(GUI_DARKCYAN);
+	GUI_FillRect(lcdgui.width-9*dispdev.set_area_width/5,0,dispdev.wave_xstart+dispdev.wave_width,dispdev.wave_ystart);
+	GUI_FillRect(dispdev.wave_xstart+dispdev.wave_width,0,lcdgui.width-1,lcdgui.height-1);
+  	GUI_SetColor(GUI_WHITE);
+	GUI_DrawRect(lcdgui.width-9*dispdev.set_area_width/5,0,dispdev.wave_xstart+dispdev.wave_width,dispdev.wave_ystart);  //矩形画线
+	GUI_DrawRect(dispdev.wave_xstart+dispdev.wave_width,0,lcdgui.width-1,lcdgui.height-1);
+	for(i=1;i<7;i++)
+	{
+		GUI_DrawLine(dispdev.wave_xstart+dispdev.wave_width,i*lcdgui.height/7,lcdgui.width-1,i*lcdgui.height/7);
+	}
+	GUI_DrawLine(lcdgui.width-dispdev.set_area_width/2,2*lcdgui.height/7,lcdgui.width-dispdev.set_area_width/2,lcdgui.height);
+	//绘制设置区域显示字符
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_SetBkColor(GUI_DARKCYAN);    //设置GUI背景色
+	GUI_SetTextMode(GUI_TM_TRANS);
+	GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+	GUI_DispStringAt("Edge ▼",lcdgui.width-7*dispdev.set_area_width/5+5,dispdev.wave_ystart/2);    //沿变设置▲▼
+	for(i=0;i<7;i++)
+	{
+		GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+		switch(i){
+			case 0 : GUI_DispStringAt("AUTO",lcdgui.width-dispdev.set_area_width/2,i*lcdgui.height/7+dispdev.set_area_height/2); break;
+			case 1 : GUI_DispStringAt("STOP",lcdgui.width-dispdev.set_area_width/2,i*lcdgui.height/7+dispdev.set_area_height/2); break;
+			case 2 :
+				GUI_DispStringAt("←",lcdgui.width-3*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("→",lcdgui.width-1*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2); break;
+			case 3 :
+				GUI_DispStringAt("↑",lcdgui.width-3*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("↓",lcdgui.width-1*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2); break;
+			case 4 :
+				GUI_DispStringAt("Hor+",lcdgui.width-3*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("Hor-",lcdgui.width-1*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2); break;
+			case 5 :
+				GUI_DispStringAt("Ver+",lcdgui.width-3*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("Ver-",lcdgui.width-1*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2); break;
+			case 6 :
+				GUI_DispStringAt("Trig+",lcdgui.width-3*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2);
+				GUI_SetTextAlign(GUI_TA_HCENTER|GUI_TA_VCENTER);
+				GUI_DispStringAt("Trig-",lcdgui.width-1*dispdev.set_area_width/4,i*lcdgui.height/7+dispdev.set_area_height/2); break;
+			default : break;
+		}
+	}
+}
+
+//绘制上侧和下测数据字符显示
+void Draw_DataCharDisp(){
+	GUI_SetPenSize(1);                  //设置画笔大小
+	//绘制界面上方显示区域
+	//正点原子
+	GUI_SetTextMode(GUI_TM_TRANS);
+	GUI_SetColor(GUI_LIGHTGREEN);        //设置GUI前景色
+	GUI_SetFont(&GUI_FontChinese_ST16);
+	GUI_SetTextAlign(GUI_TA_LEFT | GUI_TA_TOP);
+	GUI_DispStringAt("正点原子",16,5);
+	//水平分辨率(时间)
+	GUI_SetColor(GUI_LIGHTGRAY);
+	GUI_DispStringAt("Hor:",data_xcoord[HorData]-32,data_ycoord[HorData]);
+	//垂直分辨率(电压)
+	GUI_DispStringAt("Ver:",data_xcoord[VerData]-32,data_ycoord[VerData]);
+
+	//绘制界面下方显示区域
+	GUI_SetColor(GUI_YELLOW);        //设置GUI前景色
+	GUI_DispStringAt("▲:",data_xcoord[EdgeData]-16,data_ycoord[EdgeData]);
+	GUI_DispStringAt("Vpp=",data_xcoord[VppData]-32,data_ycoord[VppData]);
+	GUI_DispStringAt("Freq=",data_xcoord[FreqData]-40,data_ycoord[FreqData]);
+}
+

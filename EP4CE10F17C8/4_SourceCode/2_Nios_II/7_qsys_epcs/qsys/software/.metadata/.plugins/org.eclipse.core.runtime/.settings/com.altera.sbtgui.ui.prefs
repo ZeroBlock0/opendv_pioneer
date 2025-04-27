@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=D\:\\project\\qsys_epcs\\qsys\\software\\qsys_epcs_rw
+newSoftwareExampleWizardPage.sopcinfoFile=D\:\\project\\qsys_epcs\\qsys\\hardware\\qsys_epcs.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=D\:\\project\\qsys_epcs\\qsys\\software\\qsys_epcs_rw_bsp

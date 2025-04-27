@@ -1,0 +1,213 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           ucosii_mail_msg
+// Last modified Date:  2018/11/20 15:12:09
+// Last Version:        V1.0
+// Descriptions:
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        2018/11/20 15:12:09
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <stdio.h>
+#include <unistd.h>
+#include "includes.h"
+
+//定义任务堆栈大小
+#define TASK_STACKSIZE 2048
+
+//定义各任务堆栈
+OS_STK start_task_stk[TASK_STACKSIZE];
+OS_STK mail_sender_stk[TASK_STACKSIZE];
+OS_STK mail_receiver_stk[TASK_STACKSIZE];
+OS_STK msg_sender_stk[TASK_STACKSIZE];
+OS_STK msg_receiver_stk[TASK_STACKSIZE];
+
+//分配各任务优先级
+#define START_TASK_PRIORITY	        5
+#define MAIL_SENDER_PRIORITY		6
+#define MAIL_RECEIVER_PRIORITY		7
+#define MSG_SENDER_PRIORITY			8
+#define MSG_RECEIVER_PRIORITY		9
+
+//定义1个邮箱
+OS_EVENT  *mailbox;
+OS_EVENT  *mailbox0;
+OS_EVENT  *mailbox1;
+
+//定义消息队列 (msgqueue)
+#define		QUEUE_SIZE  10               	//消息队列大小
+OS_EVENT	*msgqueue;                      //消息队列事件指针
+void     	*msgqueueTbl[QUEUE_SIZE];  		//队列缓冲区
+
+//用于发送消息队列的数据
+INT32U      *data_arr[QUEUE_SIZE] = {0,1,2,3,4,5,6,7,8,9};
+
+//局部函数声明
+int initOSDataStructs(void);            //初始化邮箱和消息队列的数据结构
+int initCreateTasks(void);              //初始化任务
+
+//邮箱部分
+//邮件发送任务0： 每隔2s将当前时间发送给mailbox0
+void MailSend(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *mbox_contents;           	//指向邮件内容的指针
+	while (1)
+	{
+		OSTimeDlyHMSM(0, 0, 2, 0);
+		mbox_contents = OSTimeGet();
+		//把消息发送到mailbox0
+		OSMboxPost(mailbox,(void *)OSTimeGet());
+		printf("Task0 send the message: %lu in mailbox\n",(*mbox_contents));
+	}
+}
+
+//邮件接收任务
+void MailReceiver(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *mbox_contents;           	//指向邮件内容的指针
+	while (1)
+	{
+		//从mailbox接收邮件，如果邮箱为空，则一直等待
+		mbox_contents = (INT32U *)OSMboxPend(mailbox, 0, &return_code);
+		printf("Task0 get the message: %lu in mailbox0\n",(*mbox_contents));
+	}
+}
+
+//发送消息任务： 将消息通过消息队列发送给所有等待消息的任务，当队列满时，延时5s
+void MsgSender(void* pdata)
+{
+	INT8U  send_cnt = 0;  	//定义发送计数器，用于循环发送数组中的数据
+	OS_Q_DATA queue_data; 	//存放消息队列的事件控制块中的信息
+	while (1)
+	{
+		OSQQuery(msgqueue, &queue_data);    //查询消息队列的信息
+		if(queue_data.OSNMsgs < QUEUE_SIZE) //查询消息队列是否已满
+		{
+			//消息队列未满时，将消息发送到消息队列
+			OSQPost(msgqueue,(void *)&data_arr[send_cnt]);
+			if(send_cnt == QUEUE_SIZE-1)
+				send_cnt = 0;
+			else
+				send_cnt++;
+		}
+		else
+		{
+			//消息队列已满，延时2s
+			OSTimeDlyHMSM(0, 0, 2, 0);
+		}
+	}
+}
+
+//消息接收任务：每100ms接收一次消息队列的消息
+void MsgReceiver(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *msg_rec;                	       //存储接收到的消息
+	while (1)
+	{  	//到msgqueue接收消息，如果消息队列为空，则一直等待
+		msg_rec = (INT32U *)OSQPend(msgqueue, 0, &return_code);
+		printf("Receive message: %lu \n",*msg_rec);
+		OSTimeDlyHMSM(0, 0, 0, 200);   //延时200ms
+	}
+}
+
+//初始化各子任务
+void  start_task(void* pdata)
+{
+	INT32U mbox0_contents = 1;
+	//初始化消息队列和邮箱的数据结构
+	initOSDataStructs();
+	//创建子任务
+	initCreateTasks();
+	OSTaskDel(OS_PRIO_SELF);
+	while (1);
+}
+
+int initOSDataStructs(void)
+{ 	//初始化邮箱的数据结构
+	mailbox = OSMboxCreate((void *)NULL);
+	mailbox1 = OSMboxCreate((void *)NULL);
+	//初始化消息队列的数据结构
+	msgqueue = OSQCreate(&msgqueueTbl[0], QUEUE_SIZE);
+	return 0;
+}
+
+int initCreateTasks(void)
+{
+
+	//创建MailSender任务
+	OSTaskCreateExt(MailSend,
+                             NULL,
+                             &mail_sender_stk[TASK_STACKSIZE-1],
+                             MAIL_SENDER_PRIORITY,
+                             MAIL_SENDER_PRIORITY,
+                             mail_sender_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	//创建MAILReceiver任务
+	OSTaskCreateExt(MailSend,
+                             NULL,
+                             &mail_sender_stk[TASK_STACKSIZE-1],
+                             MAIL_SENDER_PRIORITY,
+                             MAIL_SENDER_PRIORITY,
+                             mail_sender_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+	//创建MsgSender任务
+	OSTaskCreateExt(MsgSender,
+                             NULL,
+                             &msg_sender_stk[TASK_STACKSIZE-1],
+                             MSG_SENDER_PRIORITY,
+                             MSG_SENDER_PRIORITY,
+                             msg_sender_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	//创建MsgReceiver任务
+	OSTaskCreateExt(MsgReceiver,
+                             NULL,
+                             &msg_receiver_stk[TASK_STACKSIZE-1],
+                             MSG_RECEIVER_PRIORITY,
+                             MSG_RECEIVER_PRIORITY,
+                             msg_receiver_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	return 0;
+}
+
+//main函数
+int main (void)
+{
+	//创建父任务
+	OSTaskCreateExt(start_task,
+                             NULL,
+                             &start_task_stk[TASK_STACKSIZE-1],
+                             START_TASK_PRIORITY,
+                             START_TASK_PRIORITY,
+                             start_task_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+	OSStart();  //启动uCOSII
+	return 0;
+}
+

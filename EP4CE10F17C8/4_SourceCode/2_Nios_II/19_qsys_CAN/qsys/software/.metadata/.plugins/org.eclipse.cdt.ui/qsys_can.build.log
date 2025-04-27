@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project qsys_can ****
+
+make all 
+Info: Building D:/project/qsys_CAN/qsys/software/qsys_can_bsp/
+make --no-print-directory -C D:/project/qsys_CAN/qsys/software/qsys_can_bsp/
+[BSP build complete]
+[qsys_can build complete]
+
+**** Build Finished ****

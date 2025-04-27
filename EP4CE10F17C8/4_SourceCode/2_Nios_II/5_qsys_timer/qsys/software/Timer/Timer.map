@@ -1,0 +1,863 @@
+Archive member included because of file (symbol)
+
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+                              obj/default/hello_world.o (alt_ic_isr_register)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o (alt_load)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o (alt_main)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_avalon_timer_sc_init)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o) (close)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o) (alt_errno)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o) (_exit)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o) (_alt_tick_rate)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o) (alt_find_dev)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o) (errno)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                              D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00008000         0x00000020
+onchip_ram       0x00008020         0x00004fe0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/hello_world.o
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libstdc++.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libm.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+START GROUP
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+LOAD D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a
+END GROUP
+LOAD d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3\libgcc.a
+                0x00008000                __alt_mem_onchip_ram = 0x8000
+
+.entry          0x00008000       0x20
+ *(.entry)
+ .entry         0x00008000       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+                0x00008000                __reset
+
+.exceptions     0x00008020      0x198
+                0x00008020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00008020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00008020        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00008020                alt_irq_entry
+ .exceptions.entry.label
+                0x00008020        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00008020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry.ecc_fatal)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00008020       0x54 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00008074       0x10 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00008084        0x4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00008088        0x4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0000808c        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0000808c        0x8 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00008094        0x4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00008098        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00008098        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00008098       0x54 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x000080ec       0xcc D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x000080ec                alt_irq_handler
+                0x000081b8                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00008020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x000081b8     0x1544
+                0x000081b8                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x000081b8       0x4c D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+                0x000081b8                _start
+ .text          0x00008204       0xe4 obj/default/hello_world.o
+                0x00008204                Timer_ISR_Interrupt
+                0x00008234                Timer_initial
+                0x00008298                main
+ .text          0x000082e8      0x1d8 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+                0x000082e8                alt_ic_isr_register
+                0x00008338                alt_ic_irq_enable
+                0x000083d4                alt_ic_irq_disable
+                0x00008474                alt_ic_irq_enabled
+ .text          0x000084c0       0xf0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x000084c0                alt_iic_isr_register
+ .text          0x000085b0        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x000085b0        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x000085b0        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x000085b0       0xec D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000861c                alt_load
+ .text          0x0000869c       0x68 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000869c                alt_main
+ .text          0x00008704       0xb4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000873c                alt_irq_init
+                0x00008770                alt_sys_init
+ .text          0x000087b8       0xc0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x000087b8                altera_avalon_jtag_uart_read_fd
+                0x00008818                altera_avalon_jtag_uart_write_fd
+ .text          0x00008878       0xf4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00008878                altera_avalon_jtag_uart_read
+ .text          0x0000896c       0x98 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000896c                altera_avalon_jtag_uart_write
+ .text          0x00008a04       0xfc D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x00008a78                alt_avalon_timer_sc_init
+ .text          0x00008b00      0x118 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+                0x00008b50                close
+ .text          0x00008c18       0x44 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00008c18                alt_dcache_flush_all
+ .text          0x00008c5c       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00008c88       0xf0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00008cd8                alt_dev_llist_insert
+ .text          0x00008d78        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x00008d78        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x00008d78       0x3c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+                0x00008d78                _exit
+ .text          0x00008db4       0x30 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00008db4                alt_icache_flush_all
+ .text          0x00008de4      0x138 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x00008ea4                alt_io_redirect
+ .text          0x00008f1c      0x270 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+                0x00009038                open
+ .text          0x0000918c       0x60 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0000918c                alt_release_fd
+ .text          0x000091ec      0x19c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+                0x000091ec                alt_alarm_stop
+                0x00009284                alt_tick
+ .text          0x00009388       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00009388                altera_nios2_qsys_irq_init
+ .text          0x000093a8       0x90 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x000093a8                alt_find_dev
+ .text          0x00009438      0x114 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x00009438                alt_find_file
+ .text          0x0000954c       0xb4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x0000954c                alt_get_fd
+ .text          0x00009600       0x8c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x00009600                alt_icache_flush
+ .text          0x0000968c        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .text          0x0000968c       0x48 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                0x0000968c                memcmp
+ .text          0x000096d4       0x28 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x000096d4                strlen
+ *(.gnu.warning.*)
+ *(.fini)
+                0x000096fc                PROVIDE (__etext, ABSOLUTE (.))
+                0x000096fc                PROVIDE (_etext, ABSOLUTE (.))
+                0x000096fc                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x000096fc                . = ALIGN (0x4)
+                0x000096fc                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x000096fc                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x000096fc                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x000096fc                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x000096fc                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x000096fc                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table .gcc_except_table.*)
+ *(.dynamic)
+                0x000096fc                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x000096fc                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x000096fc                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x000096fc                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x000096fc                . = ALIGN (0x4)
+
+.rodata         0x000096fc       0x2c
+                0x000096fc                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x000096fc                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000096fc       0x10 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x0000970c       0x10 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x0000971c        0xc D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ *(.rodata1)
+                0x00009728                . = ALIGN (0x4)
+                0x00009728                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x000096fc                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00009728      0x1f8 load address 0x00009920
+                0x00009728                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00009728                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+ .data          0x00009728        0x0 obj/default/hello_world.o
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00009728        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00009728       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00009754        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x00009754        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00009754        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00009754        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x00009754        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x00009754        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00009754      0x1a8 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00009754                alt_dev_null
+                0x0000977c                alt_fd_list
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x000098fc        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x000098fc        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .data          0x000098fc        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .data          0x000098fc        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                0x000118fc                _gp = ABSOLUTE ((. + 0x8000))
+                0x000118fc                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x000098fc        0x4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x000098fc                alt_priority_mask
+ .sdata         0x00009900       0x14 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00009900                alt_fs_list
+                0x00009908                alt_dev_list
+                0x00009910                alt_max_fd
+ .sdata         0x00009914        0x4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00009914                alt_errno
+ .sdata         0x00009918        0x8 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00009918                alt_alarm_list
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00009920                . = ALIGN (0x4)
+                0x00009920                _edata = ABSOLUTE (.)
+                0x00009920                PROVIDE (edata, ABSOLUTE (.))
+                0x00009920                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00009920                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00009b18      0x120
+                0x00009b18                __bss_start = ABSOLUTE (.)
+                0x00009b18                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00009b18                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00009b18        0x1 obj/default/hello_world.o
+                0x00009b18                time_out
+ *fill*         0x00009b19        0x3 
+ .sbss          0x00009b1c        0x4 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00009b1c                alt_irq_active
+ .sbss          0x00009b20        0xc D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+                0x00009b20                alt_argc
+                0x00009b24                alt_argv
+                0x00009b28                alt_envp
+ .sbss          0x00009b2c        0x8 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00009b2c                _alt_tick_rate
+                0x00009b30                _alt_nticks
+ .sbss          0x00009b34        0x4 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                0x00009b34                errno
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00009b38                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00009b38                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+ .bss           0x00009b38        0x0 obj/default/hello_world.o
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x00009b38        0x0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x00009b38        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x00009b38        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .bss           0x00009b38        0x0 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+ *(COMMON)
+ COMMON         0x00009b38      0x100 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00009b38                alt_irq
+                0x00009c38                . = ALIGN (0x4)
+                0x00009c38                __bss_end = ABSOLUTE (.)
+
+.onchip_ram     0x00009c38        0x0
+                0x00009c38                PROVIDE (_alt_partition_onchip_ram_start, ABSOLUTE (.))
+ *(.onchip_ram .onchip_ram. onchip_ram.*)
+                0x00009c38                . = ALIGN (0x4)
+                0x00009c38                PROVIDE (_alt_partition_onchip_ram_end, ABSOLUTE (.))
+                0x00009c38                _end = ABSOLUTE (.)
+                0x00009c38                end = ABSOLUTE (.)
+                0x00009c38                __alt_stack_base = ABSOLUTE (.)
+                0x00009c38                PROVIDE (_alt_partition_onchip_ram_load_addr, LOADADDR (.onchip_ram))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/hello_world.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x24 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x458
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/hello_world.o
+ .debug_aranges
+                0x00000048       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x00000068       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x00000088       0x30 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x000000b8       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x000000d8       0x18 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_aranges
+                0x000000f0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x00000110       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000130       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000150       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000170       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x00000190       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x000001b0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_aranges
+                0x000001d0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x000001f0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000210       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000230       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000250       0x18 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_aranges
+                0x00000268       0x38 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x000002a0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_aranges
+                0x000002c0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x000002e0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000300       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000320       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x00000340       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x00000360       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000380       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x000003a0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x000003c0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x000003e0       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_aranges
+                0x00000400       0x18 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_aranges
+                0x00000418       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000438       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x41b2
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x64 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000064       0xef obj/default/hello_world.o
+ .debug_info    0x00000153      0x364 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x000004b7      0x1f6 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x000006ad       0x6d D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000071a      0x190 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x000008aa       0x8a D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x00000934      0x135 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000a69      0x139 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000ba2      0x420 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000fc2      0x3da D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x0000139c      0x1bc D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x00001558      0x19f D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x000016f7      0x235 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x0000192c      0x350 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x00001c7c       0xa3 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00001d1f      0x4e3 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x00002202      0x1b9 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x000023bb       0xa3 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x0000245e       0x73 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x000024d1       0xec D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_info    0x000025bd       0x90 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000264d      0x4f0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x00002b3d      0x3f0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x00002f2d      0x2dd D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x0000320a      0x2b1 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x000034bb       0x90 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x0000354b      0x30d D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x00003858      0x30c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x00003b64      0x339 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x00003e9d       0xda D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x00003f77       0x84 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00003ffb       0xf1 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x000040ec       0xc6 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_abbrev   0x00000000     0x19dc
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012       0xa1 obj/default/hello_world.o
+ .debug_abbrev  0x000000b3      0x16a D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x0000021d      0x169 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x00000386       0x12 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00000398      0x124 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x000004bc       0x40 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x000004fc       0x9d D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000599       0xba D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x00000653      0x155 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x000007a8       0xf7 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x0000089f       0xd5 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00000974       0xd5 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x00000a49      0x155 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x00000b9e      0x11f D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00000cbd       0x5a D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000d17       0xd9 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00000df0      0x114 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x00000f04       0x5a D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x00000f5e       0x12 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x00000f70       0xa6 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_abbrev  0x00001016       0x42 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00001058      0x114 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x0000116c      0x148 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x000012b4       0xde D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00001392      0x15a D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x000014ec       0x42 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x0000152e       0xf0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x0000161e       0xf0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x0000170e      0x10d D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x0000181b       0x8c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x000018a7       0x37 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x000018de       0x7f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x0000195d       0x7f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_line     0x00000000     0x1ae9
+ *(.debug_line)
+ .debug_line    0x00000000       0x72 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000072       0x99 obj/default/hello_world.o
+ .debug_line    0x0000010b       0xed D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x000001f8       0xdb D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x000002d3       0x6b D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000033e       0xae D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x000003ec       0x50 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x0000043c       0x92 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x000004ce       0x9e D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000056c      0x142 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000006ae      0x114 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x000007c2      0x101 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x000008c3       0xf8 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000009bb       0xfd D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x00000ab8      0x186 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00000c3e       0x61 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00000c9f      0x119 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00000db8       0xd0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00000e88       0x51 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x00000ed9       0xab D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00000f84       0x71 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_line    0x00000ff5       0x50 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00001045      0x154 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00001199      0x125 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x000012be       0xae D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000136c      0x102 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x0000146e       0x51 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x000014bf       0xb9 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x00001578       0xd5 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x0000164d       0xd1 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000171e       0x81 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000179f       0x5d d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x000017fc      0x17c d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x00001978      0x171 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_frame    0x00000000      0x678
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x64 obj/default/hello_world.o
+ .debug_frame   0x00000064       0x80 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x000000e4       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x00000110       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x0000013c       0x48 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000184       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x000001b0       0x64 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000214       0x48 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x0000025c       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000288       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x000002b4       0x48 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_frame   0x000002fc       0x48 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x00000344       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000370       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x0000039c       0x48 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x000003e4       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_frame   0x00000410       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000043c       0x48 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000484       0x64 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x000004e8       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x00000514       0x48 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x0000055c       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x00000588       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x000005b4       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x000005e0       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x0000060c       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_frame   0x00000638       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000658       0x20 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_str      0x00000000      0xd98
+ *(.debug_str)
+ .debug_str     0x00000000       0xd6 obj/default/hello_world.o
+                                0x114 (size before relaxing)
+ .debug_str     0x000000d6      0x133 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+                                0x1eb (size before relaxing)
+ .debug_str     0x00000209       0x4c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000255       0x3a D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                                0x144 (size before relaxing)
+ .debug_str     0x0000028f       0x17 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                                 0xf3 (size before relaxing)
+ .debug_str     0x000002a6      0x10f D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+                                0x1b5 (size before relaxing)
+ .debug_str     0x000003b5       0x7c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+                                0x14a (size before relaxing)
+ .debug_str     0x00000431      0x188 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+                                0x2b7 (size before relaxing)
+ .debug_str     0x000005b9       0x77 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                                0x282 (size before relaxing)
+ .debug_str     0x00000630       0x4d D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                                0x1cc (size before relaxing)
+ .debug_str     0x0000067d       0x50 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                                0x1c2 (size before relaxing)
+ .debug_str     0x000006cd       0x7f D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                                0x1f8 (size before relaxing)
+ .debug_str     0x0000074c       0x44 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+                                0x1b8 (size before relaxing)
+ .debug_str     0x00000790       0x34 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                                0x102 (size before relaxing)
+ .debug_str     0x000007c4      0x120 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+                                0x2b2 (size before relaxing)
+ .debug_str     0x000008e4       0x4b D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                                0x16f (size before relaxing)
+ .debug_str     0x0000092f       0x14 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_errno.o)
+                                 0xe8 (size before relaxing)
+ .debug_str     0x00000943       0x2a D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+                                 0xfe (size before relaxing)
+ .debug_str     0x0000096d       0x34 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                                0x102 (size before relaxing)
+ .debug_str     0x000009a1       0x56 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                                0x2c3 (size before relaxing)
+ .debug_str     0x000009f7       0x2f D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+                                0x1f8 (size before relaxing)
+ .debug_str     0x00000a26       0x28 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+                                0x18c (size before relaxing)
+ .debug_str     0x00000a4e       0x78 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+                                0x1ff (size before relaxing)
+ .debug_str     0x00000ac6       0x3b D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x109 (size before relaxing)
+ .debug_str     0x00000b01       0x24 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+                                0x199 (size before relaxing)
+ .debug_str     0x00000b25       0x26 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+                                0x1a7 (size before relaxing)
+ .debug_str     0x00000b4b       0x30 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+                                0x1c9 (size before relaxing)
+ .debug_str     0x00000b7b       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                                0x108 (size before relaxing)
+ .debug_str     0x00000ba7       0xd1 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-int_errno.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x00000c78       0xde d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+                                0x17c (size before relaxing)
+ .debug_str     0x00000d56       0x42 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+                                0x182 (size before relaxing)
+
+.debug_loc      0x00000000      0x7d0
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x84 obj/default/hello_world.o
+ .debug_loc     0x00000084       0xb0 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x00000134       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x00000160       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x0000018c       0x58 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x000001e4       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000210       0x84 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000294       0x58 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x000002ec       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x00000318       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x00000344       0x58 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_loc     0x0000039c       0x58 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x000003f4       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x00000420       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x0000044c       0x58 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x000004a4       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_loc     0x000004d0       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x000004fc       0x58 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x00000554       0x84 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x000005d8       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x00000604       0x58 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_loc     0x0000065c       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x00000688       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x000006b4       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x000006e0       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x0000070c       0x2c D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_loc     0x00000738       0x6f d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x000007a7       0x29 d:/altera/13.1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.7.3/../../../../../H-i686-mingw32/nios2-elf/lib\libsmallc.a(lib_a-strlen.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x30
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x30 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+                0x0000d000                __alt_data_end = 0xd000
+                0x0000d000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00009c38                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00009c38                PROVIDE (__alt_heap_start, end)
+                0x0000d000                PROVIDE (__alt_heap_limit, 0xd000)
+OUTPUT(Timer.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0xd0
+ .debug_ranges  0x00000000       0x20 D:/project/5_qsys_timer/qsys/software/Timer_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x30 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_ranges  0x00000050       0x28 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000078       0x10 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_ranges  0x00000088       0x18 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_ranges  0x000000a0       0x30 D:/project/5_qsys_timer/qsys/software/Timer_bsp/\libhal_bsp.a(alt_exception_entry.o)

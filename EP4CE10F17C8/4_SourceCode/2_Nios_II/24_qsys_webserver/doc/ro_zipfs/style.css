@@ -1,0 +1,150 @@
+body{
+	text-align:center;
+	font:100%/140% Arial, Helvetica, sans-serif;
+}
+
+div{
+}
+h1{
+	font:140%/140% Arial, Helvetica,"sans-serif bold";
+	text-align:center;
+	color:#FFF;
+	margin-top:0;
+	margin-bottom:0;
+}
+h2{
+	font:120%/140% Arial,Helvetica,"sans-serif bold";
+	text-align:center;
+	margin-bottom:0;
+	margin-top:1;
+	margin-left:0.5em;
+}
+strong{
+	margin-top:0;
+	margin-bottom:0ex;
+	margin-left:0;
+	margin-right:0;
+}
+dd{
+	margin-left:0;
+}
+
+input.adjust_font{
+	font:75%/140% Arial, Helvetica, sans-serif;
+}
+img{
+	margin-right:2px;
+	float:center;
+}
+img.align_center{
+	float:center;
+	margin:4px;
+}
+ul{
+	margin-top:1ex;
+	margin-bottom:6ex;
+  }
+ol{
+	margin-top:1ex;
+	margin-bottom:1ex;
+}
+form{
+	margin-top:2ex;
+	margin-bottom:0;
+	margin-left:0.5em;
+}
+hr{
+	margin-top:1ex;
+	margin-bottom:1ex;
+}
+a:link{ 
+	font-family: Arial, Helvetica, sans-serif; 
+	text-decoration: none;
+	color:#06C; 
+       }
+a:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+       	}
+a:hover{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF9900;
+	text-decoration: underline;
+       }
+a:active{
+	font-family: Arial, Helvetica, sans-serif;
+	}
+#container{
+	width:830px;
+	margin:0 auto;
+	text-align:left;
+	background:#FFF;
+}
+
+#header{
+	background:#06C;
+        clear:both;
+	margin-bottom:0;
+}
+
+#main_content{
+	margin-bottom:0;
+	display:inline;
+	width:410px;
+	float:left;
+	margin-left:210px;
+	margin-top:2ex;
+	background:#FFF;
+	font:75%/140% Arial, Helvetica, sans-serif;
+}
+#main_content p.intro{
+	margin-top:4ex;
+	margin-bottom:15ex;
+}
+#main_content p{
+	margin-top:3ex;
+	margin-bottom:3ex;
+}
+#main_content p.align_center{
+	text-align:center;
+}
+
+#links{
+	width:200px;
+	height:300px;
+	float:left;
+	margin-left:10px;
+	margin-top:0;
+	margin-bottom:0;
+	background:#EFEFEF;
+}
+#links ul.main{
+	margin-left:1em;
+}
+#board_interaction{
+	width:200px;
+	height:300px;
+	float:left;
+	margin-left:-830px;
+	margin-right:0;
+	margin-top:0;
+	margin-bottom:0;
+	font:85%/140% Arial, Helvetica, sans-serif;
+	background:#EFEFEF;
+}
+#board_interaction p{
+	margin-top:0;
+	margin-bottom:0;
+	margin-left:0.5em
+}
+
+#foot{
+	background:#06C;
+	clear:both;
+	color:#FFF;
+	margin-top:0;
+}
+#foot p{
+	margin-top:0;
+	margin-bottom:0;
+}

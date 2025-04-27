@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=D\:\\work\\Pio_irq\\qsys\\software\\irq
+newSoftwareExampleWizardPage.sopcinfoFile=D\:\\work\\Pio_irq\\qsys\\hardware\\irq.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=D\:\\work\\Pio_irq\\qsys\\software\\irq_bsp

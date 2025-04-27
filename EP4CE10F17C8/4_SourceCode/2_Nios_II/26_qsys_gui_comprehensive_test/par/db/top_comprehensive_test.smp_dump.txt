@@ -1,0 +1,211 @@
+
+State Machine - |top_comprehensive_test|lcd_top:u_lcd_top|mlcd_driver:u_mlcd_driver|wr_step
+Name wr_step.step3 wr_step.step2 wr_step.step1 wr_step.idle 
+wr_step.idle 0 0 0 0 
+wr_step.step1 0 0 1 1 
+wr_step.step2 0 1 0 1 
+wr_step.step3 1 0 0 1 
+
+State Machine - |top_comprehensive_test|vip_st_decode:u_vip_st_decode|state
+Name state.DATA state.HEAD state.IDLE 
+state.IDLE 0 0 0 
+state.HEAD 0 1 1 
+state.DATA 1 0 1 
+
+State Machine - |top_comprehensive_test|ST_VIP_bridge:u_ST_VIP_bridge|state
+Name state.DATA state.CODE state.IDLE 
+state.IDLE 0 0 0 
+state.CODE 0 1 1 
+state.DATA 1 0 1 
+
+State Machine - |top_comprehensive_test|ov5640:u_ov5640|i2c_dri_ov5640:u_i2c_dri_ov5640|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|adda_top:u_adda_top|i2c_dri:u_i2c_dri|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|remote_rcv:u_remote_rcv|cur_state
+Name cur_state.st_repeat_code cur_state.st_rec_data cur_state.st_start_judge cur_state.st_start_low_9ms cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 
+cur_state.st_start_low_9ms 0 0 0 1 1 
+cur_state.st_start_judge 0 0 1 0 1 
+cur_state.st_rec_data 0 1 0 0 1 
+cur_state.st_repeat_code 1 0 0 0 1 
+
+State Machine - |top_comprehensive_test|top_touch:u_top_touch|touch_ctrl:u_touch_ctrl|cur_state
+Name cur_state.tp_xy cur_state.id_handle cur_state.getpos_xy cur_state.change_addr cur_state.chk_touch cur_state.cfg_state cur_state.init 
+cur_state.init 0 0 0 0 0 0 0 
+cur_state.cfg_state 0 0 0 0 0 1 1 
+cur_state.chk_touch 0 0 0 0 1 0 1 
+cur_state.change_addr 0 0 0 1 0 0 1 
+cur_state.getpos_xy 0 0 1 0 0 0 1 
+cur_state.id_handle 0 1 0 0 0 0 1 
+cur_state.tp_xy 1 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|top_touch:u_top_touch|touch_gt_cfg:u_touch_gt_cfg|i2c_dri_m:u_i2c_dri|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_control_slave:control_slave|packet_state
+Name packet_state.WAITING packet_state.RECEIVE_PACKET packet_state.SEND_PACKET 
+packet_state.WAITING 0 0 0 
+packet_state.SEND_PACKET 1 0 1 
+packet_state.RECEIVE_PACKET 1 1 0 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_control_slave:control_slave|state
+Name state.IDLE state.RECEIVE_PACKET_WAITING state.SEND_PACKET_WAITING 
+state.IDLE 0 0 0 
+state.SEND_PACKET_WAITING 1 0 1 
+state.RECEIVE_PACKET_WAITING 1 1 0 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_scaler_kernel_creator:kernel_creator|state
+Name state.PARTIAL_RESP state.PARTIAL_RUN state.STEP_RUN state.STEP_RESP state.INIT_CHECK state.INIT_RESP state.INIT_DIVIDE state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 
+state.INIT_DIVIDE 0 0 0 0 0 0 1 1 
+state.INIT_RESP 0 0 0 0 0 1 0 1 
+state.INIT_CHECK 0 0 0 0 1 0 0 1 
+state.STEP_RESP 0 0 0 1 0 0 0 1 
+state.STEP_RUN 0 0 1 0 0 0 0 1 
+state.PARTIAL_RUN 0 1 0 0 0 0 0 1 
+state.PARTIAL_RESP 1 0 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_scaler_scheduler:scheduler|state
+Name state.VOB_END_FRAME state.VOB_CMD_SEND_LINE_OUTPUT state.PM_CMD_SEND_LINE state.AC_CMD_PROCESS_LINE state.LB_CMD_SEND_LINE state.VIB_CMD_SEND_LINE_OUTPUT state.LB_CMD_REC_LINE state.VIB_CMD_SEND_LINE_GET_LINES state.LB_CMD_SHIFT state.COMPARE_SHIFT_LINES state.CALC_SHIFT_LINES state.WAIT_KC_RESP_STEP state.KC_CMD_STEP state.AC_CMD_INIT state.WAIT_KC_RESP_INIT state.VOB_CMD_SEND_CONTROL state.KC_CMD_INIT state.LB_CMD_REC_LINE_IDLE state.VIB_CMD_SEND_LINE_IDLE state.VOB_CMD_SEND_USER_PACKET state.PM_CMD_SEND_USER_PACKET state.VIB_CMD_SEND_USER_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.VIB_CMD_SEND_USER_PACKET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.PM_CMD_SEND_USER_PACKET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.VOB_CMD_SEND_USER_PACKET 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.VIB_CMD_SEND_LINE_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.LB_CMD_REC_LINE_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.KC_CMD_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.VOB_CMD_SEND_CONTROL 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.WAIT_KC_RESP_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.AC_CMD_INIT 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.KC_CMD_STEP 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.WAIT_KC_RESP_STEP 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.CALC_SHIFT_LINES 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.COMPARE_SHIFT_LINES 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.LB_CMD_SHIFT 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.VIB_CMD_SEND_LINE_GET_LINES 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.LB_CMD_REC_LINE 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.VIB_CMD_SEND_LINE_OUTPUT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.LB_CMD_SEND_LINE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.AC_CMD_PROCESS_LINE 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.PM_CMD_SEND_LINE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.VOB_CMD_SEND_LINE_OUTPUT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.VOB_END_FRAME 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_video_output_bridge:video_out|state
+Name state.SEND_PACKET state.SEND_PACKET_SOP state.SEND_CONTROL_PACKET state.IDLE 
+state.IDLE 0 0 0 0 
+state.SEND_CONTROL_PACKET 0 0 1 1 
+state.SEND_PACKET_SOP 0 1 0 1 
+state.SEND_PACKET 1 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_video_output_bridge:video_out|alt_vip_common_video_packet_encode:video_output|state
+Name state.IDLE state.SEND_PACKET state.CONTROL_PACKET 
+state.IDLE 0 0 0 
+state.CONTROL_PACKET 1 0 1 
+state.SEND_PACKET 1 1 0 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|system_qsys_alt_vip_cl_scl_0_scaler_core:scaler_core|alt_vip_scaler_alg_core:scaler_core_inst|alt_vip_scaler_alg_core_controller:local_control|state
+Name state.LATE_EOP state.RUN state.FILL state.VERT_COEFF_STORE state.INIT_1 state.INIT_0 state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.INIT_0 0 0 0 0 0 1 1 
+state.INIT_1 0 0 0 0 1 0 1 
+state.VERT_COEFF_STORE 0 0 0 1 0 0 1 
+state.FILL 0 0 1 0 0 0 1 
+state.RUN 0 1 0 0 0 0 1 
+state.LATE_EOP 1 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_video_input_bridge:video_in|state
+Name state.SEND_PACKET_COMPLETE state.SEND_LINE_COMPLETE state.SEND_PACKET state.WAIT_FOR_SEND_PACKET state.NEW_PACKET state.NEW_CONTROL_PACKET state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.NEW_CONTROL_PACKET 0 0 0 0 0 1 1 
+state.NEW_PACKET 0 0 0 0 1 0 1 
+state.WAIT_FOR_SEND_PACKET 0 0 0 1 0 0 1 
+state.SEND_PACKET 0 0 1 0 0 0 1 
+state.SEND_LINE_COMPLETE 0 1 0 0 0 0 1 
+state.SEND_PACKET_COMPLETE 1 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_alt_vip_cl_scl_0:alt_vip_cl_scl_0|alt_vip_video_input_bridge:video_in|alt_vip_common_video_packet_decode:video_input|state
+Name state.SEND_PACKET_SOP state.CONTROL_PACKET state.SINGLE_BEAT_PACKET state.IDLE state.SEND_PACKET 
+state.IDLE 0 0 0 0 0 
+state.SINGLE_BEAT_PACKET 0 0 1 1 0 
+state.CONTROL_PACKET 0 1 0 1 0 
+state.SEND_PACKET_SOP 1 0 0 1 0 
+state.SEND_PACKET 0 0 0 1 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_sdram:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_sdram:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_sdram:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_sdram:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |top_comprehensive_test|system_qsys:u_qsys|system_qsys_nios2:nios2|system_qsys_nios2_nios2_oci:the_system_qsys_nios2_nios2_oci|system_qsys_nios2_jtag_debug_module_wrapper:the_system_qsys_nios2_jtag_debug_module_wrapper|system_qsys_nios2_jtag_debug_module_tck:the_system_qsys_nios2_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

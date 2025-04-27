@@ -1,0 +1,126 @@
+!SESSION 2018-10-15 15:31:26.106 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-10-15 15:32:41.370
+!MESSAGE Indexed 'qsys_sdram_rw_bsp' (82 sources, 61 headers) in 0.74 sec: 1,142 declarations; 3,041 references; 117 unresolved inclusions; 5 syntax errors; 210 unresolved names (4.78%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-10-15 15:32:57.295
+!MESSAGE Indexed 'qsys_sdram_rw' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 15:38:41.253
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x1800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 15:38:52.162
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x1800 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+!SESSION 2018-10-15 15:41:43.569 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 15:47:09.910
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x1800]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 15:47:20.983
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x1800 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+!SESSION 2018-10-15 16:06:41.309 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 16:09:59.045
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 16:10:14.589
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-15 16:10:38.492
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x4001000, /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-15 16:10:38.492
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 16:11:37.593
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 16:11:51.090
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-15 16:12:11.796
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x4001000, /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-10-15 16:12:11.796
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 16:12:47.225
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-15 16:13:00.722
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 --reset-target /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+!SESSION 2018-10-17 09:24:39.619 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-17 09:25:14.360
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-10-17 09:25:16.780
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 --reset-target /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+!SESSION 2018-11-05 13:40:46.274 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:42:05.148
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:42:08.276
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+!SESSION 2018-11-05 13:42:54.189 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:43:22.315
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:43:25.329
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:45:03.031
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:45:04.546
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:45:07.514
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:46:28.744
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:46:30.242
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x4001000]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-11-05 13:46:33.209
+!MESSAGE Executing: [D:/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x4001000 /cygdrive/f/Qsys/qsys_sdram/qsys/software/qsys_sdram_rw/qsys_sdram_rw.elf]

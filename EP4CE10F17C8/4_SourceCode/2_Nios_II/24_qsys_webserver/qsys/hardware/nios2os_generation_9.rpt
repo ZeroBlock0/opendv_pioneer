@@ -1,0 +1,319 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=F:/Qsys/qsys_webserver/qsys/hardware/ --output-directory=F:/Qsys/qsys_webserver/qsys/hardware/nios2os/ --report-file=bsf:F:/Qsys/qsys_webserver/qsys/hardware/nios2os.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE10F17C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=F:/Qsys/qsys_webserver/qsys/hardware/nios2os.qsys
+Progress: Loading hardware/nios2os.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.1]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding epcs_flash_controller [altera_avalon_epcs_flash_controller 13.1]
+Progress: Parameterizing module epcs_flash_controller
+Progress: Adding tse_mac [altera_eth_tse 13.1]
+Progress: Parameterizing module tse_mac
+Progress: Adding sgdma_tx [altera_avalon_sgdma 13.1]
+Progress: Parameterizing module sgdma_tx
+Progress: Adding sgdma_rx [altera_avalon_sgdma 13.1]
+Progress: Parameterizing module sgdma_rx
+Progress: Adding descriptor_memory [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module descriptor_memory
+Progress: Adding pb_dma_to_sdram [altera_avalon_mm_bridge 13.1]
+Progress: Parameterizing module pb_dma_to_sdram
+Progress: Adding sys_clk_timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding high_res_timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module high_res_timer
+Progress: Adding led_pio [altera_avalon_pio 13.1]
+Progress: Parameterizing module led_pio
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios2os.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios2os.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: nios2os.tse_mac.receive/sgdma_rx.in: The source has a ready latency of 2, while the sink has 0. Avalon Streaming Transform will be executed.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=F:/Qsys/qsys_webserver/qsys/hardware/ --output-directory=F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:F:/Qsys/qsys_webserver/qsys/hardware/nios2os.html --report-file=sopcinfo:F:/Qsys/qsys_webserver/qsys/hardware/nios2os.sopcinfo --report-file=cmp:F:/Qsys/qsys_webserver/qsys/hardware/nios2os.cmp --report-file=qip:F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/nios2os.qip --report-file=svd --report-file=regmap:F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/nios2os.regmap --report-file=debuginfo:F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/nios2os.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE10F17C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=F:/Qsys/qsys_webserver/qsys/hardware/nios2os.qsys --language=VERILOG
+Progress: Loading hardware/nios2os.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.1]
+Progress: Parameterizing module clk
+Progress: Adding nios2 [altera_nios2_qsys 13.1]
+Progress: Parameterizing module nios2
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 13.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding epcs_flash_controller [altera_avalon_epcs_flash_controller 13.1]
+Progress: Parameterizing module epcs_flash_controller
+Progress: Adding tse_mac [altera_eth_tse 13.1]
+Progress: Parameterizing module tse_mac
+Progress: Adding sgdma_tx [altera_avalon_sgdma 13.1]
+Progress: Parameterizing module sgdma_tx
+Progress: Adding sgdma_rx [altera_avalon_sgdma 13.1]
+Progress: Parameterizing module sgdma_rx
+Progress: Adding descriptor_memory [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module descriptor_memory
+Progress: Adding pb_dma_to_sdram [altera_avalon_mm_bridge 13.1]
+Progress: Parameterizing module pb_dma_to_sdram
+Progress: Adding sys_clk_timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding high_res_timer [altera_avalon_timer 13.1]
+Progress: Parameterizing module high_res_timer
+Progress: Adding led_pio [altera_avalon_pio 13.1]
+Progress: Parameterizing module led_pio
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios2os.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: nios2os.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: nios2os.tse_mac.receive/sgdma_rx.in: The source has a ready latency of 2, while the sink has 0. Avalon Streaming Transform will be executed.
+Info: nios2os: Generating nios2os "nios2os" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 14 modules, 74 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 14 modules, 55 connections
+Info: merlin_translator_transform: After transform: 29 modules, 115 connections
+Info: merlin_domain_transform: After transform: 58 modules, 310 connections
+Info: merlin_router_transform: After transform: 73 modules, 370 connections
+Info: merlin_traffic_limiter_transform: After transform: 75 modules, 380 connections
+Info: merlin_burst_transform: After transform: 76 modules, 384 connections
+Info: merlin_network_to_switch_transform: After transform: 105 modules, 461 connections
+Info: merlin_width_transform: After transform: 107 modules, 469 connections
+Info: limiter_update_transform: After transform: 107 modules, 471 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 109 modules, 579 connections
+Info: merlin_hierarchy_transform: After transform: 15 modules, 76 connections
+Info: merlin_initial_interconnect_transform: After transform: 5 modules, 13 connections
+Info: merlin_translator_transform: After transform: 10 modules, 33 connections
+Info: merlin_domain_transform: After transform: 17 modules, 80 connections
+Info: merlin_router_transform: After transform: 22 modules, 100 connections
+Info: merlin_network_to_switch_transform: After transform: 31 modules, 123 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 33 modules, 154 connections
+Info: merlin_hierarchy_transform: After transform: 16 modules, 80 connections
+Info: merlin_initial_interconnect_transform: After transform: 5 modules, 11 connections
+Info: merlin_translator_transform: After transform: 8 modules, 23 connections
+Info: merlin_domain_transform: After transform: 13 modules, 54 connections
+Info: merlin_router_transform: After transform: 16 modules, 66 connections
+Info: merlin_network_to_switch_transform: After transform: 21 modules, 79 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 23 modules, 100 connections
+Info: merlin_hierarchy_transform: After transform: 17 modules, 84 connections
+Info: merlin_mm_transform: After transform: 17 modules, 84 connections
+Info: merlin_interrupt_mapper_transform: After transform: 18 modules, 88 connections
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: com_altera_sopcmodel_transforms_avalonst_AvalonStreamingTransform: After transform: 19 modules, 92 connections
+Info: reset_adaptation_transform: After transform: 21 modules, 92 connections
+Warning: nios2os: "No matching role found for epcs_flash_controller:epcs_control_port:endofpacket (endofpacket)"
+Warning: nios2os: "No matching role found for epcs_flash_controller:epcs_control_port:dataavailable (dataavailable)"
+Warning: nios2os: "No matching role found for epcs_flash_controller:epcs_control_port:readyfordata (readyfordata)"
+Info: nios2: Starting RTL generation for module 'nios2os_nios2'
+Info: nios2:   Generation command is [exec D:/eda/quartus13/quartus/bin/eperlcmd.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/eda/quartus13/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/eda/quartus13/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/eda/quartus13/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/eda/quartus13/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios2os_nios2 --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0001_nios2_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0001_nios2_gen//nios2os_nios2_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2: # 2019.01.29 14:34:54 (*) Starting Nios II generation
+Info: nios2: # 2019.01.29 14:34:54 (*)   Checking for plaintext license.
+Info: nios2: # 2019.01.29 14:34:57 (*)   Plaintext license not found.
+Info: nios2: # 2019.01.29 14:34:57 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2: # 2019.01.29 14:34:57 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: nios2: # 2019.01.29 14:34:57 (*)   Elaborating CPU configuration settings
+Info: nios2: # 2019.01.29 14:34:57 (*)   Creating all objects for CPU
+Info: nios2: # 2019.01.29 14:34:57 (*)     Testbench
+Info: nios2: # 2019.01.29 14:34:58 (*)     Instruction decoding
+Info: nios2: # 2019.01.29 14:34:58 (*)       Instruction fields
+Info: nios2: # 2019.01.29 14:34:58 (*)       Instruction decodes
+Info: nios2: # 2019.01.29 14:34:58 (*)       Signals for RTL simulation waveforms
+Info: nios2: # 2019.01.29 14:34:58 (*)       Instruction controls
+Info: nios2: # 2019.01.29 14:34:58 (*)     Pipeline frontend
+Info: nios2: # 2019.01.29 14:34:58 (*)     Pipeline backend
+Info: nios2: # 2019.01.29 14:35:01 (*)   Generating RTL from CPU objects
+Info: nios2: # 2019.01.29 14:35:03 (*)   Creating encrypted RTL
+Info: nios2: # 2019.01.29 14:35:04 (*) Done Nios II generation
+Info: nios2: Done RTL generation for module 'nios2os_nios2'
+Info: nios2: "nios2os" instantiated altera_nios2_qsys "nios2"
+Info: sdram: Starting RTL generation for module 'nios2os_sdram'
+Info: sdram:   Generation command is [exec D:/eda/quartus13/quartus/bin/perl/bin/perl.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nios2os_sdram --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0002_sdram_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0002_sdram_gen//nios2os_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'nios2os_sdram'
+Info: sdram: "nios2os" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sysid_qsys: "nios2os" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: jtag_uart: Starting RTL generation for module 'nios2os_jtag_uart'
+Info: jtag_uart:   Generation command is [exec D:/eda/quartus13/quartus/bin/perl/bin/perl.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios2os_jtag_uart --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0004_jtag_uart_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0004_jtag_uart_gen//nios2os_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'nios2os_jtag_uart'
+Info: jtag_uart: "nios2os" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: epcs_flash_controller: Starting RTL generation for module 'nios2os_epcs_flash_controller'
+Info: epcs_flash_controller:   Generation command is [exec D:/eda/quartus13/quartus/bin/perl/bin/perl.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller/generate_rtl.pl --name=nios2os_epcs_flash_controller --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0005_epcs_flash_controller_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0005_epcs_flash_controller_gen//nios2os_epcs_flash_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: epcs_flash_controller: Done RTL generation for module 'nios2os_epcs_flash_controller'
+Info: epcs_flash_controller: "nios2os" instantiated altera_avalon_epcs_flash_controller "epcs_flash_controller"
+Info: pipeline_bridge_swap_transform: After transform: 1 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: tse_mac: "nios2os" instantiated altera_eth_tse "tse_mac"
+Info: sgdma_tx: Starting RTL generation for module 'nios2os_sgdma_tx'
+Info: sgdma_tx:   Generation command is [exec D:/eda/quartus13/quartus/bin/perl/bin/perl.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=nios2os_sgdma_tx --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0006_sgdma_tx_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0006_sgdma_tx_gen//nios2os_sgdma_tx_component_configuration.pl  --do_build_sim=0  ]
+Info: sgdma_tx: Done RTL generation for module 'nios2os_sgdma_tx'
+Info: sgdma_tx: "nios2os" instantiated altera_avalon_sgdma "sgdma_tx"
+Info: sgdma_rx: Starting RTL generation for module 'nios2os_sgdma_rx'
+Info: sgdma_rx:   Generation command is [exec D:/eda/quartus13/quartus/bin/perl/bin/perl.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=nios2os_sgdma_rx --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0007_sgdma_rx_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0007_sgdma_rx_gen//nios2os_sgdma_rx_component_configuration.pl  --do_build_sim=0  ]
+Info: sgdma_rx: Done RTL generation for module 'nios2os_sgdma_rx'
+Info: sgdma_rx: "nios2os" instantiated altera_avalon_sgdma "sgdma_rx"
+Info: descriptor_memory: Starting RTL generation for module 'nios2os_descriptor_memory'
+Info: descriptor_memory:   Generation command is [exec D:/eda/quartus13/quartus/bin/perl/bin/perl.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios2os_descriptor_memory --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0008_descriptor_memory_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0008_descriptor_memory_gen//nios2os_descriptor_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: descriptor_memory: Done RTL generation for module 'nios2os_descriptor_memory'
+Info: descriptor_memory: "nios2os" instantiated altera_avalon_onchip_memory2 "descriptor_memory"
+Info: pb_dma_to_sdram: "nios2os" instantiated altera_avalon_mm_bridge "pb_dma_to_sdram"
+Info: sys_clk_timer: Starting RTL generation for module 'nios2os_sys_clk_timer'
+Info: sys_clk_timer:   Generation command is [exec D:/EDA/quartus13/quartus/bin//perl/bin/perl.exe -I D:/EDA/quartus13/quartus/bin//perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios2os_sys_clk_timer --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0009_sys_clk_timer_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0009_sys_clk_timer_gen//nios2os_sys_clk_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk_timer: Done RTL generation for module 'nios2os_sys_clk_timer'
+Info: sys_clk_timer: "nios2os" instantiated altera_avalon_timer "sys_clk_timer"
+Info: high_res_timer: Starting RTL generation for module 'nios2os_high_res_timer'
+Info: high_res_timer:   Generation command is [exec D:/EDA/quartus13/quartus/bin//perl/bin/perl.exe -I D:/EDA/quartus13/quartus/bin//perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=nios2os_high_res_timer --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0010_high_res_timer_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0010_high_res_timer_gen//nios2os_high_res_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: high_res_timer: Done RTL generation for module 'nios2os_high_res_timer'
+Info: high_res_timer: "nios2os" instantiated altera_avalon_timer "high_res_timer"
+Info: led_pio: Starting RTL generation for module 'nios2os_led_pio'
+Info: led_pio:   Generation command is [exec D:/eda/quartus13/quartus/bin/perl/bin/perl.exe -I D:/eda/quartus13/quartus/bin/perl/lib -I D:/eda/quartus13/quartus/sopc_builder/bin/europa -I D:/eda/quartus13/quartus/sopc_builder/bin/perl_lib -I D:/eda/quartus13/quartus/sopc_builder/bin -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/common -I D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/eda/quartus13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios2os_led_pio --dir=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0011_led_pio_gen/ --quartus_dir=D:/eda/quartus13/quartus --verilog --config=C:/Users/CX_OFF~1/AppData/Local/Temp/alt7925_8436612893879964247.dir/0011_led_pio_gen//nios2os_led_pio_component_configuration.pl  --do_build_sim=0  ]
+Info: led_pio: Done RTL generation for module 'nios2os_led_pio'
+Info: led_pio: "nios2os" instantiated altera_avalon_pio "led_pio"
+Info: pipeline_bridge_swap_transform: After transform: 95 modules, 325 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 95 modules, 325 connections
+Info: mm_interconnect_0: "nios2os" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: pipeline_bridge_swap_transform: After transform: 28 modules, 84 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 28 modules, 84 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 28 modules, 84 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 28 modules, 84 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 28 modules, 84 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 28 modules, 84 connections
+Info: mm_interconnect_1: "nios2os" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_1"
+Info: pipeline_bridge_swap_transform: After transform: 18 modules, 52 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 18 modules, 52 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 18 modules, 52 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 18 modules, 52 connections
+Info: mm_interconnect_2: "nios2os" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_2"
+Info: irq_mapper: "nios2os" instantiated altera_irq_mapper "irq_mapper"
+Info: pipeline_bridge_swap_transform: After transform: 3 modules, 3 connections
+Info: No custom instruction connections, skipping transform 
+Info: avalon_st_adapter: "nios2os" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: rst_controller: "nios2os" instantiated altera_reset_controller "rst_controller"
+Info: i_tse_mac: "tse_mac" instantiated altera_eth_tse_mac "i_tse_mac"
+Info: nios2_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_instruction_master_translator"
+Info: nios2_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "nios2_jtag_debug_module_translator"
+Info: nios2_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "nios2_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "mm_interconnect_0" instantiated altera_merlin_router "id_router_001"
+Info: id_router_003: "mm_interconnect_0" instantiated altera_merlin_router "id_router_003"
+Info: limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "limiter"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_001"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_003"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_001"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_002"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: addr_router: "mm_interconnect_1" instantiated altera_merlin_router "addr_router"
+Info: id_router: "mm_interconnect_1" instantiated altera_merlin_router "id_router"
+Info: cmd_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: addr_router: "mm_interconnect_2" instantiated altera_merlin_router "addr_router"
+Info: id_router: "mm_interconnect_2" instantiated altera_merlin_router "id_router"
+Info: cmd_xbar_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file F:/Qsys/qsys_webserver/qsys/hardware/nios2os/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: timing_adapter_0: Starting generation. 
+Info: timing_adapter_0_fifo: Starting generation. 
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: nios2os: Done "nios2os" with 59 modules, 174 files, 4251814 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

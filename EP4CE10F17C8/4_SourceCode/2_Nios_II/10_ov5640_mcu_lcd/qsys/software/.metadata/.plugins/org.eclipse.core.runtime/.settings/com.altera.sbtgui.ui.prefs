@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=F\:\\project\\ov5640_mcu_lcd\\qsys\\software\\lcd_init
+newSoftwareExampleWizardPage.sopcinfoFile=F\:\\project\\ov5640_mcu_lcd\\qsys\\hardware\\qsys.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=F\:\\project\\ov5640_mcu_lcd\\qsys\\software\\lcd_init_bsp

@@ -1,0 +1,292 @@
+
+**** Build of configuration Nios II for project GUI_Test_bsp ****
+
+make all 
+      0 [main] pwd 22180 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22076 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22056 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test ****
+
+make all 
+      0 [main] sh 19732 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21980 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21692 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22172 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 22408 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+      0 [main] pwd 22208 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21204 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2856 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] echo 6264 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Compiling gui_main.c to obj/default/gui_main.o
+the public mailing list cygwin@cygwin.com
+      0 [main] mkdir 22268 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+nios2-elf-gcc -xc -MP -MMD -c -IF:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp//HAL/inc -IF:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/ -IF:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp//drivers/inc -IuCGUI/AntiAlias -IuCGUI/Config -IuCGUI/ConvertColor -IuCGUI/ConvertMono -IuCGUI/Core -IuCGUI/Font -IuCGUI/GUI_X -IuCGUI/JPEG -IuCGUI/LCDDriver -IuCGUI/MemDev -IuCGUI/MultiLayer -IuCGUI/Widget -IuCGUI/WM -IAPP  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/gui_main.o gui_main.c
+gui_main.c: In function 'main':
+gui_main.c:460:27: warning: pointer targets in passing argument 2 of 'uart_send_str' differ in signedness [-Wpointer-sign]
+In file included from gui_main.c:8:0:
+draw_page.h:154:6: note: expected 'unsigned char *' but argument is of type 'char *'
+gui_main.c:485:25: warning: implicit declaration of function 'alt_dcache_flush_all' [-Wimplicit-function-declaration]
+      0 [main] true 22480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 21588 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Linking GUI_Test.elf
+the public mailing list cygwin@cygwin.com
+nios2-elf-g++  -T'F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp//linker.x' -msys-crt0='F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LF:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/   -Wl,-Map=GUI_Test.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o GUI_Test.elf obj/default/APP/24cxx.o obj/default/APP/adda_test.o obj/default/APP/ap3216c.o obj/default/APP/calendar.o obj/default/APP/dac.o obj/default/APP/delay.o obj/default/APP/mculcd.o obj/default/APP/mdio.o obj/default/APP/myiic.o obj/default/APP/rgblcd.o obj/default/APP/rtc.o obj/default/APP/sd_spi.o obj/default/APP/wm8978.o obj/default/draw_page.o obj/default/gui_main.o obj/default/source/home_pic.o obj/default/source/yinfu_01.o obj/default/uCGUI/AntiAlias/GUIAAArc.o obj/default/uCGUI/AntiAlias/GUIAAChar.o obj/default/uCGUI/AntiAlias/GUIAAChar2.o obj/default/uCGUI/AntiAlias/GUIAAChar4.o obj/default/uCGUI/AntiAlias/GUIAACircle.o obj/default/uCGUI/AntiAlias/GUIAALib.o obj/default/uCGUI/AntiAlias/GUIAALine.o obj/default/uCGUI/AntiAlias/GUIAAPoly.o obj/default/uCGUI/AntiAlias/GUIAAPolyOut.o obj/default/uCGUI/ConvertColor/LCDP111.o obj/default/uCGUI/ConvertColor/LCDP222.o obj/default/uCGUI/ConvertColor/LCDP233.o obj/default/uCGUI/ConvertColor/LCDP323.o obj/default/uCGUI/ConvertColor/LCDP332.o obj/default/uCGUI/ConvertColor/LCDP444_12.o obj/default/uCGUI/ConvertColor/LCDP444_12_1.o obj/default/uCGUI/ConvertColor/LCDP444_16.o obj/default/uCGUI/ConvertColor/LCDP555.o obj/default/uCGUI/ConvertColor/LCDP556.o obj/default/uCGUI/ConvertColor/LCDP565.o obj/default/uCGUI/ConvertColor/LCDP655.o obj/default/uCGUI/ConvertColor/LCDP8666.o obj/default/uCGUI/ConvertColor/LCDP8666_1.o obj/default/uCGUI/ConvertColor/LCDPM233.o obj/default/uCGUI/ConvertColor/LCDPM323.o obj/default/uCGUI/ConvertColor/LCDPM332.o obj/default/uCGUI/ConvertColor/LCDPM444_12.o obj/default/uCGUI/ConvertColor/LCDPM444_16.o obj/default/uCGUI/ConvertColor/LCDPM555.o obj/default/uCGUI/ConvertColor/LCDPM556.o obj/default/uCGUI/ConvertColor/LCDPM565.o obj/default/uCGUI/ConvertColor/LCDPM655.o obj/default/uCGUI/ConvertMono/LCDP0.o obj/default/uCGUI/ConvertMono/LCDP2.o obj/default/uCGUI/ConvertMono/LCDP4.o obj/default/uCGUI/Core/GUI2DLib.o obj/default/uCGUI/Core/GUIAlloc.o obj/default/uCGUI/Core/GUIArc.o obj/default/uCGUI/Core/GUIChar.o obj/default/uCGUI/Core/GUICharLine.o obj/default/uCGUI/Core/GUICharM.o obj/default/uCGUI/Core/GUICharP.o obj/default/uCGUI/Core/GUICirc.o obj/default/uCGUI/Core/GUIColor2Index.o obj/default/uCGUI/Core/GUICore.o obj/default/uCGUI/Core/GUICurs.o obj/default/uCGUI/Core/GUIEncJS.o obj/default/uCGUI/Core/GUIIndex2Color.o obj/default/uCGUI/Core/GUIPolyE.o obj/default/uCGUI/Core/GUIPolyM.o obj/default/uCGUI/Core/GUIPolyR.o obj/default/uCGUI/Core/GUIRealloc.o obj/default/uCGUI/Core/GUIStream.o obj/default/uCGUI/Core/GUITask.o obj/default/uCGUI/Core/GUITime.o obj/default/uCGUI/Core/GUITimer.o obj/default/uCGUI/Core/GUIUC0.o obj/default/uCGUI/Core/GUIVal.o obj/default/uCGUI/Core/GUIValf.o obj/default/uCGUI/Core/GUI_ALLOC_AllocInit.o obj/default/uCGUI/Core/GUI_ALLOC_AllocZero.o obj/default/uCGUI/Core/GUI_AddBin.o obj/default/uCGUI/Core/GUI_AddDec.o obj/default/uCGUI/Core/GUI_AddDecMin.o obj/default/uCGUI/Core/GUI_AddDecShift.o obj/default/uCGUI/Core/GUI_AddHex.o obj/default/uCGUI/Core/GUI_AddKeyMsgHook.o obj/default/uCGUI/Core/GUI_BMP.o obj/default/uCGUI/Core/GUI_BMP_Serialize.o obj/default/uCGUI/Core/GUI_CalcColorDist.o obj/default/uCGUI/Core/GUI_ClearRectEx.o obj/default/uCGUI/Core/GUI_Color2VisColor.o obj/default/uCGUI/Core/GUI_CursorArrowL.o obj/default/uCGUI/Core/GUI_CursorArrowLI.o obj/default/uCGUI/Core/GUI_CursorArrowLPx.o obj/default/uCGUI/Core/GUI_CursorArrowM.o obj/default/uCGUI/Core/GUI_CursorArrowMI.o obj/default/uCGUI/Core/GUI_CursorArrowMPx.o obj/default/uCGUI/Core/GUI_CursorArrowS.o obj/default/uCGUI/Core/GUI_CursorArrowSI.o obj/default/uCGUI/Core/GUI_CursorArrowSPx.o obj/default/uCGUI/Core/GUI_CursorCrossL.o obj/default/uCGUI/Core/GUI_CursorCrossLI.o obj/default/uCGUI/Core/GUI_CursorCrossLPx.o obj/default/uCGUI/Core/GUI_CursorCrossM.o obj/default/uCGUI/Core/GUI_CursorCrossMI.o obj/default/uCGUI/Core/GUI_CursorCrossMPx.o obj/default/uCGUI/Core/GUI_CursorCrossS.o obj/default/uCGUI/Core/GUI_CursorCrossSI.o obj/default/uCGUI/Core/GUI_CursorCrossSPx.o obj/default/uCGUI/Core/GUI_CursorHeaderM.o obj/default/uCGUI/Core/GUI_CursorHeaderMI.o obj/default/uCGUI/Core/GUI_CursorHeaderMPx.o obj/default/uCGUI/Core/GUI_CursorPal.o obj/default/uCGUI/Core/GUI_CursorPalI.o obj/default/uCGUI/Core/GUI_DispBin.o obj/default/uCGUI/Core/GUI_DispCEOL.o obj/default/uCGUI/Core/GUI_DispChar.o obj/default/uCGUI/Core/GUI_DispChars.o obj/default/uCGUI/Core/GUI_DispHex.o obj/default/uCGUI/Core/GUI_DispString.o obj/default/uCGUI/Core/GUI_DispStringAt.o obj/default/uCGUI/Core/GUI_DispStringAtCEOL.o obj/default/uCGUI/Core/GUI_DispStringHCenter.o obj/default/uCGUI/Core/GUI_DispStringInRect.o obj/default/uCGUI/Core/GUI_DispStringInRectEx.o obj/default/uCGUI/Core/GUI_DispStringInRectMax.o obj/default/uCGUI/Core/GUI_DispStringLen.o obj/default/uCGUI/Core/GUI_DrawBitmap.o obj/default/uCGUI/Core/GUI_DrawBitmapEx.o obj/default/uCGUI/Core/GUI_DrawBitmapExp.o obj/default/uCGUI/Core/GUI_DrawBitmapMag.o obj/default/uCGUI/Core/GUI_DrawFocusRect.o obj/default/uCGUI/Core/GUI_DrawGraph.o obj/default/uCGUI/Core/GUI_DrawHLine.o obj/default/uCGUI/Core/GUI_DrawPie.o obj/default/uCGUI/Core/GUI_DrawPixel.o obj/default/uCGUI/Core/GUI_DrawPolyline.o obj/default/uCGUI/Core/GUI_DrawRectEx.o obj/default/uCGUI/Core/GUI_DrawVLine.o obj/default/uCGUI/Core/GUI_ErrorOut.o obj/default/uCGUI/Core/GUI_Exec.o obj/default/uCGUI/Core/GUI_FillPolygon.o obj/default/uCGUI/Core/GUI_FillRect.o obj/default/uCGUI/Core/GUI_FillRectEx.o obj/default/uCGUI/Core/GUI_GetBitmapPixelColor.o obj/default/uCGUI/Core/GUI_GetBitmapPixelIndex.o obj/default/uCGUI/Core/GUI_GetClientRect.o obj/default/uCGUI/Core/GUI_GetColor.o obj/default/uCGUI/Core/GUI_GetDispPos.o obj/default/uCGUI/Core/GUI_GetFont.o obj/default/uCGUI/Core/GUI_GetFontInfo.o obj/default/uCGUI/Core/GUI_GetFontSizeY.o obj/default/uCGUI/Core/GUI_GetLineStyle.o obj/default/uCGUI/Core/GUI_GetStringDistX.o obj/default/uCGUI/Core/GUI_GetTextAlign.o obj/default/uCGUI/Core/GUI_GetTextExtend.o obj/default/uCGUI/Core/GUI_GetTextMode.o obj/default/uCGUI/Core/GUI_GetVersionString.o obj/default/uCGUI/Core/GUI_GetYSizeOfFont.o obj/default/uCGUI/Core/GUI_Goto.o obj/default/uCGUI/Core/GUI_InitLUT.o obj/default/uCGUI/Core/GUI_InvertRect.o obj/default/uCGUI/Core/GUI_IsInFont.o obj/default/uCGUI/Core/GUI_Log.o obj/default/uCGUI/Core/GUI_MOUSE.o obj/default/uCGUI/Core/GUI_MOUSE_DriverPS2.o obj/default/uCGUI/Core/GUI_MergeRect.o obj/default/uCGUI/Core/GUI_MoveRect.o obj/default/uCGUI/Core/GUI_OnKey.o obj/default/uCGUI/Core/GUI_PID.o obj/default/uCGUI/Core/GUI_Pen.o obj/default/uCGUI/Core/GUI_RectsIntersect.o obj/default/uCGUI/Core/GUI_SIF.o obj/default/uCGUI/Core/GUI_SIF_Prop.o obj/default/uCGUI/Core/GUI_SaveContext.o obj/default/uCGUI/Core/GUI_SelectLCD.o obj/default/uCGUI/Core/GUI_SelectLayer.o obj/default/uCGUI/Core/GUI_SetColor.o obj/default/uCGUI/Core/GUI_SetColorIndex.o obj/default/uCGUI/Core/GUI_SetDecChar.o obj/default/uCGUI/Core/GUI_SetDefault.o obj/default/uCGUI/Core/GUI_SetDrawMode.o obj/default/uCGUI/Core/GUI_SetFont.o obj/default/uCGUI/Core/GUI_SetLBorder.o obj/default/uCGUI/Core/GUI_SetLUTColor.o obj/default/uCGUI/Core/GUI_SetLUTColorEx.o obj/default/uCGUI/Core/GUI_SetLUTEntry.o obj/default/uCGUI/Core/GUI_SetLineStyle.o obj/default/uCGUI/Core/GUI_SetOrg.o obj/default/uCGUI/Core/GUI_SetPixelIndex.o obj/default/uCGUI/Core/GUI_SetTextAlign.o obj/default/uCGUI/Core/GUI_SetTextMode.o obj/default/uCGUI/Core/GUI_SetTextStyle.o obj/default/uCGUI/Core/GUI_TOUCH.o obj/default/uCGUI/Core/GUI_TOUCH_DriverAnalog.o obj/default/uCGUI/Core/GUI_TOUCH_StoreState.o obj/default/uCGUI/Core/GUI_TOUCH_StoreUnstable.o obj/default/uCGUI/Core/GUI_UC.o obj/default/uCGUI/Core/GUI_UC_DispString.o obj/default/uCGUI/Core/GUI_UC_EncodeNone.o obj/default/uCGUI/Core/GUI_UC_EncodeUTF8.o obj/default/uCGUI/Core/GUI_WaitEvent.o obj/default/uCGUI/Core/GUI_WaitKey.o obj/default/uCGUI/Core/GUI_Warn.o obj/default/uCGUI/Core/GUI__AddSpaceHex.o obj/default/uCGUI/Core/GUI__CalcTextRect.o obj/default/uCGUI/Core/GUI__DivideRound.o obj/default/uCGUI/Core/GUI__DivideRound32.o obj/default/uCGUI/Core/GUI__GetFontSizeY.o obj/default/uCGUI/Core/GUI__GetNumChars.o obj/default/uCGUI/Core/GUI__HandleEOLine.o obj/default/uCGUI/Core/GUI__IntersectRect.o obj/default/uCGUI/Core/GUI__IntersectRects.o obj/default/uCGUI/Core/GUI__Read.o obj/default/uCGUI/Core/GUI__ReduceRect.o obj/default/uCGUI/Core/GUI__SetText.o obj/default/uCGUI/Core/GUI__Wrap.o obj/default/uCGUI/Core/GUI__memset.o obj/default/uCGUI/Core/GUI__memset16.o obj/default/uCGUI/Core/GUI__strcmp.o obj/default/uCGUI/Core/GUI__strlen.o obj/default/uCGUI/Core/LCD.o obj/default/uCGUI/Core/LCDAA.o obj/default/uCGUI/Core/LCDColor.o obj/default/uCGUI/Core/LCDGetP.o obj/default/uCGUI/Core/LCDInfo.o obj/default/uCGUI/Core/LCDInfo0.o obj/default/uCGUI/Core/LCDInfo1.o obj/default/uCGUI/Core/LCDL0Delta.o obj/default/uCGUI/Core/LCDL0Mag.o obj/default/uCGUI/Core/LCDP1.o obj/default/uCGUI/Core/LCDP565_Index2Color.o obj/default/uCGUI/Core/LCDPM565_Index2Color.o obj/default/uCGUI/Core/LCDRLE4.o obj/default/uCGUI/Core/LCDRLE8.o obj/default/uCGUI/Core/LCD_API.o obj/default/uCGUI/Core/LCD_DrawBitmap_565.o obj/default/uCGUI/Core/LCD_DrawBitmap_M565.o obj/default/uCGUI/Core/LCD_DrawVLine.o obj/default/uCGUI/Core/LCD_GetColorIndex.o obj/default/uCGUI/Core/LCD_GetEx.o obj/default/uCGUI/Core/LCD_GetNumDisplays.o obj/default/uCGUI/Core/LCD_GetPixelColor.o obj/default/uCGUI/Core/LCD_Index2ColorEx.o obj/default/uCGUI/Core/LCD_L0_Generic.o obj/default/uCGUI/Core/LCD_Mirror.o obj/default/uCGUI/Core/LCD_MixColors256.o obj/default/uCGUI/Core/LCD_Rotate180.o obj/default/uCGUI/Core/LCD_RotateCCW.o obj/default/uCGUI/Core/LCD_RotateCW.o obj/default/uCGUI/Core/LCD_SelectLCD.o obj/default/uCGUI/Core/LCD_SetAPI.o obj/default/uCGUI/Core/LCD_SetClipRectEx.o obj/default/uCGUI/Core/LCD_UpdateColorIndices.o obj/default/uCGUI/Font/Chinese_ST36_B.o obj/default/uCGUI/Font/Chinese_WRYH32.o obj/default/uCGUI/Font/F08_1.o obj/default/uCGUI/Font/F08_ASCII.o obj/default/uCGUI/Font/F10S_1.o obj/default/uCGUI/Font/F10S_ASCII.o obj/default/uCGUI/Font/F10_1.o obj/default/uCGUI/Font/F10_ASCII.o obj/default/uCGUI/Font/F13B_1.o obj/default/uCGUI/Font/F13B_ASCII.o obj/default/uCGUI/Font/F13HB_1.o obj/default/uCGUI/Font/F13HB_ASCII.o obj/default/uCGUI/Font/F13H_1.o obj/default/uCGUI/Font/F13H_ASCII.o obj/default/uCGUI/Font/F13_1.o obj/default/uCGUI/Font/F13_ASCII.o obj/default/uCGUI/Font/F16B_1.o obj/default/uCGUI/Font/F16B_ASCII.o obj/default/uCGUI/Font/F16_1.o obj/default/uCGUI/Font/F16_1HK.o obj/default/uCGUI/Font/F16_ASCII.o obj/default/uCGUI/Font/F16_HK.o obj/default/uCGUI/Font/F24B_1.o obj/default/uCGUI/Font/F24B_ASCII.o obj/default/uCGUI/Font/F24_1.o obj/default/uCGUI/Font/F24_ASCII.o obj/default/uCGUI/Font/F32B_1.o obj/default/uCGUI/Font/F32B_ASCII.o obj/default/uCGUI/Font/F32_1.o obj/default/uCGUI/Font/F32_ASCII.o obj/default/uCGUI/Font/F4x6.o obj/default/uCGUI/Font/F6x8.o obj/default/uCGUI/Font/F8x10_ASCII.o obj/default/uCGUI/Font/F8x12_ASCII.o obj/default/uCGUI/Font/F8x13_1.o obj/default/uCGUI/Font/F8x13_ASCII.o obj/default/uCGUI/Font/F8x15B_1.o obj/default/uCGUI/Font/F8x15B_ASCII.o obj/default/uCGUI/Font/F8x16.o obj/default/uCGUI/Font/F8x8.o obj/default/uCGUI/Font/FComic18B_1.o obj/default/uCGUI/Font/FComic18B_ASCII.o obj/default/uCGUI/Font/FComic24B_1.o obj/default/uCGUI/Font/FComic24B_ASCII.o obj/default/uCGUI/Font/FD24x32.o obj/default/uCGUI/Font/FD32.o obj/default/uCGUI/Font/FD36x48.o obj/default/uCGUI/Font/FD48.o obj/default/uCGUI/Font/FD48x64.o obj/default/uCGUI/Font/FD60x80.o obj/default/uCGUI/Font/FD64.o obj/default/uCGUI/Font/ST80.o obj/default/uCGUI/GUI_X/GUI_X.o obj/default/uCGUI/GUI_X/GUI_X_Touch.o obj/default/uCGUI/JPEG/GUI_JPEG.o obj/default/uCGUI/JPEG/jcomapi.o obj/default/uCGUI/JPEG/jdapimin.o obj/default/uCGUI/JPEG/jdapistd.o obj/default/uCGUI/JPEG/jdcoefct.o obj/default/uCGUI/JPEG/jdcolor.o obj/default/uCGUI/JPEG/jddctmgr.o obj/default/uCGUI/JPEG/jdhuff.o obj/default/uCGUI/JPEG/jdinput.o obj/default/uCGUI/JPEG/jdmainct.o obj/default/uCGUI/JPEG/jdmarker.o obj/default/uCGUI/JPEG/jdmaster.o obj/default/uCGUI/JPEG/jdmerge.o obj/default/uCGUI/JPEG/jdphuff.o obj/default/uCGUI/JPEG/jdpostct.o obj/default/uCGUI/JPEG/jdsample.o obj/default/uCGUI/JPEG/jdtrans.o obj/default/uCGUI/JPEG/jerror.o obj/default/uCGUI/JPEG/jfdctflt.o obj/default/uCGUI/JPEG/jfdctfst.o obj/default/uCGUI/JPEG/jfdctint.o obj/default/uCGUI/JPEG/jidctflt.o obj/default/uCGUI/JPEG/jidctfst.o obj/default/uCGUI/JPEG/jidctint.o obj/default/uCGUI/JPEG/jidctred.o obj/default/uCGUI/JPEG/jmemmgr.o obj/default/uCGUI/JPEG/jquant1.o obj/default/uCGUI/JPEG/jquant2.o obj/default/uCGUI/JPEG/jutils.o obj/default/uCGUI/LCDDriver/LCD_driver.o obj/default/uCGUI/MemDev/GUIDEV.o obj/default/uCGUI/MemDev/GUIDEV_1.o obj/default/uCGUI/MemDev/GUIDEV_16.o obj/default/uCGUI/MemDev/GUIDEV_8.o obj/default/uCGUI/MemDev/GUIDEV_AA.o obj/default/uCGUI/MemDev/GUIDEV_Auto.o obj/default/uCGUI/MemDev/GUIDEV_Banding.o obj/default/uCGUI/MemDev/GUIDEV_Clear.o obj/default/uCGUI/MemDev/GUIDEV_CmpWithLCD.o obj/default/uCGUI/MemDev/GUIDEV_CopyFromLCD.o obj/default/uCGUI/MemDev/GUIDEV_CreateFixed.o obj/default/uCGUI/MemDev/GUIDEV_GetDataPtr.o obj/default/uCGUI/MemDev/GUIDEV_GetXSize.o obj/default/uCGUI/MemDev/GUIDEV_GetYSize.o obj/default/uCGUI/MemDev/GUIDEV_Measure.o obj/default/uCGUI/MemDev/GUIDEV_ReduceYSize.o obj/default/uCGUI/MemDev/GUIDEV_SetOrg.o obj/default/uCGUI/MemDev/GUIDEV_Usage.o obj/default/uCGUI/MemDev/GUIDEV_UsageBM.o obj/default/uCGUI/MemDev/GUIDEV_Write.o obj/default/uCGUI/MemDev/GUIDEV_WriteAlpha.o obj/default/uCGUI/MemDev/GUIDEV_WriteEx.o obj/default/uCGUI/MemDev/GUIDEV_XY2PTR.o obj/default/uCGUI/MultiLayer/LCD_1.o obj/default/uCGUI/MultiLayer/LCD_2.o obj/default/uCGUI/MultiLayer/LCD_3.o obj/default/uCGUI/MultiLayer/LCD_4.o obj/default/uCGUI/WM/WM.o obj/default/uCGUI/WM/WMMemDev.o obj/default/uCGUI/WM/WMTouch.o obj/default/uCGUI/WM/WM_AttachWindow.o obj/default/uCGUI/WM/WM_BringToBottom.o obj/default/uCGUI/WM/WM_BringToTop.o obj/default/uCGUI/WM/WM_Broadcast.o obj/default/uCGUI/WM/WM_CheckScrollPos.o obj/default/uCGUI/WM/WM_CriticalHandle.o obj/default/uCGUI/WM/WM_DIAG.o obj/default/uCGUI/WM/WM_EnableWindow.o obj/default/uCGUI/WM/WM_ForEachDesc.o obj/default/uCGUI/WM/WM_GetBkColor.o obj/default/uCGUI/WM/WM_GetClientRect.o obj/default/uCGUI/WM/WM_GetClientWindow.o obj/default/uCGUI/WM/WM_GetDesktopWindow.o obj/default/uCGUI/WM/WM_GetDesktopWindowEx.o obj/default/uCGUI/WM/WM_GetDiagInfo.o obj/default/uCGUI/WM/WM_GetDialogItem.o obj/default/uCGUI/WM/WM_GetFirstChild.o obj/default/uCGUI/WM/WM_GetFlags.o obj/default/uCGUI/WM/WM_GetFocussedWindow.o obj/default/uCGUI/WM/WM_GetId.o obj/default/uCGUI/WM/WM_GetInsideRect.o obj/default/uCGUI/WM/WM_GetInsideRectExScrollbar.o obj/default/uCGUI/WM/WM_GetInvalidRect.o obj/default/uCGUI/WM/WM_GetNextSibling.o obj/default/uCGUI/WM/WM_GetOrg.o obj/default/uCGUI/WM/WM_GetParent.o obj/default/uCGUI/WM/WM_GetPrevSibling.o obj/default/uCGUI/WM/WM_GetScrollPartner.o obj/default/uCGUI/WM/WM_GetScrollState.o obj/default/uCGUI/WM/WM_GetScrollbar.o obj/default/uCGUI/WM/WM_GetWindowRect.o obj/default/uCGUI/WM/WM_GetWindowSize.o obj/default/uCGUI/WM/WM_HasCaptured.o obj/default/uCGUI/WM/WM_HasFocus.o obj/default/uCGUI/WM/WM_Hide.o obj/default/uCGUI/WM/WM_IsCompletelyVisible.o obj/default/uCGUI/WM/WM_IsEnabled.o obj/default/uCGUI/WM/WM_IsFocussable.o obj/default/uCGUI/WM/WM_IsVisible.o obj/default/uCGUI/WM/WM_IsWindow.o obj/default/uCGUI/WM/WM_MakeModal.o obj/default/uCGUI/WM/WM_Move.o obj/default/uCGUI/WM/WM_MoveChildTo.o obj/default/uCGUI/WM/WM_NotifyParent.o obj/default/uCGUI/WM/WM_OnKey.o obj/default/uCGUI/WM/WM_PID__GetPrevState.o obj/default/uCGUI/WM/WM_Paint.o obj/default/uCGUI/WM/WM_ResizeWindow.o obj/default/uCGUI/WM/WM_Screen2Win.o obj/default/uCGUI/WM/WM_SendMessageNoPara.o obj/default/uCGUI/WM/WM_SendToParent.o obj/default/uCGUI/WM/WM_SetAnchor.o obj/default/uCGUI/WM/WM_SetCallback.o obj/default/uCGUI/WM/WM_SetCapture.o obj/default/uCGUI/WM/WM_SetCaptureMove.o obj/default/uCGUI/WM/WM_SetCreateFlags.o obj/default/uCGUI/WM/WM_SetDesktopColor.o obj/default/uCGUI/WM/WM_SetFocus.o obj/default/uCGUI/WM/WM_SetFocusOnNextChild.o obj/default/uCGUI/WM/WM_SetFocusOnPrevChild.o obj/default/uCGUI/WM/WM_SetId.o obj/default/uCGUI/WM/WM_SetScrollState.o obj/default/uCGUI/WM/WM_SetScrollbar.o obj/default/uCGUI/WM/WM_SetSize.o obj/default/uCGUI/WM/WM_SetTrans.o obj/default/uCGUI/WM/WM_SetTransState.o obj/default/uCGUI/WM/WM_SetUserClipRect.o obj/default/uCGUI/WM/WM_SetXSize.o obj/default/uCGUI/WM/WM_SetYSize.o obj/default/uCGUI/WM/WM_SetpfPollPID.o obj/default/uCGUI/WM/WM_Show.o obj/default/uCGUI/WM/WM_StayOnTop.o obj/default/uCGUI/WM/WM_Timer.o obj/default/uCGUI/WM/WM_TimerExternal.o obj/default/uCGUI/WM/WM_UserData.o obj/default/uCGUI/WM/WM_Validate.o obj/default/uCGUI/WM/WM_ValidateWindow.o obj/default/uCGUI/WM/WM__ForEachDesc.o obj/default/uCGUI/WM/WM__GetFirstSibling.o obj/default/uCGUI/WM/WM__GetFocussedChild.o obj/default/uCGUI/WM/WM__GetLastSibling.o obj/default/uCGUI/WM/WM__GetOrg_AA.o obj/default/uCGUI/WM/WM__GetPrevSibling.o obj/default/uCGUI/WM/WM__IsAncestor.o obj/default/uCGUI/WM/WM__IsChild.o obj/default/uCGUI/WM/WM__IsEnabled.o obj/default/uCGUI/WM/WM__NotifyVisChanged.o obj/default/uCGUI/WM/WM__Screen2Client.o obj/default/uCGUI/WM/WM__SendMessage.o obj/default/uCGUI/WM/WM__SendMessageIfEnabled.o obj/default/uCGUI/WM/WM__SendMessageNoPara.o obj/default/uCGUI/WM/WM__UpdateChildPositions.o obj/default/uCGUI/Widget/BUTTON.o obj/default/uCGUI/Widget/BUTTON_BMP.o obj/default/uCGUI/Widget/BUTTON_Bitmap.o obj/default/uCGUI/Widget/BUTTON_Create.o obj/default/uCGUI/Widget/BUTTON_CreateIndirect.o obj/default/uCGUI/Widget/BUTTON_Default.o obj/default/uCGUI/Widget/BUTTON_Get.o obj/default/uCGUI/Widget/BUTTON_IsPressed.o obj/default/uCGUI/Widget/BUTTON_SelfDraw.o obj/default/uCGUI/Widget/BUTTON_SetTextAlign.o obj/default/uCGUI/Widget/BUTTON_StreamedBitmap.o obj/default/uCGUI/Widget/BUTTON__SetBitmapObj.o obj/default/uCGUI/Widget/CHECKBOX.o obj/default/uCGUI/Widget/CHECKBOX_Create.o obj/default/uCGUI/Widget/CHECKBOX_CreateIndirect.o obj/default/uCGUI/Widget/CHECKBOX_Default.o obj/default/uCGUI/Widget/CHECKBOX_GetState.o obj/default/uCGUI/Widget/CHECKBOX_Image.o obj/default/uCGUI/Widget/CHECKBOX_IsChecked.o obj/default/uCGUI/Widget/CHECKBOX_SetBkColor.o obj/default/uCGUI/Widget/CHECKBOX_SetDefaultImage.o obj/default/uCGUI/Widget/CHECKBOX_SetFont.o obj/default/uCGUI/Widget/CHECKBOX_SetImage.o obj/default/uCGUI/Widget/CHECKBOX_SetNumStates.o obj/default/uCGUI/Widget/CHECKBOX_SetSpacing.o obj/default/uCGUI/Widget/CHECKBOX_SetState.o obj/default/uCGUI/Widget/CHECKBOX_SetText.o obj/default/uCGUI/Widget/CHECKBOX_SetTextAlign.o obj/default/uCGUI/Widget/CHECKBOX_SetTextColor.o obj/default/uCGUI/Widget/DIALOG.o obj/default/uCGUI/Widget/DROPDOWN.o obj/default/uCGUI/Widget/DROPDOWN_Create.o obj/default/uCGUI/Widget/DROPDOWN_CreateIndirect.o obj/default/uCGUI/Widget/DROPDOWN_DeleteItem.o obj/default/uCGUI/Widget/DROPDOWN_InsertString.o obj/default/uCGUI/Widget/DROPDOWN_ItemSpacing.o obj/default/uCGUI/Widget/DROPDOWN_SetAutoScroll.o obj/default/uCGUI/Widget/DROPDOWN_SetTextAlign.o obj/default/uCGUI/Widget/DROPDOWN_SetTextHeight.o obj/default/uCGUI/Widget/EDIT.o obj/default/uCGUI/Widget/EDITBin.o obj/default/uCGUI/Widget/EDITDec.o obj/default/uCGUI/Widget/EDITFloat.o obj/default/uCGUI/Widget/EDITHex.o obj/default/uCGUI/Widget/EDIT_Create.o obj/default/uCGUI/Widget/EDIT_CreateIndirect.o obj/default/uCGUI/Widget/EDIT_Default.o obj/default/uCGUI/Widget/EDIT_GetNumChars.o obj/default/uCGUI/Widget/EDIT_SetCursorAtChar.o obj/default/uCGUI/Widget/EDIT_SetInsertMode.o obj/default/uCGUI/Widget/EDIT_SetSel.o obj/default/uCGUI/Widget/EDIT_SetpfAddKeyEx.o obj/default/uCGUI/Widget/EDIT_SetpfUpdateBuffer.o obj/default/uCGUI/Widget/FRAMEWIN.o obj/default/uCGUI/Widget/FRAMEWIN_AddMenu.o obj/default/uCGUI/Widget/FRAMEWIN_Button.o obj/default/uCGUI/Widget/FRAMEWIN_ButtonClose.o obj/default/uCGUI/Widget/FRAMEWIN_ButtonMax.o obj/default/uCGUI/Widget/FRAMEWIN_ButtonMin.o obj/default/uCGUI/Widget/FRAMEWIN_Create.o obj/default/uCGUI/Widget/FRAMEWIN_CreateIndirect.o obj/default/uCGUI/Widget/FRAMEWIN_Default.o obj/default/uCGUI/Widget/FRAMEWIN_Get.o obj/default/uCGUI/Widget/FRAMEWIN_IsMinMax.o obj/default/uCGUI/Widget/FRAMEWIN_MinMaxRest.o obj/default/uCGUI/Widget/FRAMEWIN_SetBorderSize.o obj/default/uCGUI/Widget/FRAMEWIN_SetColors.o obj/default/uCGUI/Widget/FRAMEWIN_SetFont.o obj/default/uCGUI/Widget/FRAMEWIN_SetResizeable.o obj/default/uCGUI/Widget/FRAMEWIN_SetTitleHeight.o obj/default/uCGUI/Widget/FRAMEWIN_SetTitleVis.o obj/default/uCGUI/Widget/FRAMEWIN__UpdateButtons.o obj/default/uCGUI/Widget/GUI_ARRAY.o obj/default/uCGUI/Widget/GUI_ARRAY_DeleteItem.o obj/default/uCGUI/Widget/GUI_ARRAY_InsertItem.o obj/default/uCGUI/Widget/GUI_ARRAY_ResizeItem.o obj/default/uCGUI/Widget/GUI_DRAW.o obj/default/uCGUI/Widget/GUI_DRAW_BITMAP.o obj/default/uCGUI/Widget/GUI_DRAW_BMP.o obj/default/uCGUI/Widget/GUI_DRAW_STREAMED.o obj/default/uCGUI/Widget/GUI_DRAW_Self.o obj/default/uCGUI/Widget/GUI_EditBin.o obj/default/uCGUI/Widget/GUI_EditDec.o obj/default/uCGUI/Widget/GUI_EditFloat.o obj/default/uCGUI/Widget/GUI_EditHex.o obj/default/uCGUI/Widget/GUI_EditString.o obj/default/uCGUI/Widget/GUI_HOOK.o obj/default/uCGUI/Widget/HEADER.o obj/default/uCGUI/Widget/HEADER_BMP.o obj/default/uCGUI/Widget/HEADER_Bitmap.o obj/default/uCGUI/Widget/HEADER_Create.o obj/default/uCGUI/Widget/HEADER_CreateIndirect.o obj/default/uCGUI/Widget/HEADER_StreamedBitmap.o obj/default/uCGUI/Widget/HEADER__SetDrawObj.o obj/default/uCGUI/Widget/LISTBOX.o obj/default/uCGUI/Widget/LISTBOX_Create.o obj/default/uCGUI/Widget/LISTBOX_CreateIndirect.o obj/default/uCGUI/Widget/LISTBOX_Default.o obj/default/uCGUI/Widget/LISTBOX_DeleteItem.o obj/default/uCGUI/Widget/LISTBOX_Font.o obj/default/uCGUI/Widget/LISTBOX_GetItemText.o obj/default/uCGUI/Widget/LISTBOX_GetNumItems.o obj/default/uCGUI/Widget/LISTBOX_InsertString.o obj/default/uCGUI/Widget/LISTBOX_ItemDisabled.o obj/default/uCGUI/Widget/LISTBOX_ItemSpacing.o obj/default/uCGUI/Widget/LISTBOX_MultiSel.o obj/default/uCGUI/Widget/LISTBOX_ScrollStep.o obj/default/uCGUI/Widget/LISTBOX_SetAutoScroll.o obj/default/uCGUI/Widget/LISTBOX_SetBkColor.o obj/default/uCGUI/Widget/LISTBOX_SetOwner.o obj/default/uCGUI/Widget/LISTBOX_SetOwnerDraw.o obj/default/uCGUI/Widget/LISTBOX_SetScrollbarWidth.o obj/default/uCGUI/Widget/LISTBOX_SetString.o obj/default/uCGUI/Widget/LISTBOX_SetTextColor.o obj/default/uCGUI/Widget/LISTVIEW.o obj/default/uCGUI/Widget/LISTVIEW_Create.o obj/default/uCGUI/Widget/LISTVIEW_CreateIndirect.o obj/default/uCGUI/Widget/LISTVIEW_Default.o obj/default/uCGUI/Widget/LISTVIEW_DeleteColumn.o obj/default/uCGUI/Widget/LISTVIEW_DeleteRow.o obj/default/uCGUI/Widget/LISTVIEW_GetBkColor.o obj/default/uCGUI/Widget/LISTVIEW_GetFont.o obj/default/uCGUI/Widget/LISTVIEW_GetHeader.o obj/default/uCGUI/Widget/LISTVIEW_GetNumColumns.o obj/default/uCGUI/Widget/LISTVIEW_GetNumRows.o obj/default/uCGUI/Widget/LISTVIEW_GetSel.o obj/default/uCGUI/Widget/LISTVIEW_GetTextColor.o obj/default/uCGUI/Widget/LISTVIEW_SetBkColor.o obj/default/uCGUI/Widget/LISTVIEW_SetColumnWidth.o obj/default/uCGUI/Widget/LISTVIEW_SetFont.o obj/default/uCGUI/Widget/LISTVIEW_SetGridVis.o obj/default/uCGUI/Widget/LISTVIEW_SetItemColor.o obj/default/uCGUI/Widget/LISTVIEW_SetItemText.o obj/default/uCGUI/Widget/LISTVIEW_SetLBorder.o obj/default/uCGUI/Widget/LISTVIEW_SetRBorder.o obj/default/uCGUI/Widget/LISTVIEW_SetRowHeight.o obj/default/uCGUI/Widget/LISTVIEW_SetSel.o obj/default/uCGUI/Widget/LISTVIEW_SetTextAlign.o obj/default/uCGUI/Widget/LISTVIEW_SetTextColor.o obj/default/uCGUI/Widget/MENU.o obj/default/uCGUI/Widget/MENU_Attach.o obj/default/uCGUI/Widget/MENU_CreateIndirect.o obj/default/uCGUI/Widget/MENU_Default.o obj/default/uCGUI/Widget/MENU_DeleteItem.o obj/default/uCGUI/Widget/MENU_DisableItem.o obj/default/uCGUI/Widget/MENU_EnableItem.o obj/default/uCGUI/Widget/MENU_GetItem.o obj/default/uCGUI/Widget/MENU_GetItemText.o obj/default/uCGUI/Widget/MENU_GetNumItems.o obj/default/uCGUI/Widget/MENU_InsertItem.o obj/default/uCGUI/Widget/MENU_Popup.o obj/default/uCGUI/Widget/MENU_SetBkColor.o obj/default/uCGUI/Widget/MENU_SetBorderSize.o obj/default/uCGUI/Widget/MENU_SetFont.o obj/default/uCGUI/Widget/MENU_SetItem.o obj/default/uCGUI/Widget/MENU_SetTextColor.o obj/default/uCGUI/Widget/MENU__FindItem.o obj/default/uCGUI/Widget/MESSAGEBOX.o obj/default/uCGUI/Widget/MULTIEDIT.o obj/default/uCGUI/Widget/MULTIEDIT_Create.o obj/default/uCGUI/Widget/MULTIEDIT_CreateIndirect.o obj/default/uCGUI/Widget/MULTIPAGE.o obj/default/uCGUI/Widget/MULTIPAGE_Create.o obj/default/uCGUI/Widget/MULTIPAGE_CreateIndirect.o obj/default/uCGUI/Widget/MULTIPAGE_Default.o obj/default/uCGUI/Widget/PROGBAR.o obj/default/uCGUI/Widget/PROGBAR_Create.o obj/default/uCGUI/Widget/PROGBAR_CreateIndirect.o obj/default/uCGUI/Widget/RADIO.o obj/default/uCGUI/Widget/RADIO_Create.o obj/default/uCGUI/Widget/RADIO_CreateIndirect.o obj/default/uCGUI/Widget/RADIO_Default.o obj/default/uCGUI/Widget/RADIO_Image.o obj/default/uCGUI/Widget/RADIO_SetBkColor.o obj/default/uCGUI/Widget/RADIO_SetDefaultImage.o obj/default/uCGUI/Widget/RADIO_SetFont.o obj/default/uCGUI/Widget/RADIO_SetGroupId.o obj/default/uCGUI/Widget/RADIO_SetImage.o obj/default/uCGUI/Widget/RADIO_SetText.o obj/default/uCGUI/Widget/RADIO_SetTextColor.o obj/default/uCGUI/Widget/SCROLLBAR.o obj/default/uCGUI/Widget/SCROLLBAR_Create.o obj/default/uCGUI/Widget/SCROLLBAR_CreateIndirect.o obj/default/uCGUI/Widget/SCROLLBAR_Defaults.o obj/default/uCGUI/Widget/SCROLLBAR_GetValue.o obj/default/uCGUI/Widget/SCROLLBAR_SetWidth.o obj/default/uCGUI/Widget/SLIDER.o obj/default/uCGUI/Widget/SLIDER_Create.o obj/default/uCGUI/Widget/SLIDER_CreateIndirect.o obj/default/uCGUI/Widget/TEXT.o obj/default/uCGUI/Widget/TEXT_Create.o obj/default/uCGUI/Widget/TEXT_CreateIndirect.o obj/default/uCGUI/Widget/TEXT_SetBkColor.o obj/default/uCGUI/Widget/TEXT_SetFont.o obj/default/uCGUI/Widget/TEXT_SetText.o obj/default/uCGUI/Widget/TEXT_SetTextAlign.o obj/default/uCGUI/Widget/TEXT_SetTextColor.o obj/default/uCGUI/Widget/WIDGET.o obj/default/uCGUI/Widget/WIDGET_Effect_3D.o obj/default/uCGUI/Widget/WIDGET_Effect_3D1L.o obj/default/uCGUI/Widget/WIDGET_Effect_3D2L.o obj/default/uCGUI/Widget/WIDGET_Effect_None.o obj/default/uCGUI/Widget/WIDGET_Effect_Simple.o obj/default/uCGUI/Widget/WIDGET_FillStringInRect.o obj/default/uCGUI/Widget/WIDGET_SetEffect.o obj/default/uCGUI/Widget/WIDGET_SetWidth.o obj/default/uCGUI/Widget/WINDOW.o obj/default/uCGUI/Widget/WINDOW_Default.o -lm 
+nios2-elf-insert GUI_Test.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --id 0 --sidp 0x2002470 --timestamp 1554196137 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name system_qsys --quartus_project_dir "f:/project/qsys_gui_comprehensive_test/qsys/hardware" --sopcinfo F:/project/qsys_gui_comprehensive_test/qsys/hardware/system_qsys.sopcinfo
+      0 [main] sh 13284 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] uname 21772 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21984 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Info: (GUI_Test.elf) 2908 KBytes program size (code + initialized data).
+Info:                29859 KBytes free for stack + heap.
+      0 [main] echo 17276 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Creating GUI_Test.objdump
+the public mailing list cygwin@cygwin.com
+nios2-elf-objdump --disassemble --syms --all-header --source GUI_Test.elf >GUI_Test.objdump
+      0 [main] sh 22404 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 13668 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[GUI_Test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test ****
+
+make all 
+      0 [main] sh 18264 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 20668 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 20964 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22180 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 6052 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+      0 [main] pwd 22044 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 8952 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21780 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 3932 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 20684 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[GUI_Test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test_bsp ****
+
+make all 
+      0 [main] pwd 22520 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 17144 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22004 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test ****
+
+make all 
+      0 [main] sh 18836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22028 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 7764 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21844 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 16688 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+      0 [main] pwd 13260 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21648 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21224 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 20916 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22200 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[GUI_Test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test ****
+
+make all 
+      0 [main] sh 4240 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21120 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 2788 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22088 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 18388 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+      1 [main] pwd 20640 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22448 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 13904 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 21460 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21108 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[GUI_Test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test_bsp ****
+
+make all 
+      0 [main] pwd 19892 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 14792 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 13292 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test ****
+
+make all 
+      0 [main] sh 22384 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22020 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 17644 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 20616 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 22088 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+      0 [main] pwd 21784 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 804 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21452 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 13068 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 19316 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[GUI_Test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test ****
+
+make all 
+      0 [main] sh 21520 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 20952 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 18184 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21464 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 20844 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+      0 [main] pwd 15480 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 20944 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 18996 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 20712 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21312 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[GUI_Test build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test_bsp ****
+
+make all 
+      0 [main] pwd 20916 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22508 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 11608 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project GUI_Test ****
+
+make all 
+      0 [main] sh 19284 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 22296 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 3976 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 21568 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] echo 13164 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Info: Building F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+the public mailing list cygwin@cygwin.com
+make --no-print-directory -C F:/project/qsys_gui_comprehensive_test/qsys/software/GUI_Test_bsp/
+      0 [main] pwd 22248 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 20932 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 9140 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[BSP build complete]
+      0 [main] true 21220 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+      0 [main] sh 19744 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+[GUI_Test build complete]
+
+**** Build Finished ****

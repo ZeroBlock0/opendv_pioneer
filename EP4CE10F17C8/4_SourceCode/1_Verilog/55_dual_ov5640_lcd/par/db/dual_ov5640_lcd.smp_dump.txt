@@ -1,0 +1,29 @@
+
+State Machine - |dual_ov5640_lcd|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|state
+Name state.rd_keep state.wr_keep state.sdram_done state.idle 
+state.idle 0 0 0 0 
+state.sdram_done 0 0 1 1 
+state.wr_keep 0 1 0 1 
+state.rd_keep 1 0 0 1 
+
+State Machine - |dual_ov5640_lcd|ov5640_dri:u1_ov5640_dri|i2c_dri:u_i2c_dr|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 
+
+State Machine - |dual_ov5640_lcd|ov5640_dri:u0_ov5640_dri|i2c_dri:u_i2c_dr|cur_state
+Name cur_state.st_stop cur_state.st_data_rd cur_state.st_addr_rd cur_state.st_data_wr cur_state.st_addr8 cur_state.st_addr16 cur_state.st_sladdr cur_state.st_idle 
+cur_state.st_idle 0 0 0 0 0 0 0 0 
+cur_state.st_sladdr 0 0 0 0 0 0 1 1 
+cur_state.st_addr16 0 0 0 0 0 1 0 1 
+cur_state.st_addr8 0 0 0 0 1 0 0 1 
+cur_state.st_data_wr 0 0 0 1 0 0 0 1 
+cur_state.st_addr_rd 0 0 1 0 0 0 0 1 
+cur_state.st_data_rd 0 1 0 0 0 0 0 1 
+cur_state.st_stop 1 0 0 0 0 0 0 1 

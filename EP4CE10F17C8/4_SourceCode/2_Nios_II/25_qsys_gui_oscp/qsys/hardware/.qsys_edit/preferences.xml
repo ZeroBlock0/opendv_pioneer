@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="200" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="175" />
+   <clocksource preferredWidth="174" />
+   <frequency preferredWidth="155" />
+  </columns>
+ </clocktable>
+ <window width="1185" height="943" x="164" y="55" />
+ <library expandedCategories="Library,Project" />
+ <generation path="E:/Qsys/qsys_gui_oscp/_PROJECT_NAME_/hardware" />
+ <hdlexample language="VERILOG" />
+</preferences>

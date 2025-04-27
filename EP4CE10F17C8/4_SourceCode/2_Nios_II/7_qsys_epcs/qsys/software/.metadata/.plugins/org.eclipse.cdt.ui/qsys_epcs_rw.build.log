@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project qsys_epcs_rw ****
+
+make all 
+Info: Building D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/
+make --no-print-directory -C D:/project/qsys_epcs/qsys/software/qsys_epcs_rw_bsp/
+[BSP build complete]
+[qsys_epcs_rw build complete]
+
+**** Build Finished ****

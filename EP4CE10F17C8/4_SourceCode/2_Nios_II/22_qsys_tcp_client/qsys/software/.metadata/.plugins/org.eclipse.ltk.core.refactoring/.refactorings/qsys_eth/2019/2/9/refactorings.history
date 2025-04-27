@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;qsys_eth/simple_socket_server.c&apos; to &apos;tcp_client.c&apos;" description="Rename resource &apos;simple_socket_server.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="simple_socket_server.c" name="tcp_client.c" stamp="1551164751678" updateReferences="true"/>
+</session>

@@ -1,0 +1,667 @@
+!SESSION 2019-02-20 16:56:40.462 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.debug.cdi.gdb.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.app_lib.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.bsp.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.commandline.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.flash.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.launch.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.nios2.isa_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbt4e.launch_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbt4e.systemconsole_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.core_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.flash.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.gprof_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.integration_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.integration.jars_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.launch_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.project_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.ui_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.service.eclipse_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.service.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.designs.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.gui.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.lightclient_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.plugin.elf_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.plugin.jtag_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.scripting_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 16:56:41.086
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.utilities_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-02-20 16:56:41.446
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconciler.dropins_1.1.100.v20110815-1419 [152]" could not be resolved. Reason: Missing Constraint: Require-Bundle: org.eclipse.equinox.p2.touchpoint.eclipse; bundle-version="1.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1327)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1311)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:323)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:389)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1131)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-20 17:04:30.712
+!MESSAGE Indexed 'qsys_udp_bsp' (227 sources, 164 headers) in 2.36 sec: 10,633 declarations; 46,366 references; 153 unresolved inclusions; 8 syntax errors; 554 unresolved names (0.96%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-20 17:04:32.166
+!MESSAGE Indexed 'qsys_udp' (6 sources, 16 headers) in 0.06 sec: 162 declarations; 788 references; 48 unresolved inclusions; 6 syntax errors; 197 unresolved names (17.18%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 17:21:52.681
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 17:21:55.119
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+!SESSION 2019-02-20 17:31:34.411 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.debug.cdi.gdb.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.app_lib.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.bsp.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.commandline.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.flash.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.launch.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.nios2.isa_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbt4e.launch_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbt4e.systemconsole_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.core_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.flash.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.gprof_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.integration_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.integration.jars_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.launch_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.project_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.ui_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.service.eclipse_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.service.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.designs.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.gui.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.lightclient_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.plugin.elf_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.plugin.jtag_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.scripting_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-20 17:31:34.864
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.utilities_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-02-20 17:31:35.052
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconciler.dropins_1.1.100.v20110815-1419 [152]" could not be resolved. Reason: Missing Constraint: Require-Bundle: org.eclipse.equinox.p2.touchpoint.eclipse; bundle-version="1.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1327)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1311)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:323)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:389)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1131)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-02-20 17:31:38.708
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 17:34:39.149
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 17:34:41.640
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 17:36:54.523
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 17:36:55.117
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 17:36:57.459
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:07:09.522
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:07:10.147
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:07:12.504
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:08:23.615
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:08:24.193
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:08:26.612
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:09:35.233
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:09:35.796
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:09:38.154
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:11:09.096
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:11:09.658
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-20 19:11:11.968
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-21 11:28:46.864
+!MESSAGE Indexed 'qsys_udp' (5 sources, 48 headers) in 0.86 sec: 1,493 declarations; 2,259 references; 0 unresolved inclusions; 1 syntax errors; 5 unresolved names (0.13%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-21 11:29:00.209
+!MESSAGE Indexed 'qsys_udp_bsp' (227 sources, 168 headers) in 1.50 sec: 11,042 declarations; 48,197 references; 0 unresolved inclusions; 1 syntax errors; 11 unresolved names (0.02%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 11:33:10.146
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 11:33:10.771
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 11:33:13.239
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 11:51:04.614
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 11:51:05.192
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 11:51:07.552
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 15:17:15.583
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 15:17:16.155
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-21 15:17:18.482
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_udp/qsys_udp.elf]
+!SESSION 2019-02-26 09:40:02.232 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.debug.cdi.gdb.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.app_lib.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.bsp.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.commandline.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.flash.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.embeddedsw.launch.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.nios2.isa_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbt4e.launch_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbt4e.systemconsole_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.core_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.flash.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.155
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.gprof_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.integration_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.integration.jars_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.launch_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.project_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.sbtgui.ui_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.service.eclipse_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.service.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.designs.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.gui.plugin_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.lightclient_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.plugin.elf_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.plugin.jtag_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.systemconsole.scripting_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.osgi 4 0 2019-02-26 09:40:03.170
+!MESSAGE Bundle reference:file:/C:/EDA/quartus13/nios2eds/bin/eclipse_nios2/dropins/com.altera.sbtgui.site/plugins/com.altera.utilities_13.1.0.162.jar@4 not found.
+
+!ENTRY org.eclipse.equinox.p2.reconciler.dropins 4 0 2019-02-26 09:40:03.577
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: The bundle "org.eclipse.equinox.p2.reconciler.dropins_1.1.100.v20110815-1419 [152]" could not be resolved. Reason: Missing Constraint: Require-Bundle: org.eclipse.equinox.p2.touchpoint.eclipse; bundle-version="1.0.0"
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolverError(AbstractBundle.java:1327)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.getResolutionFailureException(AbstractBundle.java:1311)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:323)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:389)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1131)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.resources 4 567 2019-02-26 09:40:12.109
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2019-02-26 09:40:12.109
+!MESSAGE Could not read metadata for 'qsys_udp_bsp'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'qsys_udp_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:854)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:703)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2503)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2019-02-26 09:40:12.109
+!MESSAGE The project description file (.project) for 'qsys_udp_bsp' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-26 09:41:10.701
+!MESSAGE Indexed 'qsys_eth_bsp' (227 sources, 198 headers) in 4.80 sec: 12,202 declarations; 46,862 references; 0 unresolved inclusions; 3 syntax errors; 171 unresolved names (0.29%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-02-26 09:41:11.030
+!MESSAGE Indexed 'qsys_eth' (6 sources, 70 headers) in 0.30 sec: 3,008 declarations; 3,503 references; 22 unresolved inclusions; 8 syntax errors; 116 unresolved names (1.75%)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2019-02-26 09:42:33.139
+!MESSAGE WARNING: Blocked recursive attempt to close part org.eclipse.cdt.make.editor while still in the middle of activating it
+!STACK 0
+java.lang.RuntimeException: WARNING: Blocked recursive attempt to close part org.eclipse.cdt.make.editor while still in the middle of activating it
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1378)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1514)
+	at org.eclipse.ui.internal.EditorPane.doHide(EditorPane.java:61)
+	at org.eclipse.ui.internal.PartStack.close(PartStack.java:537)
+	at org.eclipse.ui.internal.EditorStack.close(EditorStack.java:206)
+	at org.eclipse.ui.internal.PartStack$1.close(PartStack.java:120)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:83)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:269)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:278)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder.access$1(DefaultTabFolder.java:1)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder$1.closeButtonPressed(DefaultTabFolder.java:71)
+	at org.eclipse.ui.internal.presentations.PaneFolder.notifyCloseListeners(PaneFolder.java:631)
+	at org.eclipse.ui.internal.presentations.PaneFolder$3.close(PaneFolder.java:206)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1599)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:261)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:334)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:364)
+	at org.eclipse.jface.dialogs.MessageDialog.openQuestion(MessageDialog.java:463)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4757)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:267)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.handleEditorInputChanged(AbstractDecoratedTextEditor.java:1474)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4887)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:257)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4865)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:984)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:941)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:187)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:306)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:134)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:125)
+	at org.eclipse.ui.internal.WWinPartService$WWinListener.partDeactivated(WWinPartService.java:50)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:115)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:55)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:113)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:242)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:300)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:57)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:136)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3636)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:3159)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:279)
+	at org.eclipse.ui.internal.EditorPane.requestActivation(EditorPane.java:98)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setFocus(PresentablePart.java:192)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:94)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:269)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:274)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.handleMouseDown(AbstractTabFolder.java:344)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder$3.mouseDown(AbstractTabFolder.java:78)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:191)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2019-02-26 09:42:34.530
+!MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.ui.console.ConsoleView while still in the middle of activating part org.eclipse.cdt.make.editor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.ui.console.ConsoleView while still in the middle of activating part org.eclipse.cdt.make.editor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3586)
+	at org.eclipse.ui.internal.WorkbenchPage.internalActivate(WorkbenchPage.java:691)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:663)
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1170)
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1140)
+	at org.eclipse.ui.internal.WorkbenchPage$20.run(WorkbenchPage.java:3921)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:3918)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:3894)
+	at com.altera.sbtgui.core.commandline.Executor.bringConsoleViewToTop(Executor.java:124)
+	at com.altera.sbtgui.core.commandline.Executor.exec(Executor.java:98)
+	at com.altera.sbtgui.core.commandline.Executor.exec(Executor.java:82)
+	at com.altera.sbtgui.core.commandline.model.Nios2MakefileSrcList.load(Nios2MakefileSrcList.java:90)
+	at com.altera.sbtgui.project.makefile.NiosIIBuildPersistentProperty.update(NiosIIBuildPersistentProperty.java:74)
+	at com.altera.sbtgui.project.makefile.Controller.getAffectedFiles(Controller.java:310)
+	at com.altera.sbtgui.project.makefile.Controller.resourceChanged(Controller.java:164)
+	at com.altera.sbtgui.project.Activator$1.resourceChanged(Activator.java:100)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2353)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:75)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:65)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:456)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.synchronize(TextFileDocumentProvider.java:1172)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4763)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:267)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.handleEditorInputChanged(AbstractDecoratedTextEditor.java:1474)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4887)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:257)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4865)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:984)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:941)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:187)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:306)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:134)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:125)
+	at org.eclipse.ui.internal.WWinPartService$WWinListener.partDeactivated(WWinPartService.java:50)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:115)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:55)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:113)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:242)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:300)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:57)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:136)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3636)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:3159)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:279)
+	at org.eclipse.ui.internal.EditorPane.requestActivation(EditorPane.java:98)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setFocus(PresentablePart.java:192)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:94)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:269)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:274)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.handleMouseDown(AbstractTabFolder.java:344)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder$3.mouseDown(AbstractTabFolder.java:78)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:191)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:123)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1386)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-26 10:00:29.662
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x2002780 --id=0x2 --timestamp=1547178543]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2019-02-26 10:00:32.139
+!MESSAGE Executing: [D:/eda/quartus13/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x2002780 --id=0x2 --timestamp=1547178543 /cygdrive/f/Qsys/qsys_udp/qsys/software/qsys_eth/qsys_eth.elf]

@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project qsys_lcd ****
+
+make all 
+Info: Building ../qsys_lcd_bsp/
+make --no-print-directory -C ../qsys_lcd_bsp/
+[BSP build complete]
+[qsys_lcd build complete]
+
+**** Build Finished ****

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jan 27 16:40:23 2019
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : qsys_touch
+Top-level Entity Name : qsys_touch
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 4,741 / 10,320 ( 46 % )
+    Total combinational functions : 4,252 / 10,320 ( 41 % )
+    Dedicated logic registers : 2,918 / 10,320 ( 28 % )
+Total registers : 2987
+Total pins : 71 / 180 ( 39 % )
+Total virtual pins : 0
+Total memory bits : 73,280 / 423,936 ( 17 % )
+Embedded Multiplier 9-bit elements : 4 / 46 ( 9 % )
+Total PLLs : 1 / 2 ( 50 % )

@@ -1,0 +1,81 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           draw_disp.c
+// Last modified Date:  2019/3/6 13:28:14
+// Last Version:        V1.0
+// Descriptions:        绘制显示界面
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <unistd.h>
+//#include "font.h"
+#include "system.h"
+#include "draw_disp.h"
+#include "GUI.h"
+
+extern _disp_dev dispdev;	//界面显示参数
+
+//绘制显示界面
+void Draw_Display(void){
+
+    GUI_SetBkColor(0x000000);  		    //设置GUI背景色
+    GUI_Clear();                        //GUI清屏
+
+	GUI_SetPenSize(10);                 //设置画笔大小
+	GUI_SetColor(GUI_RED);            //设置GUI前景色
+	GUI_DrawLine(10,20,10 + dispdev.wave_width,20 + dispdev.wave_height);  //画线
+	GUI_DrawLine(10 + dispdev.wave_width,20,10 + dispdev.wave_width,20 + dispdev.wave_height);  //画线
+	GUI_DrawLine(10 + dispdev.wave_width,20 + dispdev.wave_height,10,20 + dispdev.wave_height);  //画线
+
+
+
+	alt_dcache_flush_all();
+
+}
+
+
+/*
+
+//读取面板参数
+//PG6=R7(M0);PI2=G7(M1);PI7=B7(M2);
+//M2:M1:M0
+//0 :0 :0	//4.3寸480*272 RGB屏,ID=0X4342
+//0 :0 :1	//7寸800*480 RGB屏,ID=0X7084
+//0 :1 :0	//7寸1024*600 RGB屏,ID=0X7016
+//1 :0 :1	//10.1寸1280*800 RGB屏,ID=0X1018
+//返回值:LCD ID:0,非法;其他值,ID;
+u16 LTDC_PanelID_Read(void)
+{
+	u8 idx=0;
+	u16 read_data = 0;
+
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_DIR_BASE,0);          // mlcd_data_dir=0 为输入
+	delay_ms(50);
+	read_data = IORD_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_IN_BASE); //获取lcd_data数据
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_DIR_BASE,1);          // mlcd_data_dir=0 为输出
+	idx=(read_data & 0x8000)>>15;		//读取M0
+	idx |= (read_data & 0x0400)>>9;      //读取M1
+	idx |= (read_data & 0x0010)>>2;      //读取M2
+	switch(idx)
+	{
+		case 0:return 0X4342;		//4.3寸屏,480*272分辨率
+		case 1:return 0X7084;		//7寸屏,800*480分辨率
+		case 2:return 0X7016;		//7寸屏,1024*600分辨率
+		case 5:return 0X1018; 		//10.1寸屏,1280*800分辨率
+		default:return 0;
+	}
+}
+*/
+ 

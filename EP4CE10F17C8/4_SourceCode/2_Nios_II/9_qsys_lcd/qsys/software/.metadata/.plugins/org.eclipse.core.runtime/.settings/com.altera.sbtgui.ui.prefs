@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=F\:\\Qsys\\qsys_lcd\\qsys\\software\\qsys_lcd
+newSoftwareExampleWizardPage.sopcinfoFile=F\:\\Qsys\\qsys_lcd\\qsys\\hardware\\nios2os.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=F\:\\Qsys\\qsys_lcd\\qsys\\software\\qsys_lcd_bsp

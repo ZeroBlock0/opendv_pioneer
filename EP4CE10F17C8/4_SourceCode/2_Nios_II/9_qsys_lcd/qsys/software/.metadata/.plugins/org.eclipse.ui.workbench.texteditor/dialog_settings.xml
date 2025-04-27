@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="252" key="DIALOG_Y_ORIGIN"/>
+		<item value="884" key="DIALOG_X_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="SSD_HT" key="selection"/>
+		<list key="findhistory">
+			<item value="SSD_HT"/>
+			<item value="TFT_BL_BASE"/>
+			<item value="MLCD_DB_BASE"/>
+			<item value="TFT_WR_N_BASE"/>
+			<item value="TFT_CS_N_BASE"/>
+			<item value="TFT_RST_N_BASE"/>
+			<item value="TFT_RD_N_BASE"/>
+			<item value="TFT_DB_BASE"/>
+		</list>
+		<list key="replacehistory">
+			<item value="MLCD_BL_BASE"/>
+			<item value="MLCD_DATA_BASE"/>
+			<item value="MLCD_WR_N_BASE"/>
+			<item value="MLCD_CS_N_BASE"/>
+			<item value="MLCD_RST_N_BASE"/>
+			<item value="MLCD_RD_N_BASE"/>
+			<item value="MLCD_DB_BASE"/>
+			<item value="MLCD_RS_BASE"/>
+		</list>
+	</section>
+</section>

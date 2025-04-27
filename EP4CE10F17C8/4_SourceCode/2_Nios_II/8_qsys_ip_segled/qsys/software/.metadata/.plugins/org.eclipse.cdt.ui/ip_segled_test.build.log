@@ -1,0 +1,7 @@
+
+**** Clean-only build of configuration Nios II for project ip_segled_test ****
+
+make clean 
+[ip_segled_test clean complete]
+
+**** Build Finished ****

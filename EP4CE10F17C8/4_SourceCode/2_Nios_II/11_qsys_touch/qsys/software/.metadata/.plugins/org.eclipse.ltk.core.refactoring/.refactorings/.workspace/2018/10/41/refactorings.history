@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;qsys_touch/drives/TOUCH/ott2001a.c&apos;" deleteContents="false" description="Delete resource &apos;qsys_touch/drives/TOUCH/ott2001a.c&apos;" element1="/qsys_touch/drives/TOUCH/ott2001a.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1539335411896"/>&#x0A;<refactoring comment="Delete resource &apos;qsys_touch/drives/TOUCH/ott2001a.h&apos;" deleteContents="false" description="Delete resource &apos;qsys_touch/drives/TOUCH/ott2001a.h&apos;" element1="/qsys_touch/drives/TOUCH/ott2001a.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1539335417342"/>
+</session>

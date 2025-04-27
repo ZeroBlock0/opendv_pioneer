@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="dual_ov5640_vga">
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_vga|cmos_driver:u_cmos1_driver|i2c_ov5640_rgb565_cfg:u_i2c_cfg|altsyncram:Ram0_rtl_0" CBX_FILE_NAME="altsyncram_qk81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_vga|pll_clk:u_pll_clk|altpll:altpll_component" CBX_FILE_NAME="pll_clk_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_vga|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|rdfifo:u_rdfifo0|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_ohm1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_vga|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo0|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_sdm1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_vga|cmos_driver:u_cmos0_driver|i2c_ov5640_rgb565_cfg:u_i2c_cfg|altsyncram:Ram0_rtl_0" CBX_FILE_NAME="altsyncram_qk81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_vga|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|rdfifo:u_rdfifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_ohm1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dual_ov5640_vga|sdram_top:u_sdram_top|sdram_fifo_ctrl:u_sdram_fifo_ctrl|wrfifo:u_wrfifo1|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_sdm1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,275 @@
+//****************************************Copyright (c)***********************************//
+//技术支持：www.openedv.com
+//淘宝店铺：http://openedv.taobao.com
+//关注微信公众平台微信号："正点原子"，免费获取FPGA & STM32资料。
+//版权所有，盗版必究。
+//Copyright(C) 正点原子 2018-2028
+//All rights reserved
+//----------------------------------------------------------------------------------------
+// File name:           ucosii_mail_msg
+// Last modified Date:  2018/11/20 15:12:09
+// Last Version:        V1.0
+// Descriptions:
+//----------------------------------------------------------------------------------------
+// Created by:          正点原子
+// Created date:        2018/11/20 15:12:09
+// Version:             V1.0
+// Descriptions:        The original version
+//
+//----------------------------------------------------------------------------------------
+//****************************************************************************************//
+
+#include <stdio.h>
+#include <unistd.h>
+#include "includes.h"
+
+/* 定义任务堆栈大小          */
+#define TASK_STACKSIZE 2048
+
+/* 定义各任务堆栈 */
+OS_STK start_task_stk[TASK_STACKSIZE];
+OS_STK msg_sender_stk[TASK_STACKSIZE];
+OS_STK msg_receiver0_stk[TASK_STACKSIZE];
+OS_STK msg_receiver1_stk[TASK_STACKSIZE];
+OS_STK mail_send0_stk[TASK_STACKSIZE];
+OS_STK mail_send1_stk[TASK_STACKSIZE];
+OS_STK mail_send2_stk[TASK_STACKSIZE];
+
+/* 分配各任务优先级 */
+#define START_TASK_PRIORITY	        7
+#define MSG_SENDER_PRIORITY			9
+#define MSG_RECEIVER0_PRIORITY		10
+#define MSG_RECEIVER1_PRIORITY		11
+#define MAIL_SEND0_PRIORITY			12
+#define MAIL_SEND1_PRIORITY			13
+#define MAIL_SEND2_PRIORITY			14
+
+/* 定义消息队列 (msgqueue)*/
+#define		QUEUE_SIZE  40                	/* 消息队列大小     */
+OS_EVENT	*msgqueue;                      /* 消息队列事件指针 */
+void     	*msgqueueTbl[QUEUE_SIZE];  		/* 队列缓冲区       */
+
+/* 定义四个邮箱 */
+OS_EVENT  *mailbox0;
+OS_EVENT  *mailbox1;
+OS_EVENT  *mailbox2;
+
+/* 局部函数声明 */
+int initOSDataStructs(void);            /* 初始化消息队列和邮箱的数据结构 */
+int initCreateTasks(void);              /* 初始化任务                                       */
+
+/* 发送消息任务： 将消息通过消息队列发送给所有等待消息的任务，当队列满时，延时1s */
+void MsgSender(void* pdata)
+{
+	INT32U  msg = 1;      	/* 定义将要发出的消息(msg)            */
+	OS_Q_DATA queue_data; 	/* 存放消息队列的事件控制块中的信息                */
+
+	while (1)
+	{
+		OSQQuery(msgqueue, &queue_data);    /* 查询消息队列的信息        */
+		if(queue_data.OSNMsgs < QUEUE_SIZE) /* 查询消息队列是否已满    */
+		{  	/* 消息队列未满时，将消息发送给所有在等待消息的任务*/
+			OSQPostOpt(msgqueue, (void *)&msg, OS_POST_OPT_BROADCAST);
+			msg++;               		    /* 产生新消息                      */
+		}
+		else
+		{ 	/* 消息队列已满，延时1s */
+			OSTimeDlyHMSM(0, 0, 1, 0);
+		}
+	}
+}
+
+/* 消息接收任务0： 每400ms接收一次消息队列的消息*/
+void MsgReceiver0(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *msg;                	       /* 存储接收到的消息   */
+	while (1)
+	{  	/* 到msgqueue接收消息，如果消息队列为空，则一直等待  */
+		msg = (INT32U *)OSQPend(msgqueue, 0, &return_code);
+		OSTimeDlyHMSM(0, 0, 0, 400);   /* 延时400ms        */
+	}
+}
+
+/* 消息接收任务1： 每1s接收一次消息队列的消息*/
+void MsgReceiver1(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *msg;                           /* 存储接收到的消息   */
+	while (1)
+	{ 	/* 从msgqueue接收消息，如果消息队列为空，则一直等待  */
+		msg = (INT32U *)OSQPend(msgqueue, 0, &return_code);
+		OSTimeDlyHMSM(0, 0, 1, 0);    /* 延时1s          */
+	}
+}
+
+//邮箱部分
+/* 邮件发送任务0： 从mailbox0中收取信息，把信息加1后发到mailbox1*/
+void MailSend0(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *mbox0_contents;           	/* 指向邮件内容的指针  */
+	while (1)
+	{ 	/* 从mailbox0接收邮件，如果邮箱为空，则一直等待  */
+		mbox0_contents = (INT32U *)OSMboxPend(mailbox0, 0, &return_code);
+		/* 输出邮件内容，并把内容加1  */
+		usleep(500000); /* 延时500000us */
+		printf("Task0 get the message: %lu in mailbox0\n",(*mbox0_contents)++);
+		OSMboxPost(mailbox1,(void *)mbox0_contents); /* 把邮件发送到mailbox1  */
+	}
+}
+
+/* 邮件发送任务1： 从mailbox1中收取信息，把信息加1后发到mailbox2*/
+void MailSend1(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *mbox1_contents;           	/* 指向邮件内容的指针  */
+	while(1)
+	{ 	/* 从mailbox1接收邮件，如果邮箱为空，则一直等待  */
+		mbox1_contents = (INT32U *)OSMboxPend(mailbox1, 0, &return_code);
+    	/* 输出邮件内容，并把内容加1  */
+		usleep(1000000); /* 延时1000000us */
+    	printf("Task1 get the message: %lu in mailbox1\n", (*mbox1_contents)++);
+		/* 把邮件发送到mailbox2  */
+		OSMboxPost(mailbox2,(void *)mbox1_contents);
+	}
+}
+
+/* 邮件发送任务2： 从mailbox2中收取信息，把信息加1后发到mailbox3*/
+void MailSend2(void* pdata)
+{
+	INT8U return_code = OS_NO_ERR;
+	INT32U *mbox2_contents;
+	while (1)
+	{   /* 从mailbox2接收邮件，如果邮箱为空，则一直等待  */
+		mbox2_contents = (INT32U *)OSMboxPend(mailbox2, 0, &return_code);
+    	printf("Task2 get the message: %lu in mailbox2\n", (*mbox2_contents)++);
+		usleep(4000000); /* 延时4000000us */
+		/* 把邮件发送到mailbox2  */
+		OSMboxPost(mailbox2,(void *)mbox2_contents);
+	}
+}
+
+/* 初始化各子任务 */
+void  start_task(void* pdata)
+{
+	INT32U mbox0_contents = 1;
+	/* 初始化消息队列和邮箱的数据结构 */
+	initOSDataStructs();
+	/* 创建子任务 */
+	initCreateTasks();
+	/* 向mailbox0发送一封邮件*/
+	OSMboxPost(mailbox0, (void *)&mbox0_contents);
+	OSTaskDel(OS_PRIO_SELF);
+	while (1);
+}
+
+int initOSDataStructs(void)
+{ 	/* 初始化邮箱的数据结构 */
+	mailbox0 = OSMboxCreate((void *)NULL);
+	mailbox1 = OSMboxCreate((void *)NULL);
+	mailbox2 = OSMboxCreate((void *)NULL);
+	/* 初始化消息队列的数据结构 */
+	msgqueue = OSQCreate(&msgqueueTbl[0], QUEUE_SIZE);
+	return 0;
+}
+
+int initCreateTasks(void)
+{
+	/*  创建MsgSender任务  */
+	OSTaskCreateExt(MsgSender,
+                             NULL,
+                             &msg_sender_stk[TASK_STACKSIZE-1],
+                             MSG_SENDER_PRIORITY,
+                             MSG_SENDER_PRIORITY,
+                             msg_sender_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	/*  创建MsgReceiver0任务  */
+	OSTaskCreateExt(MsgReceiver0,
+                             NULL,
+                             &msg_receiver0_stk[TASK_STACKSIZE-1],
+                             MSG_RECEIVER0_PRIORITY,
+                             MSG_RECEIVER0_PRIORITY,
+                             msg_receiver0_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	/*  创建MsgReceiver1任务  */
+	OSTaskCreateExt(MsgReceiver1,
+                             NULL,
+                             &msg_receiver1_stk[TASK_STACKSIZE-1],
+                             MSG_RECEIVER1_PRIORITY,
+                             MSG_RECEIVER1_PRIORITY,
+                             msg_receiver1_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	/*  创建MailSend0任务  */
+	OSTaskCreateExt(MailSend0,
+                             NULL,
+                             &mail_send0_stk[TASK_STACKSIZE-1],
+                             MAIL_SEND0_PRIORITY,
+                             MAIL_SEND0_PRIORITY,
+                             mail_send0_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	/*  创建MailSend1任务  */
+	OSTaskCreateExt(MailSend1,
+                             NULL,
+                             &mail_send1_stk[TASK_STACKSIZE-1],
+                             MAIL_SEND1_PRIORITY,
+                             MAIL_SEND1_PRIORITY,
+                             mail_send1_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	/*  创建MailSend2任务  */
+	OSTaskCreateExt(MailSend2,
+                             NULL,
+                             &mail_send2_stk[TASK_STACKSIZE-1],
+                             MAIL_SEND2_PRIORITY,
+                             MAIL_SEND2_PRIORITY,
+                             mail_send2_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	/*  创建MailSend3任务  */
+	OSTaskCreateExt(MailSend3,
+                             NULL,
+                             &mail_send3_stk[TASK_STACKSIZE-1],
+                             MAIL_SEND3_PRIORITY,
+                             MAIL_SEND3_PRIORITY,
+                             mail_send3_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+
+	return 0;
+}
+
+//main函数
+int main (void)
+{
+	/*  创建父任务  */
+	OSTaskCreateExt(start_task,
+                             NULL,
+                             &start_task_stk[TASK_STACKSIZE-1],
+                             START_TASK_PRIORITY,
+                             START_TASK_PRIORITY,
+                             start_task_stk,
+                             TASK_STACKSIZE,
+                             NULL,
+                             0);
+	OSStart();  /*  启动MicroC/OS-II  */
+	return 0;
+}
+

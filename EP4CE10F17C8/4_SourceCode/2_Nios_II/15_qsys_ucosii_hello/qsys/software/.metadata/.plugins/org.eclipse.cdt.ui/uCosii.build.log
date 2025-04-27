@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project uCosii ****
+
+make all 
+Info: Building F:/project/qsys_ucosii_hello/qsys/software/uCosii_bsp/
+make --no-print-directory -C F:/project/qsys_ucosii_hello/qsys/software/uCosii_bsp/
+[BSP build complete]
+[uCosii build complete]
+
+**** Build Finished ****
